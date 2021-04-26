@@ -56,7 +56,7 @@ public class Main {
 
                 ObjectMapper mapper = new ObjectMapper();
 
-                mapper.writerWithDefaultPrettyPrinter().writeValue(new File("cacho.json"), d.trim());
+                mapper.writerWithDefaultPrettyPrinter().writeValue(new File("countriesapi.json"), d.trim());
                mapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
                 //mapper.writeValue(new File("messi.json"),new Country( 1, "car;ps","ads","sad"));
                 List<Country> countries = new ArrayList<>();
@@ -66,7 +66,7 @@ countries.add(new Country(1,"sdadsa","21","sad"));
 countries.add(new Country(1,"sdadsa","21","sad"));
 countries.add(new Country(1,"sdadsa","21","sad"));
 countries.add(new Country(1,"sdadsa","21","sad"));
-mapper.writerWithDefaultPrettyPrinter().writeValue(new File("messi.json"),countries);
+mapper.writerWithDefaultPrettyPrinter().writeValue(new File("countries.json"),countries);
         /*       countries = mapper.readValue(new File("cacho.json"), new TypeReference<List<Country>>() {
                 });-**/
 
