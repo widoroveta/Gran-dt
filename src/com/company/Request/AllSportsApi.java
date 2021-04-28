@@ -1,5 +1,7 @@
 package com.company.Request;
 
+import com.company.Class.Club;
+import com.company.Class.Player;
 import com.company.Class.Team;
 import com.company.Request.APIClass.Players;
 import com.company.Request.APIClass.Teams;
@@ -19,7 +21,7 @@ public class AllSportsApi<T> {
     private URL url = null;
     private List<String> stringList = new ArrayList<>();
     private HttpURLConnection con = null;
-private List<Teams> teams =new ArrayList<>();
+private List<Club> clubs =new ArrayList<>();
     public void toUpdate() {
         int i;
         ObjectMapper mapper = new ObjectMapper();
@@ -52,8 +54,13 @@ private List<Teams> teams =new ArrayList<>();
 
 
        Teams t =mapper.readValue(b,Teams.class);
-    teams.add(t);
-
+    List <Player> players = new ArrayList<>();
+                for (Players c:
+                     t.getPlayers()) {
+                    players.add(new Player(c.getPlayer_name(),c.getPlayer_number(),c.getPlayer_country(),c.getPlayer_type(),c.getPlayer_match_played(),c.getPlayer_goals(),c.getPlayer_yellow_cards(),c.getPlayer_red_cards()));
+                }
+    Club club = new Club(t.getTeam_name(),players);
+clubs.add(club);
             } catch (UnsupportedEncodingException unsupportedEncodingException) {
                 unsupportedEncodingException.printStackTrace();
             } catch (IOException ioException) {
@@ -61,7 +68,7 @@ private List<Teams> teams =new ArrayList<>();
             }
         }
         try {
-            mapper.writerWithDefaultPrettyPrinter().writeValue(new File("Teams.json"),teams);
+            mapper.writerWithDefaultPrettyPrinter().writeValue(new File("clubs"),clubs);
         } catch (IOException e) {
             e.printStackTrace();
         }
