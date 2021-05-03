@@ -2,7 +2,6 @@ package com.company.Request;
 
 import com.company.Class.Club;
 import com.company.Class.Player;
-import com.company.Class.Team;
 import com.company.Request.APIClass.Players;
 import com.company.Request.APIClass.Teams;
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
