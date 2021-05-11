@@ -2,14 +2,14 @@ package com.company.Class;
 
 public class Player {
     private  String playerName;
-
     private String playerNumber;
     private String playerCountry;
     private String playerType;
-    private int playerMatchPlayed;
-    private int playerGoals;
-    private int playerYellowCards;
-    private int playerRedCards;
+    private String clubName;
+    private int playerMatchPlayed;//
+    private int playerGoals;//
+    private int playerYellowCards;//
+    private int playerRedCards;//
 
     public Player(String playerName, String playerNumber, String playerCountry, String playerType, int playerMatchPlayed, int playerGoals, int playerYellowCards, int playerRedCards) {
         this.playerName = playerName;
@@ -20,6 +20,10 @@ public class Player {
         this.playerGoals = playerGoals;
         this.playerYellowCards = playerYellowCards;
         this.playerRedCards = playerRedCards;
+    }
+
+    public Player() {
+
     }
 
     @Override
