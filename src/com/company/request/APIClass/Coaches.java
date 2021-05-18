@@ -1,4 +1,4 @@
-package com.company.Request.APIClass;
+package com.company.request.APIClass;
 
 public class Coaches {
    private String coach_name;

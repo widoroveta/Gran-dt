@@ -1,4 +1,4 @@
-package com.company.Request.APIClass;
+package com.company.request.APIClass;
 
 public class Players {
     private long player_key;

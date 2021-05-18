@@ -1,23 +1,26 @@
 package com.company;
 
-import com.company.Class.Player;
-import com.company.Class.User;
-import com.company.Repository.Repository;
-import com.company.Request.AllSportsApi;
-import com.fasterxml.jackson.annotation.JsonAutoDetect;
-import com.fasterxml.jackson.annotation.PropertyAccessor;
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import com.company.model.Player;
+import com.company.repository.Repository;
+import com.company.request.AllSportsApi;
+
+import java.io.IOException;
 
 public class Main {
 
     public static void main(String[] args) {
 
-      /* AllSportsApi api = new AllSportsApi();
-        api.toUpdate();
-*/
-        Repository r= new Repository();
-    /*    r.add(new User("CARLOS","CARLITOS21","DASS","rodriguez","messi@gmail.com",3212312));
+       AllSportsApi api = new AllSportsApi();
+        try {
+            api.toUpdate();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+            Repository r= new Repository();
+    r.add(new Player ("carlos",2,"carlos"));
+        /*    r.add(new User("CARLOS","CARLITOS21","DASS","rodriguez","messi@gmail.com",3212312));
 r.add(new Player());*/
       //  r.retrieveData();
     System.out.println( goalsSimulation(0.5));

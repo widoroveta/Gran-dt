@@ -1,10 +1,10 @@
-package com.company.Class;
+package com.company.model;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Club {
-    private  String club;
+    private String club;
     private List<Player> playerList = new ArrayList<>();
 
     public Club(String club, List<Player> playerList) {
@@ -29,5 +29,5 @@ public class Club {
 
     public void setPlayerList(List<Player> playerList) {
         this.playerList = playerList;
-    }
+    
 }

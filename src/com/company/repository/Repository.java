@@ -1,6 +1,7 @@
-package com.company.Repository;
+package com.company.repository;
 
-import com.company.Class.User;
+import com.company.model.Player;
+import com.company.model.User;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -14,14 +15,21 @@ public class Repository <T>{
     private List<T> list = new ArrayList<>();
     private ObjectMapper mapper;
     public void add(T t){
-
+        retrieveData();
        if(t instanceof User)
        {
            User user =(User) t;
 
        }
        else{
-           System.out.println(t);
+
+          switch (t.getClass().getSimpleName().toString())
+          {
+              case "Player":
+              {
+
+              }
+          }
        }
 
     }

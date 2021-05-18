@@ -1,8 +1,4 @@
-package com.company.Class;
-
-import java.security.MessageDigest;
-import java.util.ArrayList;
-import java.util.List;
+package com.company.model;
 
 public class User {
     private String userName;
