@@ -25,7 +25,7 @@ public class AllSportsApi<T> {
         int i;
         ObjectMapper mapper = new ObjectMapper();
         mapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
-        for (i = 10; i < 41; i++) {
+        for (i = 10; i <= 40; i++) {
             try {
                 url = new URL("https://allsportsapi.com/api/football/?&met=Teams&teamId=26" + i + "&APIkey=" + appKey);
 
@@ -80,7 +80,7 @@ public class AllSportsApi<T> {
             }
 
             try {
-                mapper.writerWithDefaultPrettyPrinter().writeValue(new File("clubs"), clubs);
+                mapper.writerWithDefaultPrettyPrinter().writeValue(new File("clubs.json" ), clubs);
             } catch (IOException e) {
                 e.printStackTrace();
             }

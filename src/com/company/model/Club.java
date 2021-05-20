@@ -29,5 +29,5 @@ public class Club {
 
     public void setPlayerList(List<Player> playerList) {
         this.playerList = playerList;
-    
+    }
 }

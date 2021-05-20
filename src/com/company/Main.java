@@ -1,45 +1,41 @@
 package com.company;
 
+import com.company.model.Club;
+import com.company.model.Fixture;
+import com.company.model.Match;
 import com.company.model.Player;
-import com.company.repository.Repository;
+import com.company.repository.FixtureRepository;
 import com.company.request.AllSportsApi;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
+import java.io.File;
 import java.io.IOException;
+import java.lang.reflect.Type;
+import java.time.LocalDate;
+import java.util.HashSet;
+import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) {
 
-       AllSportsApi api = new AllSportsApi();
+ /* AllSportsApi api = new AllSportsApi();
         try {
             api.toUpdate();
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
 
+        Fixture fixture = new Fixture();
+        fixture.doFixture();
+        for (Match m :
+                fixture.getFixture()) {
 
-            Repository r= new Repository();
-    r.add(new Player ("carlos",2,"carlos"));
-        /*    r.add(new User("CARLOS","CARLITOS21","DASS","rodriguez","messi@gmail.com",3212312));
-r.add(new Player());*/
-      //  r.retrieveData();
-    System.out.println( goalsSimulation(0.5));
-
-    }
-    private static int goalsSimulation (double probabilitie){
-      byte goals=0;
-
-        for(byte i =0 ;i<90 ;i++)
-        {
-            if(i==(int)90*probabilitie) {
-         goals++;
-            }
-            else{
-
-            }
+                System.out.println(m);
 
         }
-        return  (int )goals;
     }
 }
 
