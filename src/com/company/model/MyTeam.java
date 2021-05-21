@@ -6,6 +6,6 @@ import java.util.List;
 public class MyTeam {
     private String teamName;
     private List<Player> players = new ArrayList<>();
-    private int score;
+    private transient  int score;
 
 }

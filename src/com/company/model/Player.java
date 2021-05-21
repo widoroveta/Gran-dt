@@ -3,19 +3,19 @@ package com.company.model;
 import com.company.interfaz.Simulation;
 
 public class Player implements Simulation {
-    private String playerName;
-    private int playerNumber;
-    private int Price;
-    private String clubName;
+    protected String playerName;
+    protected int playerNumber;
+    protected int Price;
+    protected String clubName;
 
 
     //Transient
-    private transient boolean playerStatus;
-    private transient boolean mvp;
-    private transient double datePoint;
-    private transient int goals;
-    private transient boolean yellowCard;
-    private transient boolean redCard;
+    protected transient boolean playerStatus;
+    protected transient boolean mvp;
+    protected transient int datePoint;
+    protected transient int goals;
+    protected transient boolean yellowCard;
+    protected transient boolean redCard;
 
     public Player(String playerName, int playerNumber, String clubName) {
         this.playerName = playerName;
@@ -76,11 +76,11 @@ public class Player implements Simulation {
         this.mvp = mvp;
     }
 
-    public double getDatePoint() {
+    public int getDatePoint() {
         return datePoint;
     }
 
-    public void setDatePoint(double datePoint) {
+    public void setDatePoint(int datePoint) {
         this.datePoint = datePoint;
     }
 
@@ -108,28 +108,8 @@ public class Player implements Simulation {
         this.redCard = redCard;
     }
 
-    @Override
+
     public int getPoints() {
-        if (this.isPlayerStatus()) {
-            int points = 0;
-            points=(int)datePoint;
-            if (this.isRedCard()) {
-
-            }
-            if (this.isYellowCard()) {
-
-            }
-            if (this.isMvp()) {
-
-            }
-            if (this.goals != 0)
-            {
-
-            }
-
-            return points;
-        } else {
-            return 0;
-        }
+        return 0;
     }
 }

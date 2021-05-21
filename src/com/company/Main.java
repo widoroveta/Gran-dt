@@ -1,5 +1,7 @@
 package com.company;
 
+import com.company.enums.Dates;
+import com.company.enums.Points;
 import com.company.model.Club;
 import com.company.model.Fixture;
 import com.company.model.Match;
@@ -21,21 +23,26 @@ public class Main {
 
     public static void main(String[] args) {
 
- /* AllSportsApi api = new AllSportsApi();
+ /*AllSportsApi api = new AllSportsApi();
         try {
             api.toUpdate();
         } catch (IOException e) {
             e.printStackTrace();
         }*/
 
-        Fixture fixture = new Fixture();
-        fixture.doFixture();
+     Fixture fixture = new Fixture();
+
+     fixture.doFixture();
+     fixture.setDate();
         for (Match m :
                 fixture.getFixture()) {
-
-                System.out.println(m);
+         if(m.getDate().isEqual(Dates.DATE_NINETH.getDate()))
+            System.out.println(m);
 
         }
+
+        fixture.amountMatch("Swansea" );
+    //    System.out.println(Points.GOAL_DEFENDER);
     }
 }
 

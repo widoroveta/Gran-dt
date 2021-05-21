@@ -1,5 +1,8 @@
 package com.company.model;
 
+import com.company.enums.Dates;
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
+import com.fasterxml.jackson.annotation.PropertyAccessor;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -28,6 +31,7 @@ public class Fixture {
 
         List<String> t = new ArrayList<>();
         try {
+
             mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
             List<Club> clubs = mapper.readValue(new File("clubs.json"), new TypeReference<List<Club>>() {
                 @Override
@@ -36,49 +40,67 @@ public class Fixture {
                 }
             });
             for (Club c :
-                    clubs.subList(0, 20)) {
+                    clubs.subList(0, 9)) {
                 teams.push(c.getClub());
             }
-            t.addAll(teams);
+            for (Club c:
+                clubs.subList(10,19) ) {
+                t.add(c.getClub());
+            }
             int a = 0;
             while (!teams.empty()) {
                 String c = teams.pop();
                 t.remove(c);
                 for (String s : t) {
-                            Match m = new Match(a++, c, s);
-                           this.fixture.add(m);
-                    }
+                    Match m = new Match(a++, c, s);
+                    this.fixture.add(m);
                 }
-
-            for(int i =0;i<fixture.size();i++)
-            {
-                int as=0;
-                                    
             }
-
         } catch (IOException e) {
             e.printStackTrace();
         }
 
 
+    }
 
+public void  setDate(){
+    int i=0;
+    int d=0;
+    Dates[] values =Dates.values();
+    int size=values.length;
+    for (Match m :
+         fixture) {
+        if (i==9||i<0)
+        {
+            d++;
+            i=0;
+            i=-d;
+            while (i!=0) {
 
-}
+                m.setDate(values[size-d].getDate());
+                i++;
+            }
 
-private void Filter()
-{
-    HashSet<Match> matches=new HashSet<>();
-    for (Match m: this.fixture)
-    {
-         matches.add(m);
+        }else {
+
+            m.setDate(values[i].getDate());
+            i++;
+        }
 
     }
-    this.fixture.clear();
-    for (Match m:
-         matches) {
-        this.fixture.add(m);
-    }
+
 }
+    public void amountMatch(String c) {
+       int i =0;
+        for (Match m:
+             fixture) {
+            if(m.getNameVisitor().equalsIgnoreCase(c)||m.getNameLocal().equalsIgnoreCase(c))
+            {
+                i++;
+            }
+        }
+        System.out.println(i);
+    }
 
 
     public List<Match> getFixture() {

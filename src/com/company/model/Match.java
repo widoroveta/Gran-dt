@@ -1,8 +1,7 @@
 package com.company.model;
 
 import java.time.LocalDate;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class Match {
     private int id;
@@ -16,6 +15,7 @@ public class Match {
         this.id = id;
         this.nameLocal = nameLocal;
         this.nameVisitor = nameVisitor;
+
     }
 
     @Override
