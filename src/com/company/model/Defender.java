@@ -7,6 +7,23 @@ public class Defender extends Player{
 
     @Override
     public int getPoints() {
+        int points=0;
+        int random =1 + (int)(Math.random() * ((1000 - 1) + 1));
+        //Goals
+        if(random>900){
+            points+=15;
+            super.setGoals(1);
+        }
+        else{super.setGoals(0);}
+        //Cards
+        if(super.playYellowCard()){
+            points-=5;
+        }
+        if(super.playRedCard()){
+            points-=15;
+        }
+        return points;
+    }
   /*      if (this.isPlayerStatus()) {
             int points = 0;
             points=super.getDatePoint();
@@ -26,7 +43,7 @@ public class Defender extends Player{
 
             return points;
         } else {*/
-            return 0;
+
        // }
     }
-}
+

@@ -28,14 +28,19 @@ public class Main {
             api.toUpdate();
         } catch (IOException e) {
             e.printStackTrace();
-        }*/System.out.println("HelloWorld!");
+        }*/
      Fixture fixture = new Fixture();
 
      fixture.doFixture();
      fixture.setDate();
- fixture.setTeams(fixture.getFixture().get(3));
+        for (Match m: fixture.getFixture()) {
+            System.out.println(m+"\n");
+        }
+
+        }
+
     //    fixture.amountMatch("Swansea" );
     //    System.out.println(Points.GOAL_DEFENDER);
     }
-}
+
 

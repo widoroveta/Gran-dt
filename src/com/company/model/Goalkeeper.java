@@ -8,6 +8,22 @@ public class Goalkeeper extends Player{
 
     @Override
     public int getPoints() {
-        return 0;
+        int points=0;
+        int random =1 + (int)(Math.random() * ((1000 - 1) + 1));
+        //Goals
+        if(random>980){
+            points+=20;
+            super.setGoals(1);
+        }
+        else{super.setGoals(0);}
+        //Cards
+        if(super.playYellowCard()){
+            points-=5;
+        }
+        if(super.playRedCard()){
+            points-=15;
+        }
+        return points;
     }
+
 }

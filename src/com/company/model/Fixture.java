@@ -62,12 +62,12 @@ public class Fixture {
 
 
     }
-   public void setTeams(Match m)
+  /* public void setTeams(Match m)
    {
        Club local =new Club();
        System.out.println(local.getTeam(m.getNameLocal()));
 
-   }
+   }*/
 
     public void setDate() {
         int i = 0;

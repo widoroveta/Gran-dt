@@ -100,12 +100,29 @@ public class Player implements Simulation {
         this.yellowCard = yellowCard;
     }
 
+    public boolean playYellowCard(){
+        int random =1 + (int)(Math.random() * ((1000 - 1) + 1));
+        if(random>700){setYellowCard(true);}
+        else{setYellowCard(false);}
+        return yellowCard;
+    }
+
     public boolean isRedCard() {
         return redCard;
     }
 
     public void setRedCard(boolean redCard) {
         this.redCard = redCard;
+    }
+
+    public void playRedCard(boolean redCard) {
+        this.redCard = redCard;
+    }
+    public boolean playRedCard(){
+        int random =1 + (int)(Math.random() * ((1000 - 1) + 1));
+        if(random>960){setRedCard(true);}
+        else{setRedCard(false);}
+        return redCard;
     }
 
 

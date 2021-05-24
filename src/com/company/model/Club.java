@@ -23,7 +23,7 @@ public class Club {
 
     public Club() {
     }
-    public List<Player> getTeam(String nameTeam)
+    /*public List<Player> getTeam(String nameTeam)
     { ObjectMapper mapper = new ObjectMapper();
         List<Player>team =new ArrayList<>();
         Club clubSelect=new Club();
@@ -64,7 +64,7 @@ public class Club {
             }
         }
         return team;
-    }
+    }*/
     public String getClub() {
         return club;
     }
