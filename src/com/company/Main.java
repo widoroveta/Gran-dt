@@ -34,14 +34,8 @@ public class Main {
 
      fixture.doFixture();
      fixture.setDate();
-        for (Match m :
-                fixture.getFixture()) {
-         if(m.getDate().isEqual(Dates.DATE_NINETH.getDate()))
-            System.out.println(m);
-
-        }
-
-        fixture.amountMatch("Swansea" );
+ fixture.setTeams(fixture.getFixture().get(3));
+    //    fixture.amountMatch("Swansea" );
     //    System.out.println(Points.GOAL_DEFENDER);
     }
 }

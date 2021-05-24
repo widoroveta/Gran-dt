@@ -43,8 +43,8 @@ public class Fixture {
                     clubs.subList(0, 9)) {
                 teams.push(c.getClub());
             }
-            for (Club c:
-                clubs.subList(10,19) ) {
+            for (Club c :
+                    clubs.subList(10, 19)) {
                 t.add(c.getClub());
             }
             int a = 0;
@@ -62,40 +62,43 @@ public class Fixture {
 
 
     }
+   public void setTeams(Match m)
+   {
+       Club local =new Club();
+       System.out.println(local.getTeam(m.getNameLocal()));
 
-public void  setDate(){
-    int i=0;
-    int d=0;
-    Dates[] values =Dates.values();
-    int size=values.length;
-    for (Match m :
-         fixture) {
-        if (i==9||i<0)
-        {
-            d++;
-            i=0;
-            i=-d;
-            while (i!=0) {
+   }
 
-                m.setDate(values[size-d].getDate());
+    public void setDate() {
+        int i = 0;
+        int d = 0;
+        int n = 0;
+        Dates[] values = Dates.values();
+        int size = values.length;
+        for (Match m :
+                fixture) {
+            if (i < 9 && i >= d) {
+                n = i - d;
+                i++;
+            } else {
+                if (i > 8) {
+                    i = 0;
+                    d++;
+                }
+                n = size - d + i;
                 i++;
             }
 
-        }else {
-
-            m.setDate(values[i].getDate());
-            i++;
+            m.setDate(values[n].getDate());
         }
-
     }
 
-}
+
     public void amountMatch(String c) {
-       int i =0;
-        for (Match m:
-             fixture) {
-            if(m.getNameVisitor().equalsIgnoreCase(c)||m.getNameLocal().equalsIgnoreCase(c))
-            {
+        int i = 0;
+        for (Match m :
+                fixture) {
+            if (m.getNameVisitor().equalsIgnoreCase(c) || m.getNameLocal().equalsIgnoreCase(c)) {
                 i++;
             }
         }
