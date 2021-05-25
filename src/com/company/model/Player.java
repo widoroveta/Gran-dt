@@ -125,6 +125,21 @@ public class Player implements Simulation {
         return redCard;
     }
 
+    @Override
+    public String toString() {
+        return "Player{" +
+                "playerName='" + playerName + '\'' +
+                ", playerNumber=" + playerNumber +
+                ", Price=" + Price +
+                ", clubName='" + clubName + '\'' +
+                ", playerStatus=" + playerStatus +
+                ", mvp=" + mvp +
+                ", datePoint=" + datePoint +
+                ", goals=" + goals +
+                ", yellowCard=" + yellowCard +
+                ", redCard=" + redCard +
+                '}';
+    }
 
     public int getPoints() {
         return 0;

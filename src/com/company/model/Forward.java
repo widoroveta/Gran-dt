@@ -8,6 +8,9 @@ public class Forward extends Player{
         super(playerName, playerNumber, clubName);
     }
 
+    public Forward() {
+    }
+
     @Override
     public int getPoints() {
         int points = 0;
@@ -56,4 +59,8 @@ public class Forward extends Player{
      //   } else {
 
 
+    @Override
+    public String toString() {
+        return super.toString();
     }
+}

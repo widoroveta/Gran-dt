@@ -1,9 +1,9 @@
 package com.company.request.APIClass;
 
 public class Coaches {
-   private String coach_name;
-   private String coach_country;
-   private int coach_age;
+    private String coach_name;
+    private String coach_country;
+    private int coach_age;
 
     public Coaches() {
 

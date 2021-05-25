@@ -5,6 +5,9 @@ public class Defender extends Player{
         super(playerName, playerNumber, clubName);
     }
 
+    public Defender() {
+    }
+
     @Override
     public int getPoints() {
         int points=0;
@@ -45,5 +48,10 @@ public class Defender extends Player{
         } else {*/
 
        // }
+
+    @Override
+    public String toString() {
+        return super.toString();
     }
+}
 

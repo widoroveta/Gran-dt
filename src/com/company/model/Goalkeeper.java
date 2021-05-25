@@ -6,6 +6,9 @@ public class Goalkeeper extends Player{
         super(playerName, playerNumber, clubName);
     }
 
+    public Goalkeeper() {
+    }
+
     @Override
     public int getPoints() {
         int points=0;
@@ -26,4 +29,8 @@ public class Goalkeeper extends Player{
         return points;
     }
 
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }

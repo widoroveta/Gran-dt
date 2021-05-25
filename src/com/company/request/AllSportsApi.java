@@ -7,7 +7,10 @@ import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -24,12 +27,12 @@ public class AllSportsApi<T> {
     public void toUpdate() throws IOException {
         int i;
         ObjectMapper mapper = new ObjectMapper();
+
         mapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
         for (i = 10; i <= 40; i++) {
             try {
                 url = new URL("https://allsportsapi.com/api/football/?&met=Teams&teamId=26" + i + "&APIkey=" + appKey);
 
-                System.out.println(url.toString());
                 con = (HttpURLConnection) url.openConnection();
                 con.setDoOutput(true);
 
@@ -40,23 +43,16 @@ public class AllSportsApi<T> {
                     IOException e) {
                 e.printStackTrace();
             }
-            try (BufferedReader br = new BufferedReader(
-                    new InputStreamReader(con.getInputStream(), "utf-8"))) {
-
+            try (BufferedReader br = new BufferedReader(new InputStreamReader(con.getInputStream(), "utf-8"))) {
                 String responseLine = null;
-
                 responseLine = br.readLine();
-                System.out.println();
                 String b = responseLine.substring(responseLine.indexOf("[") + 1, responseLine.length() - 2);
-                // String [] m =b.split("\\{");
-
-
                 Teams t = mapper.readValue(b, Teams.class);
                 List<Player> players = new ArrayList<>();
                 for (Players c : t.getPlayers()) {
                     switch (c.getPlayer_type()) {
                         case "Goalkeepers":
-                            players.add(new Goalkeeper(c.getPlayer_name(),Integer.parseInt(c.getPlayer_number()) , t.getTeam_name()));
+                            players.add(new Goalkeeper(c.getPlayer_name(), Integer.parseInt(c.getPlayer_number()), t.getTeam_name()));
                             break;
                         case "Defenders":
                             players.add(new Defender(c.getPlayer_name(), Integer.parseInt(c.getPlayer_number()), t.getTeam_name()));
@@ -80,10 +76,12 @@ public class AllSportsApi<T> {
             }
 
             try {
-                mapper.writerWithDefaultPrettyPrinter().writeValue(new File("clubs.json" ), clubs);
+              mapper.enableDefaultTyping(ObjectMapper.DefaultTyping.NON_FINAL);
+                mapper.writerWithDefaultPrettyPrinter().writeValue(new File("clubs.json"), clubs);
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
-        }
     }
+
+}

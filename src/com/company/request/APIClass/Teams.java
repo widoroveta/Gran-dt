@@ -3,10 +3,10 @@ package com.company.request.APIClass;
 import java.util.Arrays;
 
 public class Teams {
-   private int  team_key;
-   private String team_name;
+    private int team_key;
+    private String team_name;
     private String team_logo;
-   private Players[] players;
+    private Players[] players;
     private Coaches[] coaches;
 
     public int getTeam_key() {

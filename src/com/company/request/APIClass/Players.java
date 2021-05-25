@@ -9,9 +9,9 @@ public class Players {
     private String player_a;
     private String player_age;
     private int player_match_played;
-     private int player_goals;
-     private int player_yellow_cards;
-     private int player_red_cards;
+    private int player_goals;
+    private int player_yellow_cards;
+    private int player_red_cards;
 
     public Players() {
     }

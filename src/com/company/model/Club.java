@@ -1,5 +1,6 @@
 package com.company.model;
 
+import com.company.repository.ClubRepository;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -23,23 +24,21 @@ public class Club {
 
     public Club() {
     }
-    /*public List<Player> getTeam(String nameTeam)
-    { ObjectMapper mapper = new ObjectMapper();
+    public List<Player> getTeam(String nameTeam)
+    {
         List<Player>team =new ArrayList<>();
-        Club clubSelect=new Club();
-        try {
+        List<Club> clubs = new ClubRepository().getClubs();
 
-            for (Club c:
-                 clubs) {
-                if(c.getClub().equalsIgnoreCase(nameTeam))
-                {
-                    clubSelect=c;
-                }
+        Club clubSelect=new Club();
+
+        for (Club club1:
+             clubs) {
+            if(club1.getClub().equalsIgnoreCase(nameTeam))
+            {
+                clubSelect=club1;
             }
-        } catch (IOException e) {
-            e.printStackTrace();
         }
-        Collections.shuffle(clubSelect.getPlayerList());
+
         int i =0;
         for (Player player : clubSelect.getPlayerList()     ) {
 
@@ -64,8 +63,9 @@ public class Club {
             }
         }
         return team;
-    }*/
+    }
     public String getClub() {
+
         return club;
     }
 
@@ -81,4 +81,11 @@ public class Club {
         this.playerList = playerList;
     }
 
+    @Override
+    public String toString() {
+        return "Club{" +
+                "club='" + club + '\'' +
+                ", playerList=" + playerList +
+                '}';
+    }
 }

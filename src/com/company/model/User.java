@@ -21,6 +21,10 @@ public class User {
 
     public User() {
     }
+    public void addPlayer()
+    {
+
+    }
 
     @Override
     public String toString() {

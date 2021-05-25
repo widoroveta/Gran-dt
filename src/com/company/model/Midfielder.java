@@ -28,4 +28,12 @@ public class Midfielder extends  Player{
         }
         return points;
     }
+
+    public Midfielder() {
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }

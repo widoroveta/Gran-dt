@@ -31,8 +31,9 @@ public class Fixture {
 
         List<String> t = new ArrayList<>();
         try {
-
+            mapper.enableDefaultTyping(ObjectMapper.DefaultTyping.NON_FINAL);
             mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+            mapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
             List<Club> clubs = mapper.readValue(new File("clubs.json"), new TypeReference<List<Club>>() {
                 @Override
                 public Type getType() {

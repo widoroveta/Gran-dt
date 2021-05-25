@@ -8,4 +8,7 @@ public class MyTeam {
     private List<Player> players = new ArrayList<>();
     private transient  int score;
 
+    public List<Player> getPlayers() {
+        return players;
+    }
 }
