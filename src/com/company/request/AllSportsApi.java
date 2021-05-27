@@ -5,6 +5,7 @@ import com.company.request.APIClass.Players;
 import com.company.request.APIClass.Teams;
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
+import com.fasterxml.jackson.databind.MapperFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.BufferedReader;
@@ -27,7 +28,7 @@ public class AllSportsApi<T> {
     public void toUpdate() throws IOException {
         int i;
         ObjectMapper mapper = new ObjectMapper();
-
+        mapper.configure(MapperFeature.PROPAGATE_TRANSIENT_MARKER, true);
         mapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
         for (i = 10; i <= 40; i++) {
             try {

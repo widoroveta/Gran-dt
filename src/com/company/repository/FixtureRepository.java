@@ -7,6 +7,7 @@ import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.MapperFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 
@@ -38,7 +39,7 @@ public class FixtureRepository implements Repository<Match> {
     }
 public void saveFixture(Fixture fixture){
     try {
-
+        mapper.configure(MapperFeature.PROPAGATE_TRANSIENT_MARKER, true);
         this.mapper.writerWithDefaultPrettyPrinter().writeValue(fileFixture,fixture);
     } catch (IOException e) {
         e.printStackTrace();
@@ -60,6 +61,7 @@ public void saveFixture(Fixture fixture){
     @Override
     public List<Match> getAll() {
         try {
+            mapper.configure(MapperFeature.PROPAGATE_TRANSIENT_MARKER, true);
             mapper.disable(DeserializationFeature.ADJUST_DATES_TO_CONTEXT_TIME_ZONE);
             mapper.disable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS);
             mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);

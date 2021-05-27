@@ -2,6 +2,7 @@ package com.company.model;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class Match {
@@ -10,7 +11,7 @@ public class Match {
     private String nameVisitor;
     private List<Player> localTeam = new ArrayList<>();
     private List<Player> visitorTeam = new ArrayList<>();
-    private LocalDate date;
+    private Date date;
 
     public Match() {
     }
@@ -136,11 +137,11 @@ public class Match {
         this.visitorTeam = visitorTeam;
     }
 
-    public LocalDate getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(LocalDate date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 }
