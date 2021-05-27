@@ -16,7 +16,7 @@ public class Player implements Simulation {
     protected transient int goals;
     protected transient boolean yellowCard;
     protected transient boolean redCard;
-
+    protected transient int points;
     public Player(String playerName, int playerNumber, String clubName) {
         this.playerName = playerName;
         this.playerNumber = playerNumber;
@@ -127,7 +127,7 @@ public class Player implements Simulation {
 
     @Override
     public String toString() {
-        return "Player{" +
+        return "\nPlayer{" +
                 "playerName='" + playerName + '\'' +
                 ", playerNumber=" + playerNumber +
                 ", Price=" + Price +
@@ -142,6 +142,14 @@ public class Player implements Simulation {
     }
 
     public int getPoints() {
-        return 0;
+        return points;
+    }
+
+    public void setPoints(int points) {
+        this.points = points;
+    }
+
+    public void doPoints() {
+
     }
 }

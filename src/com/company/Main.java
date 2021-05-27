@@ -1,11 +1,12 @@
 package com.company;
 
-import com.company.model.Club;
-import com.company.model.Fixture;
-import com.company.model.Match;
+import com.company.model.*;
 import com.company.repository.ClubRepository;
+import com.company.repository.FixtureRepository;
+import com.company.repository.UserRepository;
 import com.company.request.AllSportsApi;
 
+import javax.swing.undo.UndoableEditSupport;
 import java.io.IOException;
 
 public class Main {
@@ -18,23 +19,14 @@ public class Main {
         } catch (IOException e) {
             e.printStackTrace();
         }*/
-      Fixture fixture = new Fixture();
+        FixtureRepository repository =new FixtureRepository();
+    Fixture fixture = new Fixture();
 
         fixture.doFixture();
         fixture.setDate();
-        Club club = new Club();
-      for (Match m : fixture.getFixture()) {
-            club.getTeam(m.getNameLocal());
-        }
-
-
-
-
-
-        //    fixture.amountMatch("Swansea" );
-        //    System.out.p
-
-
+     repository.saveFixture(fixture);
+        MyTeam myTeam=new MyTeam();
+        myTeam.selectPlayer();
 
     }
 

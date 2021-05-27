@@ -35,13 +35,7 @@ ObjectMapper mapper =new ObjectMapper();
                     return super.getType();
                 }
             });
-            for (Club club1:
-                 clubs) {
-                for (Player p:
-                     club1.getPlayerList()) {
-                    System.out.println(p.getClass().getSimpleName());
-                }
-            }
+
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -40,6 +40,7 @@ public class Club {
         }
 
         int i =0;
+
         for (Player player : clubSelect.getPlayerList()     ) {
 
             if(player instanceof Goalkeeper && i==0)
@@ -62,6 +63,8 @@ public class Club {
                 i++;
             }
         }
+
+
         return team;
     }
     public String getClub() {

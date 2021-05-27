@@ -1,7 +1,9 @@
 package com.company.model;
 
-public class Goalkeeper extends Player{
+import com.company.enums.Points;
 
+public class Goalkeeper extends Player{
+    private boolean withoutGoals;
     public Goalkeeper(String playerName, int playerNumber, String clubName) {
         super(playerName, playerNumber, clubName);
     }
@@ -9,25 +11,36 @@ public class Goalkeeper extends Player{
     public Goalkeeper() {
     }
 
+    public boolean getWithoutGoals() {
+        return withoutGoals;
+    }
+
+    public void setWithoutGoals(boolean withoutGoals) {
+        this.withoutGoals = withoutGoals;
+    }
+
     @Override
-    public int getPoints() {
-        int points=0;
+    public void doPoints() {
         int random =1 + (int)(Math.random() * ((1000 - 1) + 1));
         //Goals
-        if(random>980){
-            points+=20;
+        if(random>995){
+
             super.setGoals(1);
         }
+
         else{super.setGoals(0);}
+        super.setPoints(super.getGoals()*Points.GOAL_GOALKEEPER.getPoints());
         //Cards
         if(super.playYellowCard()){
-            points-=5;
+            super.points-= Points.YELLOW_CARD.getPoints();
         }
         if(super.playRedCard()){
-            points-=15;
+            super.points-=Points.RED_CARD.getPoints();
         }
-        return points;
+
     }
+
+
 
     @Override
     public String toString() {

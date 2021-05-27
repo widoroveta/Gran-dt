@@ -63,12 +63,7 @@ public class Fixture {
 
 
     }
-  /* public void setTeams(Match m)
-   {
-       Club local =new Club();
-       System.out.println(local.getTeam(m.getNameLocal()));
 
-   }*/
 
     public void setDate() {
         int i = 0;
@@ -89,7 +84,7 @@ public class Fixture {
                 n = size - d + i;
                 i++;
             }
-
+            m.assembleMatch();
             m.setDate(values[n].getDate());
         }
     }
