@@ -1,16 +1,8 @@
 package com.company.model;
 
 import com.company.repository.ClubRepository;
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.DeserializationFeature;
-import com.fasterxml.jackson.databind.ObjectMapper;
 
-import java.io.File;
-import java.io.IOException;
-import java.lang.reflect.Type;
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
 import java.util.List;
 
 public class Club {
@@ -24,41 +16,37 @@ public class Club {
 
     public Club() {
     }
-    public List<Player> getTeam(String nameTeam)
-    {
-        List<Player>team =new ArrayList<>();
+
+    public List<Player> getTeam(String nameTeam) {
+        List<Player> team = new ArrayList<>();
         List<Club> clubs = new ClubRepository().getClubs();
 
-        Club clubSelect=new Club();
+        Club clubSelect = new Club();
 
-        for (Club club1:
-             clubs) {
-            if(club1.getClub().equalsIgnoreCase(nameTeam))
-            {
-                clubSelect=club1;
+        for (Club club1 :
+                clubs) {
+            if (club1.getClub().equalsIgnoreCase(nameTeam)) {
+                clubSelect = club1;
             }
         }
 
-        int i =0;
+        int i = 0;
 
-        for (Player player : clubSelect.getPlayerList()     ) {
+        for (Player player : clubSelect.getPlayerList()) {
 
-            if(player instanceof Goalkeeper && i==0)
-            {
+            if (player instanceof Goalkeeper && i == 0) {
                 team.add(player);
                 i++;
             }
-            if(player instanceof Defender && 4 >= i && i>0)
-            {
+            if (player instanceof Defender && 4 >= i && i > 0) {
                 team.add(player);
                 i++;
             }
-            if(player instanceof Midfielder && 8 >= i && i>4)
-            {
+            if (player instanceof Midfielder && 8 >= i && i > 4) {
                 team.add(player);
                 i++;
-            }if(player instanceof Forward && 10>= i && i>8)
-            {
+            }
+            if (player instanceof Forward && 10 >= i && i > 8) {
                 team.add(player);
                 i++;
             }
@@ -67,6 +55,7 @@ public class Club {
 
         return team;
     }
+
     public String getClub() {
 
         return club;

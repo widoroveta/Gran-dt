@@ -5,7 +5,7 @@ import com.company.interfaz.Simulation;
 public class Player implements Simulation {
     protected String playerName;
     protected int playerNumber;
-    protected int Price;
+    protected int price;
     protected String clubName;
 
 
@@ -17,10 +17,11 @@ public class Player implements Simulation {
     protected transient boolean yellowCard;
     protected transient boolean redCard;
     protected transient int points;
-    public Player(String playerName, int playerNumber, String clubName) {
+
+    public Player(String playerName, int playerNumber, String clubName, int price) {
         this.playerName = playerName;
         this.playerNumber = playerNumber;
-
+        this.price = price;
         this.clubName = clubName;
     }
 
@@ -45,11 +46,11 @@ public class Player implements Simulation {
     }
 
     public int getPrice() {
-        return Price;
+        return this.price;
     }
 
     public void setPrice(int price) {
-        Price = price;
+        this.price = price;
     }
 
     public String getClubName() {
@@ -100,10 +101,9 @@ public class Player implements Simulation {
         this.yellowCard = yellowCard;
     }
 
-    public boolean playYellowCard(){
-        int random =1 + (int)(Math.random() * ((1000 - 1) + 1));
-        if(random>700){setYellowCard(true);}
-        else{setYellowCard(false);}
+    public boolean playYellowCard() {
+        int random = 1 + (int) (Math.random() * ((1000 - 1) + 1));
+        setYellowCard(random > 700);
         return yellowCard;
     }
 
@@ -118,10 +118,10 @@ public class Player implements Simulation {
     public void playRedCard(boolean redCard) {
         this.redCard = redCard;
     }
-    public boolean playRedCard(){
-        int random =1 + (int)(Math.random() * ((1000 - 1) + 1));
-        if(random>960){setRedCard(true);}
-        else{setRedCard(false);}
+
+    public boolean playRedCard() {
+        int random = 1 + (int) (Math.random() * ((1000 - 1) + 1));
+        setRedCard(random > 960);
         return redCard;
     }
 
@@ -130,7 +130,7 @@ public class Player implements Simulation {
         return "\nPlayer{" +
                 "playerName='" + playerName + '\'' +
                 ", playerNumber=" + playerNumber +
-                ", Price=" + Price +
+                ", price=" + price +
                 ", clubName='" + clubName + '\'' +
                 ", playerStatus=" + playerStatus +
                 ", mvp=" + mvp +

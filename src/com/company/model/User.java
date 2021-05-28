@@ -24,44 +24,43 @@ public class User {
     public User() {
     }
 
-    public Boolean login(String userName,String password){
-        UserRepository userRepository= new UserRepository();
+    public Boolean login(String userName, String password) {
+        UserRepository userRepository = new UserRepository();
         User userLogin = null;
 
         for (User user :
-             userRepository.getAll()) {
-          if(  user.getUserName().equalsIgnoreCase(userName))
-          {
-            userLogin=user;
-          }
+                userRepository.getAll()) {
+            if (user.getUserName().equalsIgnoreCase(userName)) {
+                userLogin = user;
+            }
         }
         if (userLogin != null) {
             return userLogin.getPassword().equals(password);
 
-        }
-else {
-    return false;
+        } else {
+            return false;
         }
     }
-    public void register(User user)
-    {
+
+    public void register(User user) {
         UserRepository userRepository = new UserRepository();
         userRepository.add(user);
 
     }
+
     public Boolean registerName(String userName) {
         UserRepository userRepository = new UserRepository();
         User userRegister = null;
 
         for (User user :
                 userRepository.getAll()) {
-            if(user.getUserName().equalsIgnoreCase(userName))
-            {
+            if (user.getUserName().equalsIgnoreCase(userName)) {
                 return false;
             }
         }
         return true;
     }
+
     public String getUserName() {
         return userName;
     }

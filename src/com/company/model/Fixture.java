@@ -2,17 +2,11 @@ package com.company.model;
 
 import com.company.enums.Dates;
 import com.company.repository.ClubRepository;
-import com.fasterxml.jackson.annotation.JsonAutoDetect;
-import com.fasterxml.jackson.annotation.PropertyAccessor;
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import java.io.File;
-import java.io.IOException;
-import java.lang.reflect.Type;
-import java.time.LocalDate;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Stack;
 
 public class Fixture {
     private List<Match> fixture = new ArrayList<>();
@@ -31,25 +25,25 @@ public class Fixture {
         ObjectMapper mapper = new ObjectMapper();
 
         List<String> t = new ArrayList<>();
-        ClubRepository clubRepository =new ClubRepository();
-        List<Club> clubs= clubRepository.getClubs();
-            for (Club c :
-                    clubs.subList(0, 9)) {
-                teams.push(c.getClub());
+        ClubRepository clubRepository = new ClubRepository();
+        List<Club> clubs = clubRepository.getClubs();
+        for (Club c :
+                clubs.subList(0, 9)) {
+            teams.push(c.getClub());
+        }
+        for (Club c :
+                clubs.subList(10, 19)) {
+            t.add(c.getClub());
+        }
+        int a = 0;
+        while (!teams.empty()) {
+            String c = teams.pop();
+            t.remove(c);
+            for (String s : t) {
+                Match m = new Match(a++, c, s);
+                this.fixture.add(m);
             }
-            for (Club c :
-                    clubs.subList(10, 19)) {
-                t.add(c.getClub());
-            }
-            int a = 0;
-            while (!teams.empty()) {
-                String c = teams.pop();
-                t.remove(c);
-                for (String s : t) {
-                    Match m = new Match(a++, c, s);
-                    this.fixture.add(m);
-                }
-            }
+        }
 
     }
 

@@ -9,6 +9,17 @@ public class Teams {
     private Players[] players;
     private Coaches[] coaches;
 
+    public Teams(int team_key, String team_name, String team_logo, Players[] players, Coaches[] coaches) {
+        this.team_key = team_key;
+        this.team_name = team_name;
+        this.team_logo = team_logo;
+        this.players = players;
+        this.coaches = coaches;
+    }
+
+    public Teams() {
+    }
+
     public int getTeam_key() {
         return team_key;
     }
@@ -47,17 +58,6 @@ public class Teams {
 
     public void setCoaches(Coaches[] coaches) {
         this.coaches = coaches;
-    }
-
-    public Teams(int team_key, String team_name, String team_logo, Players[] players, Coaches[] coaches) {
-        this.team_key = team_key;
-        this.team_name = team_name;
-        this.team_logo = team_logo;
-        this.players = players;
-        this.coaches = coaches;
-    }
-
-    public Teams() {
     }
 
     @Override

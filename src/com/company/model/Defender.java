@@ -2,9 +2,9 @@ package com.company.model;
 
 import com.company.enums.Points;
 
-public class Defender extends Player{
-    public Defender(String playerName, int playerNumber, String clubName) {
-        super(playerName, playerNumber, clubName);
+public class Defender extends Player {
+    public Defender(String playerName, int playerNumber, String clubName, int price) {
+        super(playerName, playerNumber, clubName, price);
     }
 
     public Defender() {
@@ -13,20 +13,21 @@ public class Defender extends Player{
     @Override
     public void doPoints() {
 
-        int random =1 + (int)(Math.random() * ((1000 - 1) + 1));
+        int random = 1 + (int) (Math.random() * ((1000 - 1) + 1));
         //Goals
-        if(random>990){
+        if (random > 990) {
 
             super.setGoals(1);
+        } else {
+            super.setGoals(0);
         }
-        else{super.setGoals(0);}
-        super.points=super.getGoals()*Points.GOAL_DEFENDER.getPoints();
+        super.points = super.getGoals() * Points.GOAL_DEFENDER.getPoints();
         //Cards
-        if(super.playYellowCard()){
-            super.points-= Points.YELLOW_CARD.getPoints();
+        if (super.playYellowCard()) {
+            super.points -= Points.YELLOW_CARD.getPoints();
         }
-        if(super.playRedCard()){
-           super.points-=Points.RED_CARD.getPoints();
+        if (super.playRedCard()) {
+            super.points -= Points.RED_CARD.getPoints();
         }
     }
 

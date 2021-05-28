@@ -1,6 +1,5 @@
 package com.company.model;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -91,8 +90,7 @@ public class Match {
             p.doPoints();
 
         }
-        for(Player p:localTeam)
-        {
+        for (Player p : localTeam) {
             p.doPoints();
         }
     }

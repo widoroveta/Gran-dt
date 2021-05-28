@@ -1,13 +1,11 @@
 package com.company.model;
 
-import com.company.repository.ClubRepository;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class MyTeam {
     private String teamName;
-    private List<Player> players = new ArrayList<>();
+    private final List<Player> players = new ArrayList<>();
     private transient int score;
 
     /*    public void selectPlayer(){
@@ -22,7 +20,7 @@ public class MyTeam {
             System.out.println(players1);
             System.out.println(players1.size());
         }*/
-    public String selectPlayer(Club club,List<Club> clubs) {
+    public String selectPlayer(Club club, List<Club> clubs) {
         String playerList = null;
         boolean flag = false;
         while (flag == false) {

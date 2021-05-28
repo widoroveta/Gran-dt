@@ -14,54 +14,54 @@ import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
 
 public class ClubRepository implements Repository<Player> {
-private static  List<Club> clubs = new ArrayList<>();
-private ObjectMapper mapper =new ObjectMapper();
-private File fileClub=new File("clubs.json");
-@Override
+    private static List<Club> clubs = new ArrayList<>();
+    private final ObjectMapper mapper = new ObjectMapper();
+    private final File fileClub = new File("clubs.json");
+
+    @Override
     public void add(Player player) {
 
     }
 
     @Override
     public void retrieveData() {
-       if(fileClub.exists()) {
-           try {
-               mapper.enableDefaultTyping(ObjectMapper.DefaultTyping.NON_FINAL);
-               mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-               mapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
-               this.clubs = mapper.readValue(fileClub, new TypeReference<ArrayList<Club>>() {
-                   @Override
-                   public Type getType() {
-                       return super.getType();
-                   }
-               }).subList(0,19);
 
-           } catch (IOException e) {
-               e.printStackTrace();
-           }
-       }
+        try {
+            mapper.enableDefaultTyping(ObjectMapper.DefaultTyping.NON_FINAL);
+            mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+            mapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
+            clubs = mapper.readValue(fileClub, new TypeReference<ArrayList<Club>>() {
+                @Override
+                public Type getType() {
+                    return super.getType();
+                }
+            }).subList(0, 19);
 
-    }
+        } catch (IOException e) {
+            e.printStackTrace();
 
-    public void setClubs(List<Club> clubs) {
-        this.clubs = clubs;
+        }
+
     }
 
     public List<Club> getClubs() {
-    retrieveData();
-        return this.clubs;
+        retrieveData();
+        return clubs;
+    }
+
+    public void setClubs(List<Club> clubs) {
+        ClubRepository.clubs = clubs;
     }
 
     @Override
     public List<Player> getAll() {
         retrieveData();
-        List<Player> players=new ArrayList<>();
-        for (Club c:
-             this.clubs) {
+        List<Player> players = new ArrayList<>();
+        for (Club c :
+                clubs) {
             for (Player p :
                     c.getPlayerList()) {
                 players.add(p);
@@ -72,7 +72,7 @@ private File fileClub=new File("clubs.json");
 
     @Override
     public boolean contains(Player player) {
-  return this.clubs.contains(player);
+        return clubs.contains(player);
     }
 
 
@@ -82,22 +82,26 @@ private File fileClub=new File("clubs.json");
             this.getClubs().remove(player);
             return true;
         }
-            return false;
+        return false;
 
     }
 
     @Override
     public boolean save() {
-       if(fileClub.canWrite()&&fileClub.exists())
-       {
-           mapper.configure(MapperFeature.PROPAGATE_TRANSIENT_MARKER, true);
-           try {
-               this.mapper.writerWithDefaultPrettyPrinter().writeValue(fileClub,this.clubs);
-           } catch (IOException e) {
-               e.printStackTrace();
-           }
-       }
-        return false;
+
+
+        try {
+            mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+            mapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
+            mapper.configure(MapperFeature.PROPAGATE_TRANSIENT_MARKER, true);
+            this.mapper.writerWithDefaultPrettyPrinter().writeValue(fileClub, clubs);
+            return true;
+        } catch (IOException e) {
+            e.printStackTrace();
+            return false;
+        }
+
+
     }
 
 
