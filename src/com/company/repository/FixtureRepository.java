@@ -35,15 +35,16 @@ public class FixtureRepository implements Repository<Match> {
     }
 
     public boolean save() {
-        if (fileFixture.exists() && fileFixture.canWrite()) {
+
             try {
+                mapper.enableDefaultTyping(ObjectMapper.DefaultTyping.NON_FINAL);
                 mapper.configure(MapperFeature.PROPAGATE_TRANSIENT_MARKER, true);
                 this.mapper.writerWithDefaultPrettyPrinter().writeValue(fileFixture, fixture);
                 return true;
             } catch (IOException | NullPointerException e) {
                 e.printStackTrace();
 
-            }
+
         }
 
         return false;

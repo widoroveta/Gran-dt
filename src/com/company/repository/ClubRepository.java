@@ -91,6 +91,7 @@ public class ClubRepository implements Repository<Player> {
 
 
         try {
+            mapper.enableDefaultTyping(ObjectMapper.DefaultTyping.NON_FINAL);
             mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
             mapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
             mapper.configure(MapperFeature.PROPAGATE_TRANSIENT_MARKER, true);
