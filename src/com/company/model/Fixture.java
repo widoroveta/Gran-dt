@@ -1,6 +1,7 @@
 package com.company.model;
 
 import com.company.enums.Dates;
+import com.company.repository.ClubRepository;
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -30,16 +31,8 @@ public class Fixture {
         ObjectMapper mapper = new ObjectMapper();
 
         List<String> t = new ArrayList<>();
-        try {
-            mapper.enableDefaultTyping(ObjectMapper.DefaultTyping.NON_FINAL);
-            mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-            mapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
-            List<Club> clubs = mapper.readValue(new File("clubs.json"), new TypeReference<List<Club>>() {
-                @Override
-                public Type getType() {
-                    return super.getType();
-                }
-            });
+        ClubRepository clubRepository =new ClubRepository();
+        List<Club> clubs= clubRepository.getClubs();
             for (Club c :
                     clubs.subList(0, 9)) {
                 teams.push(c.getClub());
@@ -57,10 +50,6 @@ public class Fixture {
                     this.fixture.add(m);
                 }
             }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
 
     }
 

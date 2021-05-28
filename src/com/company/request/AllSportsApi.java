@@ -1,6 +1,7 @@
 package com.company.request;
 
 import com.company.model.*;
+import com.company.repository.ClubRepository;
 import com.company.request.APIClass.Players;
 import com.company.request.APIClass.Teams;
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
@@ -18,9 +19,8 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AllSportsApi<T> {
+public class AllSportsApi{
     private static final String appKey = "4f613aeef397a3ac7ed09e01692012de508c4f7f66277ac5a0eb798113e7081e";
-    private URL url = null;
     private List<String> stringList = new ArrayList<>();
     private HttpURLConnection con = null;
     private List<Club> clubs = new ArrayList<>();
@@ -32,20 +32,17 @@ public class AllSportsApi<T> {
         mapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
         for (i = 10; i <= 40; i++) {
             try {
-                url = new URL("https://allsportsapi.com/api/football/?&met=Teams&teamId=26" + i + "&APIkey=" + appKey);
+                URL url = new URL("https://allsportsapi.com/api/football/?&met=Teams&teamId=26" + i + "&APIkey=" + appKey);
 
                 con = (HttpURLConnection) url.openConnection();
                 con.setDoOutput(true);
 
             } catch (
-                    MalformedURLException e) {
-                e.printStackTrace();
-            } catch (
                     IOException e) {
                 e.printStackTrace();
             }
             try (BufferedReader br = new BufferedReader(new InputStreamReader(con.getInputStream(), "utf-8"))) {
-                String responseLine = null;
+                String responseLine;
                 responseLine = br.readLine();
                 String b = responseLine.substring(responseLine.indexOf("[") + 1, responseLine.length() - 2);
                 Teams t = mapper.readValue(b, Teams.class);
@@ -75,13 +72,16 @@ public class AllSportsApi<T> {
                 clubs.add(club);
 
             }
-
-            try {
-              mapper.enableDefaultTyping(ObjectMapper.DefaultTyping.NON_FINAL);
+            ClubRepository clubRepository =new ClubRepository();
+            clubRepository.setClubs(clubs);
+            clubRepository.save();
+          /*  try {
+         /*     mapper.enableDefaultTyping(ObjectMapper.DefaultTyping.NON_FINAL);
                 mapper.writerWithDefaultPrettyPrinter().writeValue(new File("clubs.json"), clubs);
             } catch (IOException e) {
                 e.printStackTrace();
-            }
+            }*/
+
         }
     }
 

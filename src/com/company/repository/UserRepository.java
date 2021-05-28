@@ -28,22 +28,24 @@ public class UserRepository implements Repository<User> {
 
     @Override
     public void retrieveData() {
-        try {
-            if(FILE.exists()) {
-                users = mapper.readValue(FILE, new TypeReference<List<User>>() {
-                    @Override
-                    public Type getType() {
-                        return super.getType();
-                    }
-                });}
-            else {
-                this.users.add(new User("admin", "admin", "", "", "", 0));
-                mapper.writerWithDefaultPrettyPrinter().writeValue(FILE, users);
-            }
+       if(FILE.exists()&&FILE.canRead()) {
+           try {
+               if (FILE.exists()) {
+                   users = mapper.readValue(FILE, new TypeReference<List<User>>() {
+                       @Override
+                       public Type getType() {
+                           return super.getType();
+                       }
+                   });
+               } else {
+                   this.users.add(new User("admin", "admin", "", "", "", 0));
+                   mapper.writerWithDefaultPrettyPrinter().writeValue(FILE, users);
+               }
 
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+           } catch (IOException e) {
+               e.printStackTrace();
+           }
+       }
     }
 
     @Override
@@ -62,7 +64,20 @@ public class UserRepository implements Repository<User> {
     }
 
     @Override
-    public boolean contains(Object o) {
+    public boolean contains(User user) {
         return false;
     }
+
+
+    @Override
+    public boolean remove(User user) {
+        return false;
+    }
+
+    @Override
+    public boolean save() {
+        return false;
+    }
+
+
 }

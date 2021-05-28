@@ -1,13 +1,11 @@
 package com.company;
 
-import com.company.model.*;
+import com.company.model.Club;
+import com.company.model.Fixture;
+import com.company.model.MyTeam;
 import com.company.repository.ClubRepository;
 import com.company.repository.FixtureRepository;
-import com.company.repository.UserRepository;
-import com.company.request.AllSportsApi;
 
-import javax.swing.undo.UndoableEditSupport;
-import java.io.IOException;
 import java.util.List;
 
 public class Main {
@@ -28,10 +26,21 @@ public class Main {
 
         fixture.doFixture();
         fixture.setDate();
-     repository.saveFixture(fixture);
-     //   MyTeam myTeam=new MyTeam();
-      System.out.println(repository.getAll());
+        repository.setFixture(fixture);
+     repository.save();
 
+   System.out.println(repository.getAll());
+        //
+        MyTeam myTeam =new MyTeam();
+        ClubRepository clubRepository = new ClubRepository();
+        List<Club> clubs = clubRepository.getClubs();
+        int i=0;
+        for (Club c:
+             clubs) {
+            System.out.println("\n"+i+")"+c.getClub());
+            i++;
+        }
+        myTeam.selectPlayer(clubs.get(10),clubs);
     }
 
 }

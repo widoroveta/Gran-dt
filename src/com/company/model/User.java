@@ -36,7 +36,7 @@ public class User {
           }
         }
         if (userLogin != null) {
-            return userLogin.getPassword().equals(password)?true:false;
+            return userLogin.getPassword().equals(password);
 
         }
 else {

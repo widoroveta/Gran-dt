@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="GranDt:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/GranDt_jar</output-path>
+    <root id="archive" name="GranDt.jar">
+      <element id="module-output" name="GranDt" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../facu/Librerias/Jackson/Jackson librari/jackson-core-2.11.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../facu/Librerias/Jackson/Jackson librari/jackson-databind-2.11.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../facu/Librerias/Jackson/Jackson librari/jackson-annotations-2.11.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
