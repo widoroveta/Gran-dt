@@ -11,6 +11,9 @@ import java.util.Stack;
 public class Fixture {
     private List<Match> fixture = new ArrayList<>();
 
+    public void setFixture(List<Match> fixture) {
+        this.fixture = fixture;
+    }
 
     public Fixture() {
     }
@@ -88,7 +91,15 @@ public class Fixture {
     public List<Match> getFixture() {
         return fixture;
     }
+    public  String toStringOnlyViewMatch()
+    {String r="";
+        for (Match match:
+             this.getFixture()) {
+            r+=match.toStringOnlyViewMatch();
+        }
+        return r;
 
+    }
     @Override
     public String toString() {
         return "Fixture{" +

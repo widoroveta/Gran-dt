@@ -41,6 +41,19 @@ public class User {
             return false;
         }
     }
+    public boolean browsUser(String userName){
+        UserRepository userRepository = new UserRepository();
+        User userBrows= null;
+        for (User user :
+                userRepository.getAll()) {
+            if (user.getUserName().equalsIgnoreCase(userName)) {
+                userBrows = user;
+                return  false;
+            }
+        }
+        return true;
+    }
+
 
     public void register(User user) {
         UserRepository userRepository = new UserRepository();

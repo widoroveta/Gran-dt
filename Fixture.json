@@ -65,7 +65,7 @@
       "playerNumber" : 1,
       "price" : 3000,
       "clubName" : "West Ham",
-      "withoutGoals" : false
+      "withoutGoals" : true
     } ], [ "com.company.model.Defender", {
       "playerName" : "Balbuena Fabian",
       "playerNumber" : 4,
@@ -184,7 +184,7 @@
       "playerNumber" : 13,
       "price" : 2500,
       "clubName" : "Liverpool",
-      "withoutGoals" : false
+      "withoutGoals" : true
     } ], [ "com.company.model.Defender", {
       "playerName" : "Alexander-Arnold Trent",
       "playerNumber" : 66,
@@ -246,7 +246,7 @@
       "playerNumber" : 13,
       "price" : 3500,
       "clubName" : "Swansea",
-      "withoutGoals" : true
+      "withoutGoals" : false
     } ], [ "com.company.model.Defender", {
       "playerName" : "Bennett Ryan",
       "playerNumber" : 2,
@@ -722,7 +722,7 @@
       "playerNumber" : 13,
       "price" : 3500,
       "clubName" : "Swansea",
-      "withoutGoals" : true
+      "withoutGoals" : false
     } ], [ "com.company.model.Defender", {
       "playerName" : "Bennett Ryan",
       "playerNumber" : 2,
@@ -779,7 +779,7 @@
       "playerNumber" : 31,
       "price" : 5000,
       "clubName" : "Manchester City",
-      "withoutGoals" : false
+      "withoutGoals" : true
     } ], [ "com.company.model.Defender", {
       "playerName" : "Ake Nathan",
       "playerNumber" : 6,
@@ -1136,7 +1136,7 @@
       "playerNumber" : 1,
       "price" : 3000,
       "clubName" : "West Ham",
-      "withoutGoals" : true
+      "withoutGoals" : false
     } ], [ "com.company.model.Defender", {
       "playerName" : "Balbuena Fabian",
       "playerNumber" : 4,
@@ -1198,7 +1198,7 @@
       "playerNumber" : 1,
       "price" : 2500,
       "clubName" : "Arsenal",
-      "withoutGoals" : true
+      "withoutGoals" : false
     } ], [ "com.company.model.Defender", {
       "playerName" : "Bellerin Hector",
       "playerNumber" : 2,
@@ -1255,7 +1255,7 @@
       "playerNumber" : 13,
       "price" : 2500,
       "clubName" : "Liverpool",
-      "withoutGoals" : true
+      "withoutGoals" : false
     } ], [ "com.company.model.Defender", {
       "playerName" : "Alexander-Arnold Trent",
       "playerNumber" : 66,
@@ -1793,7 +1793,7 @@
       "playerNumber" : 1,
       "price" : 2500,
       "clubName" : "Arsenal",
-      "withoutGoals" : false
+      "withoutGoals" : true
     } ], [ "com.company.model.Defender", {
       "playerName" : "Bellerin Hector",
       "playerNumber" : 2,
@@ -1912,7 +1912,7 @@
       "playerNumber" : 1,
       "price" : 2500,
       "clubName" : "Arsenal",
-      "withoutGoals" : false
+      "withoutGoals" : true
     } ], [ "com.company.model.Defender", {
       "playerName" : "Bellerin Hector",
       "playerNumber" : 2,
@@ -2031,7 +2031,7 @@
       "playerNumber" : 1,
       "price" : 2500,
       "clubName" : "Arsenal",
-      "withoutGoals" : false
+      "withoutGoals" : true
     } ], [ "com.company.model.Defender", {
       "playerName" : "Bellerin Hector",
       "playerNumber" : 2,
@@ -2088,7 +2088,7 @@
       "playerNumber" : 1,
       "price" : 5000,
       "clubName" : "Tottenham",
-      "withoutGoals" : true
+      "withoutGoals" : false
     } ], [ "com.company.model.Defender", {
       "playerName" : "Alderweireld Toby",
       "playerNumber" : 4,
@@ -2150,7 +2150,7 @@
       "playerNumber" : 1,
       "price" : 4000,
       "clubName" : "Chelsea",
-      "withoutGoals" : true
+      "withoutGoals" : false
     } ], [ "com.company.model.Defender", {
       "playerName" : "Alonso Marcos",
       "playerNumber" : 3,
@@ -2207,7 +2207,7 @@
       "playerNumber" : 1,
       "price" : 3000,
       "clubName" : "West Ham",
-      "withoutGoals" : false
+      "withoutGoals" : true
     } ], [ "com.company.model.Defender", {
       "playerName" : "Balbuena Fabian",
       "playerNumber" : 4,
@@ -2269,7 +2269,7 @@
       "playerNumber" : 1,
       "price" : 4000,
       "clubName" : "Chelsea",
-      "withoutGoals" : true
+      "withoutGoals" : false
     } ], [ "com.company.model.Defender", {
       "playerName" : "Alonso Marcos",
       "playerNumber" : 3,
@@ -2445,7 +2445,7 @@
       "playerNumber" : 44,
       "price" : 5000,
       "clubName" : "Huddersfield",
-      "withoutGoals" : false
+      "withoutGoals" : true
     } ], [ "com.company.model.Defender", {
       "playerName" : "Brown Jaden",
       "playerNumber" : 28,
@@ -2983,7 +2983,7 @@
       "playerNumber" : 1,
       "price" : 4000,
       "clubName" : "Chelsea",
-      "withoutGoals" : true
+      "withoutGoals" : false
     } ], [ "com.company.model.Defender", {
       "playerName" : "Alonso Marcos",
       "playerNumber" : 3,
@@ -3040,7 +3040,7 @@
       "playerNumber" : 26,
       "price" : 1000,
       "clubName" : "Manchester United",
-      "withoutGoals" : false
+      "withoutGoals" : true
     } ], [ "com.company.model.Defender", {
       "playerName" : "Bailly Eric",
       "playerNumber" : 3,
@@ -3102,7 +3102,7 @@
       "playerNumber" : 1,
       "price" : 4000,
       "clubName" : "Chelsea",
-      "withoutGoals" : false
+      "withoutGoals" : true
     } ], [ "com.company.model.Defender", {
       "playerName" : "Alonso Marcos",
       "playerNumber" : 3,
@@ -3159,7 +3159,7 @@
       "playerNumber" : 1,
       "price" : 5000,
       "clubName" : "Tottenham",
-      "withoutGoals" : true
+      "withoutGoals" : false
     } ], [ "com.company.model.Defender", {
       "playerName" : "Alderweireld Toby",
       "playerNumber" : 4,
@@ -3873,7 +3873,7 @@
       "playerNumber" : 25,
       "price" : 4000,
       "clubName" : "West Brom",
-      "withoutGoals" : true
+      "withoutGoals" : false
     } ], [ "com.company.model.Defender", {
       "playerName" : "Ajayi Semi",
       "playerNumber" : 6,
@@ -3992,7 +3992,7 @@
       "playerNumber" : 31,
       "price" : 5000,
       "clubName" : "Manchester City",
-      "withoutGoals" : true
+      "withoutGoals" : false
     } ], [ "com.company.model.Defender", {
       "playerName" : "Ake Nathan",
       "playerNumber" : 6,
@@ -4111,7 +4111,7 @@
       "playerNumber" : 26,
       "price" : 1000,
       "clubName" : "Manchester United",
-      "withoutGoals" : true
+      "withoutGoals" : false
     } ], [ "com.company.model.Defender", {
       "playerName" : "Bailly Eric",
       "playerNumber" : 3,
@@ -4292,7 +4292,7 @@
       "playerNumber" : 44,
       "price" : 3000,
       "clubName" : "Southampton",
-      "withoutGoals" : false
+      "withoutGoals" : true
     } ], [ "com.company.model.Defender", {
       "playerName" : "Bednarek Jan",
       "playerNumber" : 35,
@@ -4349,7 +4349,7 @@
       "playerNumber" : 1,
       "price" : 3000,
       "clubName" : "West Ham",
-      "withoutGoals" : false
+      "withoutGoals" : true
     } ], [ "com.company.model.Defender", {
       "playerName" : "Balbuena Fabian",
       "playerNumber" : 4,
@@ -4706,7 +4706,7 @@
       "playerNumber" : 26,
       "price" : 3000,
       "clubName" : "Watford",
-      "withoutGoals" : false
+      "withoutGoals" : true
     } ], [ "com.company.model.Defender", {
       "playerName" : "Cathcart Craig",
       "playerNumber" : 15,
@@ -4768,7 +4768,7 @@
       "playerNumber" : 44,
       "price" : 3000,
       "clubName" : "Southampton",
-      "withoutGoals" : true
+      "withoutGoals" : false
     } ], [ "com.company.model.Defender", {
       "playerName" : "Bednarek Jan",
       "playerNumber" : 35,
@@ -4944,7 +4944,7 @@
       "playerNumber" : 25,
       "price" : 4000,
       "clubName" : "West Brom",
-      "withoutGoals" : true
+      "withoutGoals" : false
     } ], [ "com.company.model.Defender", {
       "playerName" : "Ajayi Semi",
       "playerNumber" : 6,
@@ -5125,7 +5125,7 @@
       "playerNumber" : 44,
       "price" : 3000,
       "clubName" : "Southampton",
-      "withoutGoals" : false
+      "withoutGoals" : true
     } ], [ "com.company.model.Defender", {
       "playerName" : "Bednarek Jan",
       "playerNumber" : 35,
@@ -5244,7 +5244,7 @@
       "playerNumber" : 44,
       "price" : 3000,
       "clubName" : "Southampton",
-      "withoutGoals" : true
+      "withoutGoals" : false
     } ], [ "com.company.model.Defender", {
       "playerName" : "Bednarek Jan",
       "playerNumber" : 35,
@@ -5420,7 +5420,7 @@
       "playerNumber" : 1,
       "price" : 3000,
       "clubName" : "West Ham",
-      "withoutGoals" : false
+      "withoutGoals" : true
     } ], [ "com.company.model.Defender", {
       "playerName" : "Balbuena Fabian",
       "playerNumber" : 4,
@@ -5539,7 +5539,7 @@
       "playerNumber" : 13,
       "price" : 2500,
       "clubName" : "Liverpool",
-      "withoutGoals" : true
+      "withoutGoals" : false
     } ], [ "com.company.model.Defender", {
       "playerName" : "Alexander-Arnold Trent",
       "playerNumber" : 66,
@@ -5720,7 +5720,7 @@
       "playerNumber" : 26,
       "price" : 4500,
       "clubName" : "Brighton",
-      "withoutGoals" : true
+      "withoutGoals" : false
     } ], [ "com.company.model.Defender", {
       "playerName" : "Burn Dan",
       "playerNumber" : 33,
@@ -5958,7 +5958,7 @@
       "playerNumber" : 26,
       "price" : 4500,
       "clubName" : "Brighton",
-      "withoutGoals" : false
+      "withoutGoals" : true
     } ], [ "com.company.model.Defender", {
       "playerName" : "Burn Dan",
       "playerNumber" : 33,
@@ -6134,7 +6134,7 @@
       "playerNumber" : 31,
       "price" : 5000,
       "clubName" : "Manchester City",
-      "withoutGoals" : true
+      "withoutGoals" : false
     } ], [ "com.company.model.Defender", {
       "playerName" : "Ake Nathan",
       "playerNumber" : 6,
@@ -6196,7 +6196,7 @@
       "playerNumber" : 26,
       "price" : 4500,
       "clubName" : "Brighton",
-      "withoutGoals" : true
+      "withoutGoals" : false
     } ], [ "com.company.model.Defender", {
       "playerName" : "Burn Dan",
       "playerNumber" : 33,
@@ -6253,7 +6253,7 @@
       "playerNumber" : 26,
       "price" : 1000,
       "clubName" : "Manchester United",
-      "withoutGoals" : true
+      "withoutGoals" : false
     } ], [ "com.company.model.Defender", {
       "playerName" : "Bailly Eric",
       "playerNumber" : 3,
@@ -6315,7 +6315,7 @@
       "playerNumber" : 26,
       "price" : 4500,
       "clubName" : "Brighton",
-      "withoutGoals" : false
+      "withoutGoals" : true
     } ], [ "com.company.model.Defender", {
       "playerName" : "Burn Dan",
       "playerNumber" : 33,
@@ -6372,7 +6372,7 @@
       "playerNumber" : 1,
       "price" : 5000,
       "clubName" : "Tottenham",
-      "withoutGoals" : false
+      "withoutGoals" : true
     } ], [ "com.company.model.Defender", {
       "playerName" : "Alderweireld Toby",
       "playerNumber" : 4,
@@ -6672,7 +6672,7 @@
       "playerNumber" : 33,
       "price" : 2000,
       "clubName" : "Everton",
-      "withoutGoals" : false
+      "withoutGoals" : true
     } ], [ "com.company.model.Defender", {
       "playerName" : "Coleman Seamus",
       "playerNumber" : 23,
@@ -7029,7 +7029,7 @@
       "playerNumber" : 33,
       "price" : 2000,
       "clubName" : "Everton",
-      "withoutGoals" : false
+      "withoutGoals" : true
     } ], [ "com.company.model.Defender", {
       "playerName" : "Coleman Seamus",
       "playerNumber" : 23,
@@ -7148,7 +7148,7 @@
       "playerNumber" : 33,
       "price" : 2000,
       "clubName" : "Everton",
-      "withoutGoals" : true
+      "withoutGoals" : false
     } ], [ "com.company.model.Defender", {
       "playerName" : "Coleman Seamus",
       "playerNumber" : 23,
@@ -7205,7 +7205,7 @@
       "playerNumber" : 31,
       "price" : 5000,
       "clubName" : "Manchester City",
-      "withoutGoals" : false
+      "withoutGoals" : true
     } ], [ "com.company.model.Defender", {
       "playerName" : "Ake Nathan",
       "playerNumber" : 6,
@@ -7267,7 +7267,7 @@
       "playerNumber" : 33,
       "price" : 2000,
       "clubName" : "Everton",
-      "withoutGoals" : false
+      "withoutGoals" : true
     } ], [ "com.company.model.Defender", {
       "playerName" : "Coleman Seamus",
       "playerNumber" : 23,
@@ -7505,7 +7505,7 @@
       "playerNumber" : 1,
       "price" : 1000,
       "clubName" : "Leicester",
-      "withoutGoals" : false
+      "withoutGoals" : true
     } ], [ "com.company.model.Defender", {
       "playerName" : "Castagne Timothy",
       "playerNumber" : 27,
@@ -7800,7 +7800,7 @@
       "playerNumber" : 44,
       "price" : 5000,
       "clubName" : "Huddersfield",
-      "withoutGoals" : true
+      "withoutGoals" : false
     } ], [ "com.company.model.Defender", {
       "playerName" : "Brown Jaden",
       "playerNumber" : 28,
@@ -8219,7 +8219,7 @@
       "playerNumber" : 1,
       "price" : 1000,
       "clubName" : "Leicester",
-      "withoutGoals" : false
+      "withoutGoals" : true
     } ], [ "com.company.model.Defender", {
       "playerName" : "Castagne Timothy",
       "playerNumber" : 27,
@@ -8457,7 +8457,7 @@
       "playerNumber" : 1,
       "price" : 1000,
       "clubName" : "Leicester",
-      "withoutGoals" : false
+      "withoutGoals" : true
     } ], [ "com.company.model.Defender", {
       "playerName" : "Castagne Timothy",
       "playerNumber" : 27,
@@ -8514,7 +8514,7 @@
       "playerNumber" : 1,
       "price" : 5000,
       "clubName" : "Tottenham",
-      "withoutGoals" : false
+      "withoutGoals" : true
     } ], [ "com.company.model.Defender", {
       "playerName" : "Alderweireld Toby",
       "playerNumber" : 4,
@@ -8576,7 +8576,7 @@
       "playerNumber" : 1,
       "price" : 500,
       "clubName" : "FAS",
-      "withoutGoals" : true
+      "withoutGoals" : false
     } ], [ "com.company.model.Defender", {
       "playerName" : "Chavez Diego",
       "playerNumber" : 4,
@@ -8814,7 +8814,7 @@
       "playerNumber" : 1,
       "price" : 500,
       "clubName" : "FAS",
-      "withoutGoals" : true
+      "withoutGoals" : false
     } ], [ "com.company.model.Defender", {
       "playerName" : "Chavez Diego",
       "playerNumber" : 4,
@@ -8871,7 +8871,7 @@
       "playerNumber" : 44,
       "price" : 5000,
       "clubName" : "Huddersfield",
-      "withoutGoals" : true
+      "withoutGoals" : false
     } ], [ "com.company.model.Defender", {
       "playerName" : "Brown Jaden",
       "playerNumber" : 28,
@@ -9052,7 +9052,7 @@
       "playerNumber" : 1,
       "price" : 500,
       "clubName" : "FAS",
-      "withoutGoals" : true
+      "withoutGoals" : false
     } ], [ "com.company.model.Defender", {
       "playerName" : "Chavez Diego",
       "playerNumber" : 4,

@@ -103,6 +103,14 @@ public class MyTeam implements Tactic {
 
     }
 
+    public int getPointDate ()
+    { int score=0;
+        for (Player player:
+             this.players) {
+          score += player.getPoints();
+        }
+        return score;
+    }
     @Override
     public String toString() {
         return "MyTeam{" +

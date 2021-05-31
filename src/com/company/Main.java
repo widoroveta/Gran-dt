@@ -30,9 +30,9 @@ public class Main {
         repository.setFixture(fixture);
         repository.save();
 
-       // System.out.println(repository.getAll());
+       System.out.println(fixture.toStringOnlyViewMatch());
         //
-        MyTeam myTeam = new MyTeam();
+      /*  MyTeam myTeam = new MyTeam();
         ClubRepository clubRepository = new ClubRepository();
         List<Club> clubs = clubRepository.getClubs();
         int i = 0;
@@ -49,7 +49,7 @@ public class Main {
         myTeam.change(
                clubs.get(3).getPlayerList().get(1),
                 clubs.get(3).getPlayerList().get(5));
-        System.out.println(myTeam);
+        System.out.println(myTeam);*/
     }
 
 }

@@ -24,12 +24,20 @@ public class Match {
 
     @Override
     public String toString() {
-        return "Match{" +
+        return "\nMatch{" +
                 "id=" + id +
                 ", nameLocal='" + nameLocal + '\'' +
                 ", nameVisitor='" + nameVisitor + '\'' +
                 ", localTeam=" + localTeam +
                 ", visitorTeam=" + visitorTeam +
+                ", date=" + date +
+                '}';
+    }
+    public String toStringOnlyViewMatch(){
+        return  "\nMatch{" +
+                "id=" + id +
+                ", nameLocal='" + nameLocal + '\'' +
+                ", nameVisitor='" + nameVisitor + '\'' +
                 ", date=" + date +
                 '}';
     }
@@ -48,6 +56,10 @@ public class Match {
         String nameVisitor = this.getNameVisitor();
         this.setLocalTeam(new Club().getTeam(nameLocal));
         this.setVisitorTeam(new Club().getTeam(nameVisitor));
+
+
+    }
+    public void simulationDate() {
         Player p = mvp();
         pointsPlayers();
         if (scoreGoals(this.visitorTeam) == 0) {
@@ -75,7 +87,6 @@ public class Match {
             this.getVisitorTeam().get(b).setMvp(true);
         }
     }
-
     public Player mvp() {
         List<Player> players = new ArrayList<>();
         players.addAll(this.localTeam);

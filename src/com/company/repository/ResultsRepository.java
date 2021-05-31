@@ -12,7 +12,7 @@ public class ResultsRepository implements Repository<Result> {
    File fileResult =new File("Result.json");
    @Override
     public void add(Result result) {
-        
+
     }
 
     @Override
