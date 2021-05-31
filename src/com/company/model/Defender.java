@@ -32,8 +32,13 @@ public class Defender extends Player {
     }
 
     @Override
+    public int compareTo(Player o) {
+        return super.compareTo(o);
+    }
+
+    @Override
     public String toString() {
-        return super.toString();
+        return "Defender {"+super.toString()+"}";
     }
 }
 

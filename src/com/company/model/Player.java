@@ -2,7 +2,7 @@ package com.company.model;
 
 import com.company.interfaz.Simulation;
 
-public class Player implements Simulation {
+public class Player implements Simulation,Comparable<Player> {
     protected String playerName;
     protected int playerNumber;
     protected int price;
@@ -149,7 +149,24 @@ public class Player implements Simulation {
         this.points = points;
     }
 
-    public void doPoints() {
+    public void doPoints() { }
 
+
+
+    @Override
+    public int compareTo(Player o) {
+     if(this instanceof Goalkeeper && (o instanceof Defender || o instanceof Midfielder || o instanceof Forward ))
+     {
+         return -1;
+     }
+        if( this instanceof Defender && (o instanceof Midfielder || o instanceof Forward ))
+        {
+            return -1;
+        }
+        if( this instanceof Midfielder && o instanceof Forward )
+        {
+            return -1;
+        }
+        return 0;
     }
 }

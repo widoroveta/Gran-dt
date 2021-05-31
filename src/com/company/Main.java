@@ -14,12 +14,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-        AllSportsApi api = new AllSportsApi();
+      /*  AllSportsApi api = new AllSportsApi();
         try {
             api.toUpdate();
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
       /*  ClubRepository clubRepository = new ClubRepository();
         List<Club> clubs = clubRepository.getClubs();*/
         FixtureRepository repository = new FixtureRepository();
@@ -30,18 +30,26 @@ public class Main {
         repository.setFixture(fixture);
         repository.save();
 
-        System.out.println(repository.getAll());
+       // System.out.println(repository.getAll());
         //
         MyTeam myTeam = new MyTeam();
         ClubRepository clubRepository = new ClubRepository();
         List<Club> clubs = clubRepository.getClubs();
         int i = 0;
-        for (Club c :
-                clubs) {
-            System.out.println("\n" + i + ")" + c.getClub());
-            i++;
-        }
-        myTeam.selectPlayer(clubs.get(10), clubs);
+
+        myTeam.addPlayer(clubs.get(3).getPlayerList().get(1)
+        );
+        myTeam.addPlayer(clubs.get(3).getPlayerList().get(10)
+        );
+        myTeam.addPlayer(clubs.get(3).getPlayerList().get(10)
+        );    myTeam.addPlayer(clubs.get(3).getPlayerList().get(0)
+        );    myTeam.addPlayer(clubs.get(3).getPlayerList().get(1)
+        );myTeam.addPlayer(clubs.get(3).getPlayerList().get(5)
+        );
+        myTeam.change(
+               clubs.get(3).getPlayerList().get(1),
+                clubs.get(3).getPlayerList().get(5));
+        System.out.println(myTeam);
     }
 
 }

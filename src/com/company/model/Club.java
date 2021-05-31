@@ -1,11 +1,13 @@
 package com.company.model;
 
+import com.company.interfaz.Tactic;
 import com.company.repository.ClubRepository;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
-public class Club {
+public class Club implements Tactic {
     private String club;
     private List<Player> playerList = new ArrayList<>();
 
@@ -76,8 +78,17 @@ public class Club {
     @Override
     public String toString() {
         return "Club{" +
-                "club='" + club + '\'' +
+                tactic() +
                 ", playerList=" + playerList +
                 '}';
     }
+    public String tactic() {
+        String result = "";
+        Collections.sort(playerList);
+        for (Player p : this.playerList) {
+            result += p.toString();
+        }
+        return result;
+    }
+
 }
