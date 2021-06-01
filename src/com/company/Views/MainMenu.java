@@ -35,11 +35,11 @@ public class MainMenu {
     }
 
 ///Login
-    public void login(String nombre,String contraseÃ±a){
+    public void login(String nombre,String contraseña){
 
     }
 ///Registro
-    public void regist(String nombre,String contraseÃ±a){
+    public void regist(String nombre,String contraseña){
 
     }
 }
