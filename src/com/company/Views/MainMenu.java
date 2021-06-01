@@ -35,11 +35,13 @@ public class MainMenu {
     }
 
 ///Login
-    public void login(String nombre,String contraseña){
+    @SuppressWarnings("unused")
+	private void login(){
 
     }
 ///Registro
-    public void regist(String nombre,String contraseña){
+    @SuppressWarnings("unused")
+	private void regist(){
 
     }
 }
