@@ -1,5 +1,6 @@
 package com.company;
 
+import com.company.Views.AdminMenu;
 import com.company.model.Club;
 import com.company.model.Fixture;
 import com.company.model.MyTeam;
@@ -13,14 +14,9 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-
-      /*  AllSportsApi api = new AllSportsApi();
-        try {
-            api.toUpdate();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }*/
-      ClubRepository clubRepository = new ClubRepository();
+      AdminMenu adminMenu=new AdminMenu();
+      adminMenu.menu();
+    /*  ClubRepository clubRepository = new ClubRepository();
         List<Club> clubs = clubRepository.getClubs();
         FixtureRepository repository = new FixtureRepository();
         Fixture fixture = new Fixture();
