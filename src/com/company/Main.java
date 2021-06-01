@@ -20,8 +20,8 @@ public class Main {
         } catch (IOException e) {
             e.printStackTrace();
         }*/
-      /*  ClubRepository clubRepository = new ClubRepository();
-        List<Club> clubs = clubRepository.getClubs();*/
+      ClubRepository clubRepository = new ClubRepository();
+        List<Club> clubs = clubRepository.getClubs();
         FixtureRepository repository = new FixtureRepository();
         Fixture fixture = new Fixture();
 
@@ -30,7 +30,8 @@ public class Main {
         repository.setFixture(fixture);
         repository.save();
 
-       System.out.println(fixture.toStringOnlyViewMatch());
+      // System.out.println(fixture.toStringOnlyViewMatch());
+        System.out.println(clubs);
         //
       /*  MyTeam myTeam = new MyTeam();
         ClubRepository clubRepository = new ClubRepository();

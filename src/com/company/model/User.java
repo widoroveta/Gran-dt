@@ -18,7 +18,6 @@ public class User {
         this.surname = surname;
         this.email = email;
         this.phone = phone;
-
     }
 
     public User() {
