@@ -57,10 +57,15 @@ public class FixtureRepository implements Repository<Match> {
 
         try {
             mapper.configure(MapperFeature.PROPAGATE_TRANSIENT_MARKER, true);
-            mapper.enableDefaultTyping(ObjectMapper.DefaultTyping.NON_FINAL);
+
             mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
             mapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
-            fixture = this.mapper.readValue(fileFixture,Fixture.class);
+            fixture = this.mapper.readValue(fileFixture, new TypeReference<Fixture>() {
+                @Override
+                public Type getType() {
+                    return super.getType();
+                }
+            });
         } catch (IOException e) {
             e.printStackTrace();
 

@@ -72,23 +72,15 @@ public class ClubRepository implements Repository<Player> {
 
     @Override
     public boolean contains(Player player) {
-        return clubs.contains(player);
+        return clubs.get;
     }
 
 
     @Override
     public boolean remove(Player player) {
         if (contains(player)) {
-            for (Club club:
-                 this.getClubs()) {
-                if(club.getPlayerList().contains(player))
-                {
-                    club.getPlayerList().remove(player);
-                    return true;
-                }
-            }
-
-
+            this.getClubs().remove(player);
+            return true;
         }
         return false;
 
