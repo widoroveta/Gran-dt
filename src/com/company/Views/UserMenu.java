@@ -19,7 +19,7 @@ public class UserMenu {
         do{
                 switch (sc.nextInt()){
                     case 1:
-                        System.out.println(viewTeam());
+                        viewTeam();
                         break;
                     case 2:
                         modifyTeam();
@@ -48,8 +48,8 @@ public class UserMenu {
         return user.toString();
     }
 
-    public String viewTeam(){
-        return user.getMyTeam().showTeam();
+    public void viewTeam(){
+       user.getMyTeam().getPlayers().stream().forEach(System.out::println);
     }
 
     public void modifyTeam(){
@@ -57,7 +57,6 @@ public class UserMenu {
         System.out.println("1)Agregar Jugador.");
         System.out.println("2)Modificar Jugador.");
         System.out.println("3)Elininar Jugador");
-        System.out.println("ok");
         switch (sc.nextInt()){
             case 1:
         //        user.getMyTeam().addPlayer(player);
