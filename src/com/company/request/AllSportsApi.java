@@ -76,12 +76,7 @@ public class AllSportsApi {
             ClubRepository clubRepository = new ClubRepository();
             clubRepository.setClubs(clubs);
             clubRepository.save();
-          /*  try {
-         /*     mapper.enableDefaultTyping(ObjectMapper.DefaultTyping.NON_FINAL);
-                mapper.writerWithDefaultPrettyPrinter().writeValue(new File("clubs.json"), clubs);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }*/
+
 
         }
     }

@@ -60,18 +60,6 @@ public class User {
 
     }
 
-    public Boolean registerName(String userName) {
-        UserRepository userRepository = new UserRepository();
-        User userRegister = null;
-
-        for (User user :
-                userRepository.getAll()) {
-            if (user.getUserName().equalsIgnoreCase(userName)) {
-                return false;
-            }
-        }
-        return true;
-    }
 
     public String getUserName() {
         return userName;
