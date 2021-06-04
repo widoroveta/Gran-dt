@@ -72,7 +72,7 @@ public class ClubRepository implements Repository<Player> {
 
     @Override
     public boolean contains(Player player) {
-        return clubs.get;
+        return false; //clubs.get;CAMBIAR GUIDOOOO
     }
 
 
