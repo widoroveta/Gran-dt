@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ClubRepository implements Repository<Player> {
-    private static List<Club> clubs = new ArrayList<>();
+    private  List<Club> clubs = new ArrayList<>();
     private final ObjectMapper mapper = new ObjectMapper();
     private final File fileClub = new File("clubs.json");
 
@@ -33,12 +33,13 @@ public class ClubRepository implements Repository<Player> {
             mapper.enableDefaultTyping(ObjectMapper.DefaultTyping.NON_FINAL);
             mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
             mapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
-            clubs = mapper.readValue(fileClub, new TypeReference<ArrayList<Club>>() {
+            clubs = mapper.readValue(fileClub,new TypeReference<ArrayList<Club>>() {
                 @Override
                 public Type getType() {
                     return super.getType();
                 }
-            }).subList(0, 19);
+            });
+          //  clubs.subList(0,19);
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -53,20 +54,18 @@ public class ClubRepository implements Repository<Player> {
     }
 
     public void setClubs(List<Club> clubs) {
-        ClubRepository.clubs = clubs;
+        this.clubs = clubs;
     }
 
     @Override
     public List<Player> getAll() {
-        retrieveData();
+
         List<Player> players = new ArrayList<>();
         for (Club c :
-                clubs) {
-            for (Player p :
-                    c.getPlayerList()) {
-                players.add(p);
+                this.getClubs()) {
+                players.addAll(c.getPlayerList());
             }
-        }
+
         return players;
     }
     public Club searchByName(String name)

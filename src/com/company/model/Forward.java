@@ -45,6 +45,6 @@ public class Forward extends Player {
 
     @Override
     public String toString() {
-      return  "Forward {"+super.toString()+"}";
+      return  "\nForward {"+super.toString()+"}";
     }
 }

@@ -48,6 +48,6 @@ public class Goalkeeper extends Player {
 
     @Override
     public String toString() {
-        return "Goalkeeper {"+super.toString()+"}";
+        return "\nGoalkeeper {"+super.toString()+"}";
     }
 }

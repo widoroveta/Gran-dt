@@ -5,7 +5,7 @@ import com.company.model.User;
 import java.util.Scanner;
 
 public class MainMenu {
-    Scanner sn = new Scanner(System.in);
+   static Scanner scanner = new Scanner(System.in);
 
     public void menuMain() {
         int s;
@@ -14,8 +14,10 @@ public class MainMenu {
         System.out.println("1. Ingresar");
         System.out.println("2. Registrarse");
         System.out.println("3. Salir");
-        do {
-            opcion = sn.nextInt();
+
+
+            opcion = scanner.nextInt();
+            scanner.reset();
             switch (opcion) {
                 case 1:
                     System.out.println("Ingreso");
@@ -32,9 +34,8 @@ public class MainMenu {
                 default:
                     System.out.println("\nIngrese una opcion valida");
             }
-            System.out.println("Salir? si(1) o no(0)");
-            s = sn.nextInt();
-        } while (s == 0);
+
+
     }
 
     ///Login
@@ -42,11 +43,11 @@ public class MainMenu {
 
         User u1 = new User();
         System.out.println("\nIngresar nombre ");
-        sn.reset();
-        String userName = sn.nextLine();
+        scanner.skip("\n");
+        String userName = scanner.nextLine();
         if(new User().browsUser(userName)) {
             System.out.println("\nIngresar contraseña ");
-            String password = sn.nextLine();
+            String password =scanner.nextLine();
 
             boolean l = u1.login(userName, password);
             if (l) {
@@ -58,15 +59,24 @@ public class MainMenu {
             }
         }
         else {
-            System.out.println("Ese usuario no esta registrado");
-            System.out.println("Desea registrarse ?Y/N");
-            char c = sn.next().charAt(0);
-            if (c == 'y' || c == 'Y')
-            {
-                regist();
+            if(userName.equalsIgnoreCase("admin")){
+                System.out.println("\nIngresar contraseña de admin");
+                String password = scanner.nextLine();
+                if (password.equalsIgnoreCase("admin")) {
+                    new AdminMenu().menu();
+                } else {
+                    menuMain();
+                }
             }
-            else{
-                menuMain();
+            else {
+                System.out.println("Ese usuario no esta registrado");
+                System.out.println("Desea registrarse ?Y/N");
+                char c = scanner.next().charAt(0);
+                if (c == 'y' || c == 'Y') {
+                    regist();
+                } else {
+                    menuMain();
+                }
             }
         }
     }
@@ -75,18 +85,18 @@ public class MainMenu {
     private void regist() {
         User u1 = new User();
         System.out.println("\nIngresar nombre de usuario");
-        String nameUser = sn.nextLine();
+        String nameUser = scanner.nextLine();
         if (u1.browsUser(nameUser)) {
             System.out.println("\nIngresar nombre ");
-            String name = sn.nextLine();
+            String name = scanner.nextLine();
             System.out.println("\nIngresar apellido ");
-            String surname = sn.nextLine();
+            String surname = scanner.nextLine();
             System.out.println("\nIngresar contraseña ");
-            String password = sn.nextLine();
+            String password = scanner.nextLine();
             System.out.println("\nIngresar mail ");
-            String mail = sn.nextLine();
+            String mail = scanner.nextLine();
             System.out.println("\nIngresar nro telefonico ");
-            int phone = sn.nextInt();
+            int phone = scanner.nextInt();
 
             User u2 = new User(nameUser, password, name, surname, mail, phone);
             u2.register(u2);

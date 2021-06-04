@@ -103,7 +103,7 @@ public class AdminMenu {
             List<Match> all = fixtureRepository.getAll();
             Match select = null;
             boolean accept = false;
-            while (accept) {
+            while (!accept) {
                 for (Match m : all) {
                     System.out.println(m);
                 }
@@ -143,7 +143,7 @@ public class AdminMenu {
             List<Club> clubs = clubRepository.getClubs();
             Club select;
             boolean accept = false;
-            while (accept) {
+            while (!accept) {
                 int i = 0;
                 for (Club c : clubs) {
                     print.println("\n" + i++ + ") Nombre del club: " + c.getClub());
@@ -182,11 +182,13 @@ public class AdminMenu {
         }
 
 
+
+
         private void modifyPLayer() {
             List<Player> all = clubRepository.getAll();
             Player select = null;
             boolean accept = false;
-            while (accept) {
+            while (!accept) {
                 int i = 0;
                 for (Player p :
                         all) {
@@ -214,6 +216,7 @@ public class AdminMenu {
             switch (scanner.nextInt()) {
                 case 1:
                     changeName(select);
+
                     break;
                 case 2:
                     changeNumber(select);
@@ -238,6 +241,7 @@ public class AdminMenu {
                 print.println("Que nombre queres ponerle al club?");
                 c.setClub(scanner.nextLine());
                 clubs.set(index, c);
+
                 return clubRepository.save();
             }
 
@@ -249,6 +253,8 @@ public class AdminMenu {
             print.println("Que precio desear ponerle al jugador?");
             player1.setPrice(scanner.nextInt());
             changePlayer(player, player1);
+            System.out.println("cambio realizado");
+            menu();
         }
 
         private void changeNumber(Player player) {
@@ -256,24 +262,31 @@ public class AdminMenu {
             print.println("Que numero desear ponerle al jugador?");
             player1.setPlayerNumber(scanner.nextInt());
             changePlayer(player, player1);
+            System.out.println("cambio realizado");
+            menu();
         }
 
         private void changePlayer(Player player1, Player player2) {
-            for (Club c :
+
+          for (Club c :
                     clubRepository.getClubs()) {
                 if (c.getPlayerList().contains(player1)) {
                     int index = c.getPlayerList().indexOf(player1);
                     c.getPlayerList().set(index, player2);
                 }
             }
+
             clubRepository.save();
         }
 
         private void changeName(Player player) {
             Player player1 = player;
             print.println("Que nombre desear ponerle al jugador?");
+            scanner.skip("\n");
             player1.setPlayerName(scanner.nextLine());
             changePlayer(player, player1);
+            System.out.println("cambio realizado");
+            menu();
         }
 
         private Player selectPlayerInMatch(Match m) {

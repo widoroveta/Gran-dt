@@ -127,7 +127,7 @@ public class Player implements Simulation,Comparable<Player> {
 
     @Override
     public String toString() {
-        return "Player{" +
+        return "'Player{" +
                 "playerName='" + playerName + '\'' +
                 ", playerNumber=" + playerNumber +
                 ", price=" + price +

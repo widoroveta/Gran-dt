@@ -16,7 +16,7 @@ import java.lang.reflect.Type;
 import java.util.List;
 
 public class FixtureRepository implements Repository<Match> {
-    private static Fixture fixture;
+    private  Fixture fixture;
     File fileFixture = new File("Fixture.json");
     private final ObjectMapper mapper = new ObjectMapper();
 
@@ -56,11 +56,16 @@ public class FixtureRepository implements Repository<Match> {
 
 
         try {
+            mapper.enableDefaultTyping(ObjectMapper.DefaultTyping.NON_FINAL);
             mapper.configure(MapperFeature.PROPAGATE_TRANSIENT_MARKER, true);
-
             mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
             mapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
-            fixture = this.mapper.readValue(fileFixture, Fixture.class);
+            fixture = this.mapper.readValue(fileFixture, new TypeReference<Fixture>() {
+                @Override
+                public Type getType() {
+                    return super.getType();
+                }
+            });
         } catch (IOException e) {
             e.printStackTrace();
 
@@ -93,6 +98,6 @@ public class FixtureRepository implements Repository<Match> {
     }
 
     public void setFixture(Fixture fixture) {
-        FixtureRepository.fixture = fixture;
+      this.fixture = fixture;
     }
 }
