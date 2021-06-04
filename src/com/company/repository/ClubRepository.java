@@ -69,6 +69,20 @@ public class ClubRepository implements Repository<Player> {
         }
         return players;
     }
+    public Club searchByName(String name)
+    {Club select=new Club();
+        if(!clubs.isEmpty())
+    {
+        for (Club c:
+             clubs) {
+            if(c.getClub().equals(name))
+            {
+                select=c;
+            }
+        }
+    }
+        return select;
+    }
 
     @Override
     public boolean contains(Player player) {

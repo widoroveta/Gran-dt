@@ -1,0 +1,67 @@
+
+f
+java:S1301{"KReplace this "switch" statement by "if" statements to increase readability.(çëëâùÿÿÿÿ
+b	java:S101D"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¶‰ª±
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¢¸Àÿúÿÿÿÿ
+—
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‡ŞıÑ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¬ıˆ‚
+<	java:S131""Add a default case to this switch.(ÖöÔŒÿÿÿÿÿ
+J
+java:S6212$"/Declare this local variable with "var" instead.(«œƒªÿÿÿÿÿ
+J
+java:S6212."/Declare this local variable with "var" instead.( ËÛ¾úÿÿÿÿ
+E
+java:S62124"/Declare this local variable with "var" instead.(¦¸’¦
+E
+java:S62125"/Declare this local variable with "var" instead.(‡ìÈ
+X
+java:S2094D"BRemove this empty class, write its code or make it an "interface".(¶‰ª±
+I
+java:S3985D"3Remove this unused private "removeMenuAdmin" class.(¶‰ª±
+—
+java:S1186J"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÊŸ‹
+<	java:S131T""Add a default case to this switch.(çëëâùÿÿÿÿ
+U
+java:S1854m":Remove this useless assignment to local variable "select".( ïŸùÿÿÿÿ
+E
+java:S6212d"/Declare this local variable with "var" instead.(¦¸’¦
+J
+java:S6212g"/Declare this local variable with "var" instead.(¨‰½üûÿÿÿÿ
+=
+java:S1125h"'Remove the unnecessary boolean literal.(öš™“
+S	java:S106j"9Replace this use of System.out or System.err by a logger.(à¿öÑúÿÿÿÿ
+E
+java:S6212n"/Declare this local variable with "var" instead.(ÉŒ¶ù
+<	java:S131{""Add a default case to this switch.(çëëâùÿÿÿÿ
+i
+java:S3776ƒ"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(ãÏé‚
+K
+java:S6212†"/Declare this local variable with "var" instead.(¨‰½üûÿÿÿÿ
+>
+java:S1125‡"'Remove the unnecessary boolean literal.(öš™“
+K
+java:S6212ˆ"/Declare this local variable with "var" instead.(ùó›Ìøÿÿÿÿ
+F
+java:S6212"/Declare this local variable with "var" instead.(ÉŒ¶ù
+O	java:S106•"9Replace this use of System.out or System.err by a logger.(Ÿğ«
+F
+java:S6212±"/Declare this local variable with "var" instead.(ìüà·
+K
+java:S6212Á"/Declare this local variable with "var" instead.(¨‰½üûÿÿÿÿ
+>
+java:S1125Â"'Remove the unnecessary boolean literal.(öš™“
+K
+java:S6212Ã"/Declare this local variable with "var" instead.(ùó›Ìøÿÿÿÿ
+T	java:S106Æ"9Replace this use of System.out or System.err by a logger.(‘Ş»Ñûÿÿÿÿ
+F
+java:S6212Ì"/Declare this local variable with "var" instead.(ÉŒ¶ù
+=	java:S131Û""Add a default case to this switch.(çëëâùÿÿÿÿ
+F
+java:S6212î"/Declare this local variable with "var" instead.(ãàİ¥
+F
+java:S6212õ"/Declare this local variable with "var" instead.(ãàİ¥
+F
+java:S6212‡"/Declare this local variable with "var" instead.(ãàİ¥
+A
+java:S1481f"+Remove this unused "select" local variable.(â°£¾

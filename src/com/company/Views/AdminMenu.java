@@ -14,8 +14,8 @@ import java.util.List;
 import java.util.Scanner;
 
 public class AdminMenu {
-    PrintStream print = System.out;
-    Scanner scanner = new Scanner(System.in);
+    private static final PrintStream print = System.out;
+    private static Scanner scanner = new Scanner(System.in);
 
     public AdminMenu() {
     }
@@ -36,6 +36,9 @@ public class AdminMenu {
                 ModificationMenuAdmin modificationMenuAdmin = new ModificationMenuAdmin();
                 modificationMenuAdmin.modification();
                 break;
+            case 3:
+                break;
+
         }
     }
 
@@ -62,9 +65,11 @@ public class AdminMenu {
 
 
     /////
-    private class removeMenuAdmin{
-
+    private class removeMenuAdmin {
+        public removeMenuAdmin() {
+        }
     }
+
     private class ModificationMenuAdmin {
         ClubRepository clubRepository = new ClubRepository();
 
@@ -98,12 +103,14 @@ public class AdminMenu {
             List<Match> all = fixtureRepository.getAll();
             Match select = null;
             boolean accept = false;
-            while (accept == false) {
+            while (accept) {
                 for (Match m : all) {
                     System.out.println(m);
                 }
                 print.println("seleccione el partido por id");
                 select = all.get(scanner.nextInt());
+                print.println(select);
+                print.println("Es este el partido a modificar?Y/N R:Volver");
                 char c = scanner.next().charAt(0);
                 if (c == 'y' || c == 'Y') {
                     accept = true;
@@ -116,9 +123,16 @@ public class AdminMenu {
             print.println("1)Cambiar jugador del mismo equipo");
             print.println("2)Cambiar jugador de otro equipo");
             print.println("3)Modificar la fecha ");
+            print.println("4)Volver al menu");
 
             switch (scanner.nextInt()) {
                 case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
                     break;
             }
 
@@ -129,7 +143,7 @@ public class AdminMenu {
             List<Club> clubs = clubRepository.getClubs();
             Club select;
             boolean accept = false;
-            while (accept == false) {
+            while (accept) {
                 int i = 0;
                 for (Club c : clubs) {
                     print.println("\n" + i++ + ") Nombre del club: " + c.getClub());
@@ -146,15 +160,13 @@ public class AdminMenu {
                         System.out.println("escribe el nombre del club");
                         select.setClub(scanner.nextLine());
                         boolean b = changeNameClub(select);
-                            if(b)
-                            {
-                                print.println("se ha cambiado el nombre correctamente");
+                        if (b) {
+                            print.println("se ha cambiado el nombre correctamente");
 
-                            }
-                            else{
-                                print.println("no se ha cambiado correctamente");
-                            }
-                            menu();
+                        } else {
+                            print.println("no se ha cambiado correctamente");
+                        }
+                        menu();
                     }
                     if (c == 'r' || c == 'R') {
                         modification();
@@ -169,26 +181,12 @@ public class AdminMenu {
 
         }
 
-        public boolean changeNameClub(Club select) {
-            Club c = select;
-            int index = 0;
-            List<Club> clubs = clubRepository.getClubs();
-            if (clubs.contains(select)) {
-                index = clubs.indexOf(select);
-                print.println("Que nombre queres ponerle al club?");
-                c.setClub(scanner.nextLine());
-                clubs.set(index, c);
-                return clubRepository.save();
-            }
-
-            return false;
-        }
 
         private void modifyPLayer() {
             List<Player> all = clubRepository.getAll();
             Player select = null;
             boolean accept = false;
-            while (accept == false) {
+            while (accept) {
                 int i = 0;
                 for (Player p :
                         all) {
@@ -231,6 +229,21 @@ public class AdminMenu {
 
         }
 
+        public boolean changeNameClub(Club select) {
+            Club c = select;
+            int index = 0;
+            List<Club> clubs = clubRepository.getClubs();
+            if (clubs.contains(select)) {
+                index = clubs.indexOf(select);
+                print.println("Que nombre queres ponerle al club?");
+                c.setClub(scanner.nextLine());
+                clubs.set(index, c);
+                return clubRepository.save();
+            }
+
+            return false;
+        }
+
         private void changePrice(Player player) {
             Player player1 = player;
             print.println("Que precio desear ponerle al jugador?");
@@ -261,6 +274,97 @@ public class AdminMenu {
             print.println("Que nombre desear ponerle al jugador?");
             player1.setPlayerName(scanner.nextLine());
             changePlayer(player, player1);
+        }
+
+        private Player selectPlayerInMatch(Match m) {
+            int i = 0;
+            print.println("Local team");
+            for (Player p :
+                    m.getLocalTeam()) {
+                print.println(i++ + ") Nombre: " + p.getPlayerName() + "Posicion: " + p.getClass().getSimpleName());
+            }
+            i = 0;
+            print.println("Visitor team");
+            for (Player p :
+                    m.getVisitorTeam()) {
+                print.println(i++ + ") Nombre: " + p.getPlayerName() + "Posicion: " + p.getClass().getSimpleName());
+            }
+            print.println("Selecciona 1 para local y 2 para visitante");
+            int i2 = scanner.nextInt();
+            if (i2 == 1) {
+                print.println("Que jugador quiere modificar del equipo Local?");
+                int i1 = scanner.nextInt();
+                print.println(m.getLocalTeam().get(i1));
+                print.println("\nEs el que quieres seleccionar?Y/N R:volver");
+                char c = scanner.next().charAt(0);
+                if (c == 'y' || c == 'Y') {
+
+                    return m.getLocalTeam().get(i1);
+                }
+                if (c == 'r' || c == 'R') {
+                    modification();
+                }
+            } else {
+                if (i == 2) {
+                    print.println("Que jugador quiere modificar del equipo Visitante?");
+                    int i1 = scanner.nextInt();
+                    print.println(m.getVisitorTeam().get(i1));
+                    print.println("\nEs el que quieres seleccionar?Y/N R:volver");
+                    char c = scanner.next().charAt(0);
+                    if (c == 'y' || c == 'Y') {
+
+                        return m.getVisitorTeam().get(i1);
+                    }
+                    if (c == 'r' || c == 'R') {
+                        modification();
+                    }
+                }
+            }
+            return null;
+        }
+
+        private void changeInMatchPlayer(Match m, Player player1, Player player2) {
+            FixtureRepository fixtureRepository = new FixtureRepository();
+            List<Match> all = fixtureRepository.getAll();
+            int i = all.indexOf(m);
+            if (i > 0) {
+                if (all.get(i).getVisitorTeam().contains(player1)) {
+                    all.get(i).getVisitorTeam().remove(player1);
+                    all.get(i).getVisitorTeam().set(i, player2);
+                } else {
+                    if (all.get(i).getLocalTeam().contains(player1)) {
+                        all.get(i).getLocalTeam().remove(player1);
+                        all.get(i).getLocalTeam().set(i, player2);
+                    }
+                }
+            } else {
+                print.println("algo andubo mal");
+                menu();
+            }
+
+        }
+
+        private void changePlayerSameClub(Match m) {
+            Player player = selectPlayerInMatch(m);
+            List<Club> clubs =  new ClubRepository().getClubs();
+            int i=0;
+            if (player != null) {
+                if (player.getClubName().equals(m.getNameLocal())) {
+                    for (Player p:
+                         new ClubRepository().searchByName(m.getNameLocal()).getPlayerList()) {
+                        print.println(i++ + ") Nombre: " + p.getPlayerName() + "Posicion: " + p.getClass().getSimpleName());
+                    }
+                    
+                }
+                if (player.getClubName().equals(m.getNameVisitor())) {
+                    for (Player p:
+                            new ClubRepository().searchByName(m.getNameVisitor()).getPlayerList()) {
+                        print.println(i++ + ") Nombre: " + p.getPlayerName() + "Posicion: " + p.getClass().getSimpleName());
+                    }
+                }
+
+
+            }
         }
     }
 }

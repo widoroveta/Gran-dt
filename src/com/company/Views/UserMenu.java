@@ -9,19 +9,52 @@ public class UserMenu {
     private Scanner sc = new Scanner(System.in);
     private int s;
 
+    public void menu() {
+        System.out.println("Hola " + user.getName() + ",que quieres hacer?");
+        System.out.println("1)Ver mi perfil");
+        System.out.println("2)Menu equipo");
+        System.out.println("3)Menu de fixture");
+        System.out.println("Aprete cualquier otro numero para salir.");
+        System.out.println("Ingrese una opcion");
+
+        switch (sc.nextInt()) {
+            case 1:
+                System.out.println(viewUser());
+                break;
+            case 2:
+                ;
+                break;
+            case 3:
+                ;
+                break;
+
+            default:
+                System.out.println("Opcion no valida. Salir? si(1) o no(0)");
+                s = sc.nextInt();
+        }
+
+    }
+
+
     public UserMenu(User user) {
         this.user = user;
     }
 
-    public void menu() {
-        System.out.println("Hola " + user.getName() + ",que quieres hacer?");
-        System.out.println("1)Ver mi equipo");
-        System.out.println("2)Modificar mi equipo");
-        System.out.println("3)Ver mi perfil");
-        System.out.println("4)Menu de fixture");
-        System.out.println("Ingrese una opción");
-        do {
-            switch (sc.nextInt()) {
+    public String viewUser() {
+        return user.toString();
+    }
+
+    private class menuTeam{
+
+        public menuTeam(){}
+
+        public void tMenu(){
+            System.out.println("Menu Equipo:");
+            System.out.println("1)Ver Equipo.");
+            System.out.println("2)Modificar Equipo.");
+            System.out.println("3)Volver al menu anterior.");
+
+            switch (sc.nextInt()){
                 case 1:
                     viewTeam();
                     break;
@@ -29,33 +62,20 @@ public class UserMenu {
                     modifyTeam();
                     break;
                 case 3:
-                    System.out.println(viewUser());
+                    menu();
                     break;
-                case 4:
-                    menuFixture();
-                    break;
-                default:
-                    System.out.println("Opción no valida.");
             }
-            System.out.println("Salir? si(1) o no(0)");
-            s = sc.nextInt();
-        } while (s == 0);
-    }
+        }
 
-    public String viewUser() {
-        return user.toString();
-    }
-
-    public void viewTeam() {
+        public void viewTeam(){
         user.getMyTeam().getPlayers().stream().forEach(System.out::println);
-    }
+        }
 
-    public void modifyTeam() {
+        public void modifyTeam () {
         System.out.println("Modificacion de equipo:");
         System.out.println("1)Agregar Jugador.");
-        System.out.println("2)Modificar Jugador.");
+        System.out.println("2)Cambiar Jugador.");
         System.out.println("3)Elininar Jugador");
-        System.out.println("ok");
         switch (sc.nextInt()) {
             case 1:
                 //        user.getMyTeam().addPlayer(player);
@@ -69,22 +89,25 @@ public class UserMenu {
                 break;
             default:
                 System.out.println("Ingrese una opcion valida.");
+            }
         }
     }
+   /* private class menuFixture {
 
-    private void menuFixture() {
         System.out.println("Menu Fixture:");
         System.out.println("1)Mostrar fixture:");
 
-        switch (sc.nextInt()) {
+        switch(sc.nextInt())
+        {
             case 1:
                 showFixture();
                 break;
         }
-    }
 
-    public String showFixture() {
-        return "";
-    }
+
+        public String showFixture() {
+            return "";
+        }
+    }*/
 
 }

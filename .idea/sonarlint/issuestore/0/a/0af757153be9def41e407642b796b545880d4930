@@ -1,0 +1,12 @@
+
+U
+java:S1128"3Remove this unused import 'java.lang.reflect.Type'.(‰ûÕñıÿÿÿÿ8¡¹¥³/
+l
+java:S1128"JRemove this unused import 'com.fasterxml.jackson.core.type.TypeReference'.(ãĞß¤ÿÿÿÿÿ8Ğ¼¥³/
+S	java:S106"9Replace this use of System.out or System.err by a logger.(î¾Ù´úÿÿÿÿ
+Q
+java:S1874(";Remove this use of "enableDefaultTyping"; it is deprecated.(ÌÓÌº
+L
+java:S2696?"6Make the enclosing method "static" or remove this set.(ì‡µ
+L
+java:S2696`"6Make the enclosing method "static" or remove this set.(¡ÉÊ·
