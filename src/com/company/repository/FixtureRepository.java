@@ -60,12 +60,7 @@ public class FixtureRepository implements Repository<Match> {
 
             mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
             mapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
-            fixture = this.mapper.readValue(fileFixture, new TypeReference<Fixture>() {
-                @Override
-                public Type getType() {
-                    return super.getType();
-                }
-            });
+            fixture = this.mapper.readValue(fileFixture, Fixture.class);
         } catch (IOException e) {
             e.printStackTrace();
 

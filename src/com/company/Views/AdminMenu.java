@@ -62,6 +62,9 @@ public class AdminMenu {
 
 
     /////
+    private class removeMenuAdmin{
+
+    }
     private class ModificationMenuAdmin {
         ClubRepository clubRepository = new ClubRepository();
 
@@ -121,6 +124,7 @@ public class AdminMenu {
 
         }
 
+
         private void modifyClub() {
             List<Club> clubs = clubRepository.getClubs();
             Club select;
@@ -136,12 +140,30 @@ public class AdminMenu {
                 print.println("\nEs el que quieres seleccionar?Y/N R:volver");
                 char c = scanner.next().charAt(0);
                 if (c == 'y' || c == 'Y') {
-                    accept = true;
+                    print.println("Quieres Cambiar nombre del club?y/n R:Volver");
+                    c = scanner.next().charAt(0);
+                    if (c == 'y' || c == 'Y') {
+                        System.out.println("escribe el nombre del club");
+                        select.setClub(scanner.nextLine());
+                        boolean b = changeNameClub(select);
+                            if(b)
+                            {
+                                print.println("se ha cambiado el nombre correctamente");
+
+                            }
+                            else{
+                                print.println("no se ha cambiado correctamente");
+                            }
+                            menu();
+                    }
+                    if (c == 'r' || c == 'R') {
+                        modification();
+                    }
                 }
                 if (c == 'r' || c == 'R') {
                     modification();
                 }
-                print.println("Cambiar nombre del club");
+
 
             }
 
@@ -189,6 +211,7 @@ public class AdminMenu {
             print.println("1)Cambiar nombre");
             print.println("2)Cambiar numero");
             print.println("3)Cambiar precio");
+            print.println("4)Volver al Menu");
 
             switch (scanner.nextInt()) {
                 case 1:
@@ -199,6 +222,9 @@ public class AdminMenu {
                     break;
                 case 3:
                     changePrice(select);
+                    break;
+                case 4:
+                    menu();
                     break;
 
             }

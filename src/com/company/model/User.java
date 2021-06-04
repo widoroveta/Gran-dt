@@ -2,6 +2,8 @@ package com.company.model;
 
 import com.company.repository.UserRepository;
 
+import java.util.List;
+
 public class User {
     private String userName;
     private String password;
@@ -26,9 +28,12 @@ public class User {
     public Boolean login(String userName, String password) {
         UserRepository userRepository = new UserRepository();
         User userLogin = null;
-
+        List<User> all = userRepository.getAll();
+        if (all==null) {
+            return false;
+        }
         for (User user :
-                userRepository.getAll()) {
+                all) {
             if (user.getUserName().equalsIgnoreCase(userName)) {
                 userLogin = user;
             }
@@ -40,14 +45,19 @@ public class User {
             return false;
         }
     }
-    public boolean browsUser(String userName){
+
+    public boolean browsUser(String userName) {
         UserRepository userRepository = new UserRepository();
-        User userBrows= null;
+        User userBrows = null;
+        List<User> all = userRepository.getAll();
+        if (all==null) {
+            return false;
+        }
         for (User user :
-                userRepository.getAll()) {
+                all) {
             if (user.getUserName().equalsIgnoreCase(userName)) {
                 userBrows = user;
-                return  false;
+                return false;
             }
         }
         return true;

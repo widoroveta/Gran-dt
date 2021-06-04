@@ -51,17 +51,20 @@ public class UserRepository implements Repository<User> {
 
     @Override
     public List<User> getAll() {
-        try {
-            this.users = mapper.readValue(FILE, new TypeReference<List<User>>() {
-                @Override
-                public Type getType() {
-                    return super.getType();
-                }
-            });
-        } catch (IOException e) {
-            e.printStackTrace();
+        if(FILE.exists()) {
+            try {
+                this.users = mapper.readValue(FILE, new TypeReference<List<User>>() {
+                    @Override
+                    public Type getType() {
+                        return super.getType();
+                    }
+                });
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            return this.users;
         }
-        return this.users;
+        return  null;
     }
 
     @Override
