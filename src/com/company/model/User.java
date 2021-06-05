@@ -20,9 +20,11 @@ public class User {
         this.surname = surname;
         this.email = email;
         this.phone = phone;
+        this.myTeam=new MyTeam();
     }
 
     public User() {
+        this.myTeam=new MyTeam();
     }
 
     public Boolean login(String userName, String password) {

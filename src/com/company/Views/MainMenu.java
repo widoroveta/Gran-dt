@@ -85,6 +85,7 @@ public class MainMenu {
     private void regist() {
         User u1 = new User();
         System.out.println("\nIngresar nombre de usuario");
+        scanner.skip("\n");
         String nameUser = scanner.nextLine();
         if (u1.browsUser(nameUser)) {
             System.out.println("\nIngresar nombre ");

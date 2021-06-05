@@ -1,7 +1,10 @@
 package com.company.Views;
 
+import com.company.model.Player;
 import com.company.model.User;
+import com.company.repository.ClubRepository;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class UserMenu {
@@ -20,7 +23,7 @@ public class UserMenu {
         switch (sc.nextInt()) {
             case 1:
                 System.out.println(viewUser());
-                break;
+                menu();
             case 2:
                 menuTeam menuT=new menuTeam();
                 break;
@@ -35,7 +38,6 @@ public class UserMenu {
 
     }
 
-
     public UserMenu(User user) {
         this.user = user;
     }
@@ -43,8 +45,11 @@ public class UserMenu {
     public String viewUser() {
         return user.toString();
     }
-
+    //\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    ///////////////Menu Team Class
     private class menuTeam{
+        private ClubRepository cRepo=new ClubRepository();
+        private Player playerAux=new Player();
 
         public menuTeam(){tMenu();}
 
@@ -66,32 +71,80 @@ public class UserMenu {
                     break;
             }
         }
-
+        //tMenu 1
         private void viewTeam(){
         user.getMyTeam().getPlayers().stream().forEach(System.out::println);
         }
-
+        //tMenu 2
         private void modifyTeam () {
         System.out.println("Modificacion de equipo:");
         System.out.println("1)Agregar Jugador.");
         System.out.println("2)Cambiar Jugador.");
         System.out.println("3)Elininar Jugador");
+        System.out.println("4)Volver al menu anterior");
         switch (sc.nextInt()) {
             case 1:
-                //        user.getMyTeam().addPlayer(player);
+                addPlayerTeam();
                 break;
 
             case 2:
-                //        user.getMyTeam().change(player1, player2);
+                changePlayerTeam();
                 break;
             case 3:
-                //        user.getMyTeam().remove(player);
+                removePlayerTeam();
+                break;
+            case 4:
+                tMenu();
                 break;
             default:
                 System.out.println("Ingrese una opcion valida.");
+                modifyTeam();
             }
         }
+        private Player searchPlayer(){
+            List<Player> all = cRepo.getAll();
+            Player select = null;
+            boolean accept = false;
+            while (!accept) {
+                int i = 0;
+                for (Player p :
+                        all) {
+                    System.out.println(i++ + ") Tipo:" + p.getClass().getSimpleName() + "  Nombre: " + p.getPlayerName() + " Club: " + p.getClubName());
+                }
+                System.out.println("\nSelecciona por numero");
+                select = all.get(sc.nextInt());
+                System.out.println("\nType:" + select.getClass().getSimpleName() + "  Name: " + select.getPlayerName() + " Club: " + select.getClubName());
+                System.out.println("\nEs el que quieres seleccionar?Y/N R:volver");
+                char c = sc.next().charAt(0);
+                if (c == 'y' || c == 'Y') {
+                    accept = true;
+                }
+                if (c == 'r' || c == 'R') {
+                    modifyTeam();
+                }
+
+            }
+            return select;
+        }
+        private void addPlayerTeam(){
+            //cRepo.getAll().stream().forEach(System.out::println);
+            //user.getMyTeam().addPlayer()
+            Player player1 = searchPlayer();
+            user.getMyTeam().addPlayer(player1);
+            System.out.println(user.getMyTeam());
+        }
+
+        private void changePlayerTeam(){
+            //        user.getMyTeam().change(player1, player2);
+        }
+
+        private void removePlayerTeam(){
+            //        user.getMyTeam().remove(player);
+        }
+
     }
+    //\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    ////////////////Menu Fixture Class
     private class menuFixture {
 
         public menuFixture(){fMenu();}
@@ -118,13 +171,14 @@ public class UserMenu {
                     break;
             }
         }
-
+        //fMenu 1
         private String showFixture() {
             return "";
         }
+        //fMenu 2
         private void showNextMatches(){}
-
+        //fMenu 3
         private void showPrevMatches(){}
     }
-
+    //\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 }
