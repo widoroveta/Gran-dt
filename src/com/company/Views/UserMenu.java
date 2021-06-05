@@ -22,10 +22,10 @@ public class UserMenu {
                 System.out.println(viewUser());
                 break;
             case 2:
-                ;
+                menuTeam menuT=new menuTeam();
                 break;
             case 3:
-                ;
+                menuFixture menuF=new menuFixture();
                 break;
 
             default:
@@ -46,9 +46,9 @@ public class UserMenu {
 
     private class menuTeam{
 
-        public menuTeam(){}
+        public menuTeam(){tMenu();}
 
-        public void tMenu(){
+        private void tMenu(){
             System.out.println("Menu Equipo:");
             System.out.println("1)Ver Equipo.");
             System.out.println("2)Modificar Equipo.");
@@ -67,11 +67,11 @@ public class UserMenu {
             }
         }
 
-        public void viewTeam(){
+        private void viewTeam(){
         user.getMyTeam().getPlayers().stream().forEach(System.out::println);
         }
 
-        public void modifyTeam () {
+        private void modifyTeam () {
         System.out.println("Modificacion de equipo:");
         System.out.println("1)Agregar Jugador.");
         System.out.println("2)Cambiar Jugador.");
@@ -92,22 +92,39 @@ public class UserMenu {
             }
         }
     }
-   /* private class menuFixture {
+    private class menuFixture {
 
-        System.out.println("Menu Fixture:");
-        System.out.println("1)Mostrar fixture:");
+        public menuFixture(){fMenu();}
 
-        switch(sc.nextInt())
-        {
-            case 1:
-                showFixture();
-                break;
+        private void fMenu() {
+            System.out.println("Menu Fixture:");
+            System.out.println("1)Mostrar fixture completo:");
+            System.out.println("2)Mostrar proximos partidos");
+            System.out.println("3)Mostrar partidos anteriores");
+            System.out.println("4)Volver al menu anterior");
+
+            switch (sc.nextInt()) {
+                case 1:
+                    showFixture();
+                    break;
+                case 2:
+                    showNextMatches();
+                    break;
+                case 3:
+                    showPrevMatches();
+                    break;
+                case 4:
+                    menu();
+                    break;
+            }
         }
 
-
-        public String showFixture() {
+        private String showFixture() {
             return "";
         }
-    }*/
+        private void showNextMatches(){}
+
+        private void showPrevMatches(){}
+    }
 
 }
