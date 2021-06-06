@@ -45,4 +45,9 @@ public class Midfielder extends Player {
     public String toString() {
         return "\nMidfielder {"+ super.toString()+"}";
     }
+    
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
 }
