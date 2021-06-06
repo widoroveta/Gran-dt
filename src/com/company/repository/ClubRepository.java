@@ -23,24 +23,34 @@ public class ClubRepository implements Repository<Player> {
 
     @Override
     public void add(Player player) {
+        retrieveData();
+      int index=-1;
+        for (Club c:
+             this.clubs) {
+            if(c.getClub().equalsIgnoreCase(player.getClubName()))
+            {
 
+
+            }
+        }
     }
 
     @Override
     public void retrieveData() {
 
         try {
-            mapper.enableDefaultTyping(ObjectMapper.DefaultTyping.NON_FINAL);
-            mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-            mapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
-            clubs = mapper.readValue(fileClub,new TypeReference<ArrayList<Club>>() {
-                @Override
-                public Type getType() {
-                    return super.getType();
-                }
-            });
-            clubs.subList(0,19);
-
+            if(fileClub.exists()) {
+                mapper.enableDefaultTyping(ObjectMapper.DefaultTyping.NON_FINAL);
+                mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+                mapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
+                clubs = mapper.readValue(fileClub, new TypeReference<ArrayList<Club>>() {
+                    @Override
+                    public Type getType() {
+                        return super.getType();
+                    }
+                });
+                clubs.subList(0, 19);
+            }
         } catch (IOException e) {
             e.printStackTrace();
 
@@ -114,8 +124,6 @@ public class ClubRepository implements Repository<Player> {
 
     @Override
     public boolean save() {
-
-
         try {
             mapper.enableDefaultTyping(ObjectMapper.DefaultTyping.NON_FINAL);
             mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);

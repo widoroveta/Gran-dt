@@ -267,24 +267,32 @@ public class AdminMenu {
         }
 
         private void changePlayer(Player player1, Player player2) {
-
-          for (Club c :
-                    clubRepository.getClubs()) {
+            Club select=null;
+            //System.out.println(player1);
+            int index=0;
+            int i=0;
+            List<Club> clubs = clubRepository.getClubs();
+            for (Club c :
+                   clubs ) {
                 if (c.getPlayerList().contains(player1)) {
-                    int index = c.getPlayerList().indexOf(player1);
-                    c.getPlayerList().set(index, player2);
+                     index = c.getPlayerList().indexOf(player1);
+                     i = clubRepository.getClubs().indexOf(c);
                 }
             }
-
+            clubs.get(i).getPlayerList().set(index,player2);
+            clubRepository.setClubs(clubs);
             clubRepository.save();
         }
 
         private void changeName(Player player) {
-            Player player1 = player;
+            Player player1 = new Player();
+            player1=player;
+            System.out.println(player1.hashCode());
+            System.out.println(player.hashCode());
             print.println("Que nombre desear ponerle al jugador?");
             scanner.skip("\n");
-            player1.setPlayerName(scanner.nextLine());
-            changePlayer(player, player1);
+            player.setPlayerName(scanner.nextLine());
+            changePlayer(player1, player);
             System.out.println("cambio realizado");
             menu();
         }
@@ -367,7 +375,7 @@ public class AdminMenu {
                          new ClubRepository().searchByName(m.getNameLocal()).getPlayerList()) {
                         print.println(i++ + ") Nombre: " + p.getPlayerName() + "Posicion: " + p.getClass().getSimpleName());
                     }
-                    
+
                 }
                 if (player.getClubName().equals(m.getNameVisitor())) {
                     for (Player p:

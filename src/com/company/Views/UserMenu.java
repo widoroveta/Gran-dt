@@ -1,9 +1,13 @@
 package com.company.Views;
 
+import com.company.model.Fixture;
+import com.company.model.Match;
 import com.company.model.Player;
 import com.company.model.User;
 import com.company.repository.ClubRepository;
+import com.company.repository.FixtureRepository;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
@@ -14,6 +18,7 @@ public class UserMenu {
 
 
     //public UserMenu(User u){this.user=u;}
+
 
     public void menu() {
         System.out.println("Hola " + user.getName() + ",que quieres hacer?");

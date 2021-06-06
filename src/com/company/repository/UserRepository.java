@@ -1,7 +1,6 @@
 package com.company.repository;
 
 import com.company.interfaz.Repository;
-import com.company.model.Club;
 import com.company.model.User;
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
@@ -39,25 +38,25 @@ public class UserRepository implements Repository<User> {
     @Override
     public void retrieveData() {
         //if (FILE.exists() && FILE.canRead()) {
-            try {
-                if (FILE.exists()) {
-                    mapper.enableDefaultTyping(ObjectMapper.DefaultTyping.NON_FINAL);
-                    mapper.configure(MapperFeature.PROPAGATE_TRANSIENT_MARKER, true);
-                    mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-                    mapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
-                    users = mapper.readValue(FILE, new TypeReference<List<User>>() {
-                        @Override
-                        public Type getType() {
-                            return super.getType();
-                        }
-                    });
-                }/* else {
+        try {
+            if (FILE.exists()) {
+                mapper.enableDefaultTyping(ObjectMapper.DefaultTyping.NON_FINAL);
+                mapper.configure(MapperFeature.PROPAGATE_TRANSIENT_MARKER, true);
+                mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+                mapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
+                users = mapper.readValue(FILE, new TypeReference<List<User>>() {
+                    @Override
+                    public Type getType() {
+                        return super.getType();
+                    }
+                });
+            }/* else {
                     this.users.add(new User("admin", "admin", "", "", "", 0));
                     mapper.writerWithDefaultPrettyPrinter().writeValue(FILE, users);
                 }*/
 
-            } catch (IOException e) {
-                e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
 
         }
     }
@@ -65,9 +64,8 @@ public class UserRepository implements Repository<User> {
     @Override
     public List<User> getAll() {
         retrieveData();
-            return this.users;
-        }
-
+        return this.users;
+    }
 
 
     @Override

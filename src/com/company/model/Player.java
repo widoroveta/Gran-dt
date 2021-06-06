@@ -12,7 +12,6 @@ public class Player implements Simulation,Comparable<Player> {
     //Transient
     protected transient boolean playerStatus;
     protected transient boolean mvp;
-    protected transient int datePoint;
     protected transient int goals;
     protected transient boolean yellowCard;
     protected transient boolean redCard;
@@ -77,13 +76,6 @@ public class Player implements Simulation,Comparable<Player> {
         this.mvp = mvp;
     }
 
-    public int getDatePoint() {
-        return datePoint;
-    }
-
-    public void setDatePoint(int datePoint) {
-        this.datePoint = datePoint;
-    }
 
     public int getGoals() {
         return goals;
@@ -125,19 +117,20 @@ public class Player implements Simulation,Comparable<Player> {
         return redCard;
     }
 
+
     @Override
     public String toString() {
-        return "'Player{" +
+        return "Player{" +
                 "playerName='" + playerName + '\'' +
                 ", playerNumber=" + playerNumber +
                 ", price=" + price +
                 ", clubName='" + clubName + '\'' +
                 ", playerStatus=" + playerStatus +
                 ", mvp=" + mvp +
-                ", datePoint=" + datePoint +
                 ", goals=" + goals +
                 ", yellowCard=" + yellowCard +
                 ", redCard=" + redCard +
+                ", points=" + points +
                 '}';
     }
 

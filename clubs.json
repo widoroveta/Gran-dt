@@ -3,33 +3,33 @@
   "playerList" : [ "java.util.ArrayList", [ [ "com.company.model.Goalkeeper", {
     "playerName" : "Carabantes Kevin",
     "playerNumber" : 1,
-    "price" : 3000,
+    "price" : 2000,
     "clubName" : "FAS",
     "withoutGoals" : false
   } ], [ "com.company.model.Defender", {
     "playerName" : "Chavez Diego",
     "playerNumber" : 4,
-    "price" : 4500,
+    "price" : 500,
     "clubName" : "FAS"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Cuellar Linares Edwin Mauricio",
     "playerNumber" : 24,
-    "price" : 2000,
+    "price" : 4500,
     "clubName" : "FAS"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Garcia Xavier",
     "playerNumber" : 2,
-    "price" : 1500,
+    "price" : 2500,
     "clubName" : "FAS"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Henriquez Alberto",
     "playerNumber" : 3,
-    "price" : 3500,
+    "price" : 3000,
     "clubName" : "FAS"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Amaya Sibrian Julio Cesar",
     "playerNumber" : 14,
-    "price" : 2000,
+    "price" : 2500,
     "clubName" : "FAS"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Chiguila Walter",
@@ -39,32 +39,32 @@
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Flores Erivan",
     "playerNumber" : 6,
-    "price" : 4000,
+    "price" : 2000,
     "clubName" : "FAS"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Rodriguez Luis",
     "playerNumber" : 27,
-    "price" : 4500,
+    "price" : 3500,
     "clubName" : "FAS"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Areco Sayas Diego Daniel",
     "playerNumber" : 9,
-    "price" : 3500,
+    "price" : 500,
     "clubName" : "FAS"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Penaranda Contreras Raul Eduardo",
     "playerNumber" : 7,
-    "price" : 4500,
+    "price" : 1000,
     "clubName" : "FAS"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Stradella Guillermo",
     "playerNumber" : 22,
-    "price" : 5000,
+    "price" : 1000,
     "clubName" : "FAS"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Wilma Torres",
     "playerNumber" : 21,
-    "price" : 1000,
+    "price" : 4500,
     "clubName" : "FAS"
   } ] ] ]
 } ], [ "com.company.model.Club", {
@@ -72,7 +72,7 @@
   "playerList" : [ "java.util.ArrayList", [ [ "com.company.model.Goalkeeper", {
     "playerName" : "Schmeichel Kasper",
     "playerNumber" : 1,
-    "price" : 4000,
+    "price" : 2500,
     "clubName" : "Leicester",
     "withoutGoals" : false
   } ], [ "com.company.model.Defender", {
@@ -83,22 +83,22 @@
   } ], [ "com.company.model.Defender", {
     "playerName" : "Evans Jonny",
     "playerNumber" : 6,
-    "price" : 2000,
+    "price" : 1000,
     "clubName" : "Leicester"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Fofana Wesley",
     "playerNumber" : 3,
-    "price" : 4000,
+    "price" : 5000,
     "clubName" : "Leicester"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Fuchs Christian",
     "playerNumber" : 28,
-    "price" : 1500,
+    "price" : 3000,
     "clubName" : "Leicester"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Justin James",
     "playerNumber" : 2,
-    "price" : 5000,
+    "price" : 2500,
     "clubName" : "Leicester"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Morgan Wes",
@@ -108,42 +108,42 @@
   } ], [ "com.company.model.Defender", {
     "playerName" : "Pereira Ricardo",
     "playerNumber" : 21,
-    "price" : 2000,
+    "price" : 1500,
     "clubName" : "Leicester"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Soyuncu Caglar",
     "playerNumber" : 4,
-    "price" : 5000,
+    "price" : 3000,
     "clubName" : "Leicester"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Albrighton Marc",
     "playerNumber" : 11,
-    "price" : 500,
+    "price" : 4000,
     "clubName" : "Leicester"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Amartey Daniel",
     "playerNumber" : 18,
-    "price" : 1000,
+    "price" : 4000,
     "clubName" : "Leicester"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Barnes Harvey",
     "playerNumber" : 15,
-    "price" : 5000,
+    "price" : 2000,
     "clubName" : "Leicester"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Choudhury Hamza",
     "playerNumber" : 20,
-    "price" : 3000,
+    "price" : 4000,
     "clubName" : "Leicester"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Leshabela Thakgalo Khanya",
     "playerNumber" : 10,
-    "price" : 4000,
+    "price" : 2500,
     "clubName" : "Leicester"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Maddison James",
     "playerNumber" : 10,
-    "price" : 2000,
+    "price" : 4500,
     "clubName" : "Leicester"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Mendy Nampalys",
@@ -153,7 +153,7 @@
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Ndidi Wilfred",
     "playerNumber" : 25,
-    "price" : 4000,
+    "price" : 4500,
     "clubName" : "Leicester"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Praet Dennis",
@@ -163,12 +163,12 @@
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Tavares Sidnei",
     "playerNumber" : 4,
-    "price" : 3500,
+    "price" : 1500,
     "clubName" : "Leicester"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Thomas Luke",
     "playerNumber" : 33,
-    "price" : 500,
+    "price" : 5000,
     "clubName" : "Leicester"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Tielemans Youri",
@@ -178,17 +178,17 @@
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Under Cengiz",
     "playerNumber" : 19,
-    "price" : 1000,
+    "price" : 3000,
     "clubName" : "Leicester"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Iheanacho Kelechi",
     "playerNumber" : 14,
-    "price" : 5000,
+    "price" : 3000,
     "clubName" : "Leicester"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Perez Ayoze",
     "playerNumber" : 17,
-    "price" : 1000,
+    "price" : 4500,
     "clubName" : "Leicester"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Vardy Jamie",
@@ -201,55 +201,55 @@
   "playerList" : [ "java.util.ArrayList", [ [ "com.company.model.Goalkeeper", {
     "playerName" : "Olsen Robin",
     "playerNumber" : 33,
-    "price" : 3000,
+    "price" : 2000,
     "clubName" : "Everton",
     "withoutGoals" : false
   } ], [ "com.company.model.Goalkeeper", {
     "playerName" : "Pickford Jordan",
     "playerNumber" : 1,
-    "price" : 3000,
+    "price" : 1000,
     "clubName" : "Everton",
     "withoutGoals" : false
   } ], [ "com.company.model.Goalkeeper", {
     "playerName" : "Virginia Joao",
     "playerNumber" : 31,
-    "price" : 5000,
+    "price" : 3500,
     "clubName" : "Everton",
     "withoutGoals" : false
   } ], [ "com.company.model.Defender", {
     "playerName" : "Coleman Seamus",
     "playerNumber" : 23,
-    "price" : 4500,
+    "price" : 4000,
     "clubName" : "Everton"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Digne Lucas",
     "playerNumber" : 12,
-    "price" : 500,
+    "price" : 4500,
     "clubName" : "Everton"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Godfrey Ben",
     "playerNumber" : 22,
-    "price" : 2000,
+    "price" : 3000,
     "clubName" : "Everton"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Holgate Mason",
     "playerNumber" : 4,
-    "price" : 4000,
+    "price" : 4500,
     "clubName" : "Everton"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Keane Michael",
     "playerNumber" : 5,
-    "price" : 2500,
+    "price" : 5000,
     "clubName" : "Everton"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Mina Yerry",
     "playerNumber" : 13,
-    "price" : 4000,
+    "price" : 2000,
     "clubName" : "Everton"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Nkounkou Niels",
     "playerNumber" : 18,
-    "price" : 3500,
+    "price" : 1000,
     "clubName" : "Everton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Allan",
@@ -259,67 +259,67 @@
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Broadhead Nathan",
     "playerNumber" : 9,
-    "price" : 1000,
+    "price" : 2000,
     "clubName" : "Everton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Davies Tom",
     "playerNumber" : 26,
-    "price" : 1500,
+    "price" : 3500,
     "clubName" : "Everton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Delph Fabian",
     "playerNumber" : 8,
-    "price" : 4000,
+    "price" : 500,
     "clubName" : "Everton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Doucoure Abdoulaye",
     "playerNumber" : 16,
-    "price" : 3500,
+    "price" : 3000,
     "clubName" : "Everton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Gbamin Jean-Philippe",
     "playerNumber" : 25,
-    "price" : 1500,
+    "price" : 4000,
     "clubName" : "Everton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Gomes Andre",
     "playerNumber" : 21,
-    "price" : 4500,
+    "price" : 4000,
     "clubName" : "Everton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Rodriguez James",
     "playerNumber" : 19,
-    "price" : 5000,
+    "price" : 1500,
     "clubName" : "Everton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Sigurdsson Gylfi",
     "playerNumber" : 10,
-    "price" : 2000,
+    "price" : 3000,
     "clubName" : "Everton"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Bernard",
     "playerNumber" : 20,
-    "price" : 4000,
+    "price" : 500,
     "clubName" : "Everton"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Calvert-Lewin Dominic",
     "playerNumber" : 9,
-    "price" : 2500,
+    "price" : 4000,
     "clubName" : "Everton"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Iwobi Alex",
     "playerNumber" : 17,
-    "price" : 2500,
+    "price" : 5000,
     "clubName" : "Everton"
   } ], [ "com.company.model.Forward", {
     "playerName" : "King Joshua",
     "playerNumber" : 11,
-    "price" : 2000,
+    "price" : 2500,
     "clubName" : "Everton"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Richarlison",
     "playerNumber" : 7,
-    "price" : 5000,
+    "price" : 4500,
     "clubName" : "Everton"
   } ] ] ]
 } ], [ "com.company.model.Club", {
@@ -327,123 +327,123 @@
   "playerList" : [ "java.util.ArrayList", [ [ "com.company.model.Goalkeeper", {
     "playerName" : "Sanchez Robert",
     "playerNumber" : 26,
-    "price" : 1000,
+    "price" : 3500,
     "clubName" : "Brighton",
     "withoutGoals" : false
   } ], [ "com.company.model.Defender", {
     "playerName" : "Burn Dan",
     "playerNumber" : 33,
-    "price" : 1500,
+    "price" : 3500,
     "clubName" : "Brighton"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Dunk Lewis",
     "playerNumber" : 5,
-    "price" : 4000,
+    "price" : 3000,
     "clubName" : "Brighton"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Lamptey Tariq",
     "playerNumber" : 2,
-    "price" : 2500,
+    "price" : 1500,
     "clubName" : "Brighton"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Veltman Joel",
     "playerNumber" : 34,
-    "price" : 2500,
+    "price" : 500,
     "clubName" : "Brighton"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Webster Adam",
     "playerNumber" : 4,
-    "price" : 3500,
+    "price" : 4500,
     "clubName" : "Brighton"
   } ], [ "com.company.model.Defender", {
     "playerName" : "White Ben",
     "playerNumber" : 3,
-    "price" : 1500,
+    "price" : 4000,
     "clubName" : "Brighton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Alzate Steven",
     "playerNumber" : 17,
-    "price" : 2500,
+    "price" : 1500,
     "clubName" : "Brighton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Bissouma Yves",
     "playerNumber" : 8,
-    "price" : 1000,
+    "price" : 3000,
     "clubName" : "Brighton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Gross Pascal",
     "playerNumber" : 13,
-    "price" : 2500,
+    "price" : 500,
     "clubName" : "Brighton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Khadra Reda",
     "playerNumber" : 11,
-    "price" : 1000,
+    "price" : 2500,
     "clubName" : "Brighton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Lallana Adam",
     "playerNumber" : 14,
-    "price" : 500,
+    "price" : 1000,
     "clubName" : "Brighton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Mac Allister Alexis",
     "playerNumber" : 10,
-    "price" : 1000,
+    "price" : 1500,
     "clubName" : "Brighton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "March Solomon",
     "playerNumber" : 20,
-    "price" : 4000,
+    "price" : 1000,
     "clubName" : "Brighton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Moder Jakub",
     "playerNumber" : 15,
-    "price" : 1500,
+    "price" : 2500,
     "clubName" : "Brighton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Propper Davy",
     "playerNumber" : 24,
-    "price" : 1500,
+    "price" : 3000,
     "clubName" : "Brighton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Tau Percy",
     "playerNumber" : 22,
-    "price" : 2500,
+    "price" : 5000,
     "clubName" : "Brighton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Trossard Leandro",
     "playerNumber" : 11,
-    "price" : 1000,
+    "price" : 4000,
     "clubName" : "Brighton"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Connolly Aaron",
     "playerNumber" : 7,
-    "price" : 1000,
+    "price" : 2500,
     "clubName" : "Brighton"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Izquierdo Jose",
     "playerNumber" : 19,
-    "price" : 4500,
+    "price" : 5000,
     "clubName" : "Brighton"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Jahanbakhsh Alireza",
     "playerNumber" : 16,
-    "price" : 1000,
+    "price" : 2000,
     "clubName" : "Brighton"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Maupay Neal",
     "playerNumber" : 9,
-    "price" : 1500,
+    "price" : 1000,
     "clubName" : "Brighton"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Welbeck Danny",
     "playerNumber" : 18,
-    "price" : 2500,
+    "price" : 4000,
     "clubName" : "Brighton"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Zeqiri Andi",
     "playerNumber" : 29,
-    "price" : 2500,
+    "price" : 4500,
     "clubName" : "Brighton"
   } ] ] ]
 } ], [ "com.company.model.Club", {
@@ -451,13 +451,13 @@
   "playerList" : [ "java.util.ArrayList", [ [ "com.company.model.Goalkeeper", {
     "playerName" : "Forster Fraser",
     "playerNumber" : 44,
-    "price" : 5000,
+    "price" : 2000,
     "clubName" : "Southampton",
     "withoutGoals" : false
   } ], [ "com.company.model.Goalkeeper", {
     "playerName" : "McCarthy Alex",
     "playerNumber" : 1,
-    "price" : 4000,
+    "price" : 3500,
     "clubName" : "Southampton",
     "withoutGoals" : false
   } ], [ "com.company.model.Defender", {
@@ -468,12 +468,12 @@
   } ], [ "com.company.model.Defender", {
     "playerName" : "Bertrand Ryan",
     "playerNumber" : 3,
-    "price" : 1000,
+    "price" : 4000,
     "clubName" : "Southampton"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Ramsay Kayne",
     "playerNumber" : 31,
-    "price" : 5000,
+    "price" : 500,
     "clubName" : "Southampton"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Salisu Mohammed",
@@ -483,22 +483,22 @@
   } ], [ "com.company.model.Defender", {
     "playerName" : "Stephens Jack",
     "playerNumber" : 5,
-    "price" : 500,
+    "price" : 3000,
     "clubName" : "Southampton"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Tchaptchet Allan",
     "playerNumber" : 4,
-    "price" : 4000,
+    "price" : 2500,
     "clubName" : "Southampton"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Vestergaard Jannik",
     "playerNumber" : 4,
-    "price" : 4000,
+    "price" : 3000,
     "clubName" : "Southampton"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Walker-Peters Kyle",
     "playerNumber" : 2,
-    "price" : 3500,
+    "price" : 1000,
     "clubName" : "Southampton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Armstrong Stuart",
@@ -508,27 +508,27 @@
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Diallo Ibrahima",
     "playerNumber" : 27,
-    "price" : 4000,
+    "price" : 3500,
     "clubName" : "Southampton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Djenepo Moussa",
     "playerNumber" : 12,
-    "price" : 2500,
+    "price" : 3000,
     "clubName" : "Southampton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Jankewitz Alexandre",
     "playerNumber" : 64,
-    "price" : 1000,
+    "price" : 500,
     "clubName" : "Southampton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Redmond Nathan",
     "playerNumber" : 11,
-    "price" : 1000,
+    "price" : 5000,
     "clubName" : "Southampton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Romeu Oriol",
     "playerNumber" : 6,
-    "price" : 1000,
+    "price" : 2500,
     "clubName" : "Southampton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Smallbone William",
@@ -538,12 +538,12 @@
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Tella Nathan",
     "playerNumber" : 23,
-    "price" : 5000,
+    "price" : 3500,
     "clubName" : "Southampton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Ward-Prowse James",
     "playerNumber" : 8,
-    "price" : 500,
+    "price" : 2500,
     "clubName" : "Southampton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Watts Caleb",
@@ -553,12 +553,12 @@
   } ], [ "com.company.model.Forward", {
     "playerName" : "Adams Che",
     "playerNumber" : 10,
-    "price" : 500,
+    "price" : 2000,
     "clubName" : "Southampton"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Ings Danny",
     "playerNumber" : 9,
-    "price" : 3000,
+    "price" : 3500,
     "clubName" : "Southampton"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Minamino Takumi",
@@ -568,17 +568,17 @@
   } ], [ "com.company.model.Forward", {
     "playerName" : "N'Lundulu Dan",
     "playerNumber" : 40,
-    "price" : 500,
+    "price" : 3500,
     "clubName" : "Southampton"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Obafemi Michael",
     "playerNumber" : 14,
-    "price" : 3000,
+    "price" : 1000,
     "clubName" : "Southampton"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Walcott Theo",
     "playerNumber" : 32,
-    "price" : 2500,
+    "price" : 5000,
     "clubName" : "Southampton"
   } ] ] ]
 } ], [ "com.company.model.Club", {
@@ -586,34 +586,34 @@
   "playerList" : [ "java.util.ArrayList", [ [ "com.company.model.Goalkeeper", {
     "playerName" : "Begovic Asmir",
     "playerNumber" : 1,
-    "price" : 4000,
+    "price" : 3000,
     "clubName" : "Bournemouth",
     "withoutGoals" : false
   } ], [ "com.company.model.Goalkeeper", {
     "playerName" : "Travers Mark",
     "playerNumber" : 23,
-    "price" : 5000,
+    "price" : 4500,
     "clubName" : "Bournemouth",
     "withoutGoals" : false
   } ], [ "com.company.model.Defender", {
     "playerName" : "Carter-Vickers Cameron",
     "playerNumber" : 18,
-    "price" : 2000,
+    "price" : 4000,
     "clubName" : "Bournemouth"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Cook Steve",
     "playerNumber" : 3,
-    "price" : 3000,
+    "price" : 4500,
     "clubName" : "Bournemouth"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Kelly Lloyd",
     "playerNumber" : 5,
-    "price" : 4500,
+    "price" : 1500,
     "clubName" : "Bournemouth"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Mepham Chris",
     "playerNumber" : 6,
-    "price" : 5000,
+    "price" : 1000,
     "clubName" : "Bournemouth"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Rico Diego",
@@ -623,82 +623,82 @@
   } ], [ "com.company.model.Defender", {
     "playerName" : "Riquelme Rodrigo",
     "playerNumber" : 20,
-    "price" : 4000,
+    "price" : 2500,
     "clubName" : "Bournemouth"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Smith Adam",
     "playerNumber" : 15,
-    "price" : 500,
+    "price" : 4500,
     "clubName" : "Bournemouth"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Stacey Jack",
     "playerNumber" : 17,
-    "price" : 500,
+    "price" : 1000,
     "clubName" : "Bournemouth"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Zemura Jordan",
     "playerNumber" : 33,
-    "price" : 1000,
+    "price" : 2000,
     "clubName" : "Bournemouth"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Billing Philip",
     "playerNumber" : 29,
-    "price" : 4000,
+    "price" : 4500,
     "clubName" : "Bournemouth"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Brooks David",
     "playerNumber" : 7,
-    "price" : 1000,
+    "price" : 500,
     "clubName" : "Bournemouth"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Cook Lewis",
     "playerNumber" : 16,
-    "price" : 500,
+    "price" : 2000,
     "clubName" : "Bournemouth"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Kilkenny Gavin",
     "playerNumber" : 26,
-    "price" : 4500,
+    "price" : 1500,
     "clubName" : "Bournemouth"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Lerma Jefferson",
     "playerNumber" : 8,
-    "price" : 5000,
+    "price" : 500,
     "clubName" : "Bournemouth"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Pearson Ben",
     "playerNumber" : 22,
-    "price" : 3000,
+    "price" : 5000,
     "clubName" : "Bournemouth"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Stanislas Junior",
     "playerNumber" : 19,
-    "price" : 2500,
+    "price" : 3000,
     "clubName" : "Bournemouth"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Wilshere Jack",
     "playerNumber" : 11,
-    "price" : 3500,
+    "price" : 5000,
     "clubName" : "Bournemouth"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Anthony Jaidon",
     "playerNumber" : 32,
-    "price" : 1500,
+    "price" : 4500,
     "clubName" : "Bournemouth"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Danjuma Arnaut",
     "playerNumber" : 10,
-    "price" : 2500,
+    "price" : 5000,
     "clubName" : "Bournemouth"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Long Shane",
     "playerNumber" : 12,
-    "price" : 4000,
+    "price" : 3500,
     "clubName" : "Bournemouth"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Solanke Dominic",
     "playerNumber" : 9,
-    "price" : 4000,
+    "price" : 3000,
     "clubName" : "Bournemouth"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Surridge Sam",
@@ -711,40 +711,40 @@
   "playerList" : [ "java.util.ArrayList", [ [ "com.company.model.Goalkeeper", {
     "playerName" : "Arrizabalaga Kepa",
     "playerNumber" : 1,
-    "price" : 4500,
+    "price" : 3000,
     "clubName" : "Chelsea",
     "withoutGoals" : false
   } ], [ "com.company.model.Goalkeeper", {
     "playerName" : "Caballero Wilfredo",
     "playerNumber" : 13,
-    "price" : 4500,
+    "price" : 3500,
     "clubName" : "Chelsea",
     "withoutGoals" : false
   } ], [ "com.company.model.Goalkeeper", {
     "playerName" : "Mendy Edouard",
     "playerNumber" : 16,
-    "price" : 2500,
+    "price" : 1000,
     "clubName" : "Chelsea",
     "withoutGoals" : false
   } ], [ "com.company.model.Defender", {
     "playerName" : "Alonso Marcos",
     "playerNumber" : 3,
-    "price" : 500,
+    "price" : 2500,
     "clubName" : "Chelsea"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Azpilicueta Cesar",
     "playerNumber" : 28,
-    "price" : 4500,
+    "price" : 2500,
     "clubName" : "Chelsea"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Chilwell Benjamin",
     "playerNumber" : 21,
-    "price" : 3500,
+    "price" : 3000,
     "clubName" : "Chelsea"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Christensen Andreas",
     "playerNumber" : 4,
-    "price" : 3000,
+    "price" : 2500,
     "clubName" : "Chelsea"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Emerson",
@@ -754,82 +754,82 @@
   } ], [ "com.company.model.Defender", {
     "playerName" : "James Reece",
     "playerNumber" : 24,
-    "price" : 3000,
+    "price" : 1000,
     "clubName" : "Chelsea"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Rudiger Antonio",
     "playerNumber" : 2,
-    "price" : 2000,
+    "price" : 500,
     "clubName" : "Chelsea"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Silva Thiago",
     "playerNumber" : 6,
-    "price" : 2000,
+    "price" : 5000,
     "clubName" : "Chelsea"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Zouma Kurt",
     "playerNumber" : 15,
-    "price" : 1500,
+    "price" : 4500,
     "clubName" : "Chelsea"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Gilmour Billy",
     "playerNumber" : 23,
-    "price" : 1500,
+    "price" : 500,
     "clubName" : "Chelsea"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Havertz Kai",
     "playerNumber" : 29,
-    "price" : 5000,
+    "price" : 1000,
     "clubName" : "Chelsea"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Hudson-Odoi Callum",
     "playerNumber" : 20,
-    "price" : 1500,
+    "price" : 2500,
     "clubName" : "Chelsea"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Jorginho",
     "playerNumber" : 5,
-    "price" : 1000,
+    "price" : 4000,
     "clubName" : "Chelsea"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Kante N'Golo",
     "playerNumber" : 7,
-    "price" : 1000,
+    "price" : 4500,
     "clubName" : "Chelsea"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Kovacic Mateo",
     "playerNumber" : 17,
-    "price" : 500,
+    "price" : 4000,
     "clubName" : "Chelsea"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Mount Mason",
     "playerNumber" : 19,
-    "price" : 4500,
+    "price" : 500,
     "clubName" : "Chelsea"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Pulisic Christian",
     "playerNumber" : 10,
-    "price" : 3000,
+    "price" : 1000,
     "clubName" : "Chelsea"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Ziyech Hakim",
     "playerNumber" : 22,
-    "price" : 5000,
+    "price" : 4500,
     "clubName" : "Chelsea"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Abraham Tammy",
     "playerNumber" : 9,
-    "price" : 1000,
+    "price" : 500,
     "clubName" : "Chelsea"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Giroud Olivier",
     "playerNumber" : 18,
-    "price" : 5000,
+    "price" : 2000,
     "clubName" : "Chelsea"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Werner Timo",
     "playerNumber" : 11,
-    "price" : 2500,
+    "price" : 2000,
     "clubName" : "Chelsea"
   } ] ] ]
 } ], [ "com.company.model.Club", {
@@ -837,70 +837,70 @@
   "playerList" : [ "java.util.ArrayList", [ [ "com.company.model.Goalkeeper", {
     "playerName" : "Leno Bernd",
     "playerNumber" : 1,
-    "price" : 1500,
+    "price" : 1000,
     "clubName" : "Arsenal",
     "withoutGoals" : false
   } ], [ "com.company.model.Goalkeeper", {
     "playerName" : "Runarsson Runar Alex",
     "playerNumber" : 13,
-    "price" : 4000,
+    "price" : 5000,
     "clubName" : "Arsenal",
     "withoutGoals" : false
   } ], [ "com.company.model.Goalkeeper", {
     "playerName" : "Ryan Mathew",
     "playerNumber" : 33,
-    "price" : 4000,
+    "price" : 4500,
     "clubName" : "Arsenal",
     "withoutGoals" : false
   } ], [ "com.company.model.Defender", {
     "playerName" : "Bellerin Hector",
     "playerNumber" : 2,
-    "price" : 2500,
+    "price" : 3500,
     "clubName" : "Arsenal"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Chambers Calum",
     "playerNumber" : 21,
-    "price" : 5000,
+    "price" : 4500,
     "clubName" : "Arsenal"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Gabriel",
     "playerNumber" : 6,
-    "price" : 4000,
+    "price" : 4500,
     "clubName" : "Arsenal"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Holding Rob",
     "playerNumber" : 16,
-    "price" : 1500,
+    "price" : 3500,
     "clubName" : "Arsenal"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Luiz David",
     "playerNumber" : 23,
-    "price" : 2000,
+    "price" : 3500,
     "clubName" : "Arsenal"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Mari Pablo",
     "playerNumber" : 22,
-    "price" : 500,
+    "price" : 4000,
     "clubName" : "Arsenal"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Soares Cedric",
     "playerNumber" : 17,
-    "price" : 2000,
+    "price" : 5000,
     "clubName" : "Arsenal"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Tierney Kieran",
     "playerNumber" : 3,
-    "price" : 1500,
+    "price" : 1000,
     "clubName" : "Arsenal"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Ceballos Daniel",
     "playerNumber" : 8,
-    "price" : 4000,
+    "price" : 1000,
     "clubName" : "Arsenal"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Elneny Mohamed",
     "playerNumber" : 25,
-    "price" : 4500,
+    "price" : 3000,
     "clubName" : "Arsenal"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Odegaard Martin",
@@ -915,52 +915,52 @@
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Smith Rowe Emile",
     "playerNumber" : 32,
-    "price" : 4500,
+    "price" : 500,
     "clubName" : "Arsenal"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Thomas",
     "playerNumber" : 18,
-    "price" : 4500,
+    "price" : 3500,
     "clubName" : "Arsenal"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Xhaka Granit",
     "playerNumber" : 34,
-    "price" : 1500,
+    "price" : 3000,
     "clubName" : "Arsenal"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Aubameyang Pierre-Emerick",
     "playerNumber" : 14,
-    "price" : 3000,
+    "price" : 2500,
     "clubName" : "Arsenal"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Lacazette Alexandre",
     "playerNumber" : 9,
-    "price" : 2000,
+    "price" : 3000,
     "clubName" : "Arsenal"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Martinelli",
     "playerNumber" : 35,
-    "price" : 4000,
+    "price" : 500,
     "clubName" : "Arsenal"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Nelson Reiss",
     "playerNumber" : 24,
-    "price" : 2000,
+    "price" : 3000,
     "clubName" : "Arsenal"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Nketiah Edward",
     "playerNumber" : 30,
-    "price" : 1500,
+    "price" : 1000,
     "clubName" : "Arsenal"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Pepe Nicolas",
     "playerNumber" : 19,
-    "price" : 1500,
+    "price" : 3000,
     "clubName" : "Arsenal"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Willian",
     "playerNumber" : 12,
-    "price" : 1500,
+    "price" : 5000,
     "clubName" : "Arsenal"
   } ] ] ]
 } ], [ "com.company.model.Club", {
@@ -968,54 +968,54 @@
   "playerList" : [ "java.util.ArrayList", [ [ "com.company.model.Goalkeeper", {
     "playerName" : "Benda Steven",
     "playerNumber" : 13,
-    "price" : 500,
+    "price" : 3500,
     "clubName" : "Swansea",
     "withoutGoals" : false
   } ], [ "com.company.model.Goalkeeper", {
     "playerName" : "Woodman Frederick",
     "playerNumber" : 1,
-    "price" : 2500,
+    "price" : 1500,
     "clubName" : "Swansea",
     "withoutGoals" : false
   } ], [ "com.company.model.Defender", {
     "playerName" : "Bennett Ryan",
     "playerNumber" : 2,
-    "price" : 5000,
+    "price" : 4000,
     "clubName" : "Swansea"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Bidwell Jake",
     "playerNumber" : 24,
-    "price" : 1500,
+    "price" : 3500,
     "clubName" : "Swansea"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Cabango Benjamin",
     "playerNumber" : 44,
-    "price" : 3500,
+    "price" : 2000,
     "clubName" : "Swansea"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Guehi Marc",
     "playerNumber" : 5,
-    "price" : 2500,
+    "price" : 3500,
     "clubName" : "Swansea"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Latibeaudiere Joel",
     "playerNumber" : 22,
-    "price" : 4000,
+    "price" : 3500,
     "clubName" : "Swansea"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Manning Ryan",
     "playerNumber" : 3,
-    "price" : 2000,
+    "price" : 3500,
     "clubName" : "Swansea"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Naughton Kyle",
     "playerNumber" : 26,
-    "price" : 3000,
+    "price" : 2500,
     "clubName" : "Swansea"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Roberts Connor",
     "playerNumber" : 23,
-    "price" : 3000,
+    "price" : 2500,
     "clubName" : "Swansea"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Cooper Oliver",
@@ -1025,7 +1025,7 @@
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Fulton Jay",
     "playerNumber" : 6,
-    "price" : 4500,
+    "price" : 2500,
     "clubName" : "Swansea"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Grimes Matt",
@@ -1035,37 +1035,37 @@
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Hourihane Conor",
     "playerNumber" : 14,
-    "price" : 2000,
+    "price" : 3500,
     "clubName" : "Swansea"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Routledge Wayne",
     "playerNumber" : 15,
-    "price" : 2500,
+    "price" : 3000,
     "clubName" : "Swansea"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Smith Korey",
     "playerNumber" : 7,
-    "price" : 2500,
+    "price" : 2000,
     "clubName" : "Swansea"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Ayew Andre",
     "playerNumber" : 10,
-    "price" : 3500,
+    "price" : 500,
     "clubName" : "Swansea"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Cullen Liam",
     "playerNumber" : 20,
-    "price" : 5000,
+    "price" : 1500,
     "clubName" : "Swansea"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Dhanda Yan",
     "playerNumber" : 21,
-    "price" : 1500,
+    "price" : 5000,
     "clubName" : "Swansea"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Lowe Jamal",
     "playerNumber" : 9,
-    "price" : 5000,
+    "price" : 2000,
     "clubName" : "Swansea"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Morris Jordan",
@@ -1075,7 +1075,7 @@
   } ], [ "com.company.model.Forward", {
     "playerName" : "Whittaker Morgan",
     "playerNumber" : 17,
-    "price" : 3500,
+    "price" : 4000,
     "clubName" : "Swansea"
   } ] ] ]
 } ], [ "com.company.model.Club", {
@@ -1083,23 +1083,23 @@
   "playerList" : [ "java.util.ArrayList", [ [ "com.company.model.Goalkeeper", {
     "playerName" : "Guaita",
     "playerNumber" : 31,
-    "price" : 1500,
+    "price" : 3000,
     "clubName" : "Crystal Palace",
     "withoutGoals" : false
   } ], [ "com.company.model.Defender", {
     "playerName" : "Cahill Gary",
     "playerNumber" : 24,
-    "price" : 3000,
+    "price" : 3500,
     "clubName" : "Crystal Palace"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Clyne Nathaniel",
     "playerNumber" : 17,
-    "price" : 1500,
+    "price" : 3500,
     "clubName" : "Crystal Palace"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Dann Scott",
     "playerNumber" : 6,
-    "price" : 1000,
+    "price" : 2500,
     "clubName" : "Crystal Palace"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Mitchell Tyrick",
@@ -1109,47 +1109,47 @@
   } ], [ "com.company.model.Defender", {
     "playerName" : "Riedewald Jairo",
     "playerNumber" : 44,
-    "price" : 1000,
+    "price" : 2500,
     "clubName" : "Crystal Palace"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Sakho Mamadou",
     "playerNumber" : 12,
-    "price" : 3000,
+    "price" : 3500,
     "clubName" : "Crystal Palace"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Tomkins James",
     "playerNumber" : 5,
-    "price" : 1500,
+    "price" : 2500,
     "clubName" : "Crystal Palace"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Ward Joel",
     "playerNumber" : 2,
-    "price" : 1500,
+    "price" : 500,
     "clubName" : "Crystal Palace"
   } ], [ "com.company.model.Defender", {
     "playerName" : "van Aanholt Patrick",
     "playerNumber" : 3,
-    "price" : 4000,
+    "price" : 5000,
     "clubName" : "Crystal Palace"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Eze Eberechi",
     "playerNumber" : 25,
-    "price" : 2500,
+    "price" : 1000,
     "clubName" : "Crystal Palace"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Kouyate Cheikhou",
     "playerNumber" : 8,
-    "price" : 1000,
+    "price" : 1500,
     "clubName" : "Crystal Palace"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "McArthur James",
     "playerNumber" : 18,
-    "price" : 4500,
+    "price" : 2000,
     "clubName" : "Crystal Palace"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "McCarthy James",
     "playerNumber" : 22,
-    "price" : 2000,
+    "price" : 1500,
     "clubName" : "Crystal Palace"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Milivojevic Luka",
@@ -1169,27 +1169,27 @@
   } ], [ "com.company.model.Forward", {
     "playerName" : "Ayew Jordan",
     "playerNumber" : 9,
-    "price" : 1500,
+    "price" : 2500,
     "clubName" : "Crystal Palace"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Batshuayi Michy",
     "playerNumber" : 23,
-    "price" : 4000,
+    "price" : 1000,
     "clubName" : "Crystal Palace"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Benteke Christian",
     "playerNumber" : 20,
-    "price" : 4000,
+    "price" : 1000,
     "clubName" : "Crystal Palace"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Mateta Jean-Philippe",
     "playerNumber" : 14,
-    "price" : 2500,
+    "price" : 500,
     "clubName" : "Crystal Palace"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Zaha Wilfried",
     "playerNumber" : 11,
-    "price" : 1000,
+    "price" : 3000,
     "clubName" : "Crystal Palace"
   } ] ] ]
 } ], [ "com.company.model.Club", {
@@ -1197,104 +1197,104 @@
   "playerList" : [ "java.util.ArrayList", [ [ "com.company.model.Goalkeeper", {
     "playerName" : "Fabianski Lukasz",
     "playerNumber" : 1,
-    "price" : 1500,
+    "price" : 4500,
     "clubName" : "West Ham",
     "withoutGoals" : false
   } ], [ "com.company.model.Goalkeeper", {
     "playerName" : "Randolph Darren",
     "playerNumber" : 35,
-    "price" : 4000,
+    "price" : 5000,
     "clubName" : "West Ham",
     "withoutGoals" : false
   } ], [ "com.company.model.Defender", {
     "playerName" : "Balbuena Fabian",
     "playerNumber" : 4,
-    "price" : 2000,
+    "price" : 4000,
     "clubName" : "West Ham"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Coufal Vladimir",
     "playerNumber" : 5,
-    "price" : 4500,
+    "price" : 1500,
     "clubName" : "West Ham"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Cresswell Aaron",
     "playerNumber" : 3,
-    "price" : 2000,
+    "price" : 500,
     "clubName" : "West Ham"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Dawson Craig",
     "playerNumber" : 15,
-    "price" : 3000,
+    "price" : 500,
     "clubName" : "West Ham"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Diop Issa",
     "playerNumber" : 23,
-    "price" : 4500,
+    "price" : 3000,
     "clubName" : "West Ham"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Fredericks Ryan",
     "playerNumber" : 24,
-    "price" : 4000,
+    "price" : 3000,
     "clubName" : "West Ham"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Johnson Benjamin",
     "playerNumber" : 31,
-    "price" : 4500,
+    "price" : 4000,
     "clubName" : "West Ham"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Masuaku Arthur",
     "playerNumber" : 26,
-    "price" : 2500,
+    "price" : 4500,
     "clubName" : "West Ham"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Ogbonna Angelo",
     "playerNumber" : 21,
-    "price" : 4500,
+    "price" : 1500,
     "clubName" : "West Ham"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Benrahma Mohamed Said",
     "playerNumber" : 9,
-    "price" : 4500,
+    "price" : 4000,
     "clubName" : "West Ham"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Fornals Pablo",
     "playerNumber" : 18,
-    "price" : 3000,
+    "price" : 3500,
     "clubName" : "West Ham"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Lanzini Manuel",
     "playerNumber" : 10,
-    "price" : 3000,
+    "price" : 3500,
     "clubName" : "West Ham"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Lingard Jesse",
     "playerNumber" : 11,
-    "price" : 2000,
+    "price" : 5000,
     "clubName" : "West Ham"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Noble Mark",
     "playerNumber" : 16,
-    "price" : 3000,
+    "price" : 1500,
     "clubName" : "West Ham"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Rice Declan",
     "playerNumber" : 41,
-    "price" : 4500,
+    "price" : 4000,
     "clubName" : "West Ham"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Soucek Tomas",
     "playerNumber" : 28,
-    "price" : 1000,
+    "price" : 3000,
     "clubName" : "West Ham"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Antonio Michail",
     "playerNumber" : 30,
-    "price" : 5000,
+    "price" : 1500,
     "clubName" : "West Ham"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Bowen Jarrod",
     "playerNumber" : 20,
-    "price" : 5000,
+    "price" : 2500,
     "clubName" : "West Ham"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Yarmolenko Andriy",
@@ -1307,25 +1307,25 @@
   "playerList" : [ "java.util.ArrayList", [ [ "com.company.model.Goalkeeper", {
     "playerName" : "Adrian",
     "playerNumber" : 13,
-    "price" : 1500,
+    "price" : 3000,
     "clubName" : "Liverpool",
     "withoutGoals" : false
   } ], [ "com.company.model.Goalkeeper", {
     "playerName" : "Alisson",
     "playerNumber" : 1,
-    "price" : 2500,
+    "price" : 5000,
     "clubName" : "Liverpool",
     "withoutGoals" : false
   } ], [ "com.company.model.Goalkeeper", {
     "playerName" : "Kelleher Caoimhin",
     "playerNumber" : 62,
-    "price" : 4500,
+    "price" : 3000,
     "clubName" : "Liverpool",
     "withoutGoals" : false
   } ], [ "com.company.model.Defender", {
     "playerName" : "Alexander-Arnold Trent",
     "playerNumber" : 66,
-    "price" : 3500,
+    "price" : 3000,
     "clubName" : "Liverpool"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Kabak Ozan",
@@ -1335,97 +1335,97 @@
   } ], [ "com.company.model.Defender", {
     "playerName" : "Matip Joel",
     "playerNumber" : 32,
-    "price" : 3500,
+    "price" : 4500,
     "clubName" : "Liverpool"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Phillips Nathaniel",
     "playerNumber" : 47,
-    "price" : 5000,
+    "price" : 1500,
     "clubName" : "Liverpool"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Robertson Andrew",
     "playerNumber" : 26,
-    "price" : 4000,
+    "price" : 2500,
     "clubName" : "Liverpool"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Tsimikas Konstantinos",
     "playerNumber" : 21,
-    "price" : 2000,
+    "price" : 3500,
     "clubName" : "Liverpool"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Williams Neco",
     "playerNumber" : 76,
-    "price" : 2500,
+    "price" : 1500,
     "clubName" : "Liverpool"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Williams Rhys",
     "playerNumber" : 46,
-    "price" : 500,
+    "price" : 2500,
     "clubName" : "Liverpool"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Alcantara Thiago",
     "playerNumber" : 6,
-    "price" : 4500,
+    "price" : 1500,
     "clubName" : "Liverpool"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Fabinho",
     "playerNumber" : 3,
-    "price" : 500,
+    "price" : 2500,
     "clubName" : "Liverpool"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Henderson Jordan",
     "playerNumber" : 14,
-    "price" : 1500,
+    "price" : 1000,
     "clubName" : "Liverpool"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Jones Curtis",
     "playerNumber" : 17,
-    "price" : 2000,
+    "price" : 3500,
     "clubName" : "Liverpool"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Keita Naby",
     "playerNumber" : 8,
-    "price" : 4500,
+    "price" : 500,
     "clubName" : "Liverpool"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Milner James",
     "playerNumber" : 7,
-    "price" : 3500,
+    "price" : 2000,
     "clubName" : "Liverpool"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Oxlade-Chamberlain Alex",
     "playerNumber" : 15,
-    "price" : 1500,
+    "price" : 500,
     "clubName" : "Liverpool"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Shaqiri Xherdan",
     "playerNumber" : 23,
-    "price" : 2500,
+    "price" : 4000,
     "clubName" : "Liverpool"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Wijnaldum Georginio",
     "playerNumber" : 5,
-    "price" : 2500,
+    "price" : 500,
     "clubName" : "Liverpool"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Firmino Roberto",
     "playerNumber" : 9,
-    "price" : 4000,
+    "price" : 500,
     "clubName" : "Liverpool"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Jota Diogo",
     "playerNumber" : 20,
-    "price" : 5000,
+    "price" : 500,
     "clubName" : "Liverpool"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Mane Sadio",
     "playerNumber" : 10,
-    "price" : 4500,
+    "price" : 500,
     "clubName" : "Liverpool"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Origi Divock",
     "playerNumber" : 27,
-    "price" : 3500,
+    "price" : 1000,
     "clubName" : "Liverpool"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Salah Mohamed",
@@ -1438,13 +1438,13 @@
   "playerList" : [ "java.util.ArrayList", [ [ "com.company.model.Goalkeeper", {
     "playerName" : "Pereira Joel",
     "playerNumber" : 44,
-    "price" : 1000,
+    "price" : 3000,
     "clubName" : "Huddersfield",
     "withoutGoals" : false
   } ], [ "com.company.model.Goalkeeper", {
     "playerName" : "Schofield Ryan",
     "playerNumber" : 31,
-    "price" : 5000,
+    "price" : 3500,
     "clubName" : "Huddersfield",
     "withoutGoals" : false
   } ], [ "com.company.model.Defender", {
@@ -1455,97 +1455,97 @@
   } ], [ "com.company.model.Defender", {
     "playerName" : "Crichlow-Noble Romoney",
     "playerNumber" : 27,
-    "price" : 2500,
+    "price" : 5000,
     "clubName" : "Huddersfield"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Duhaney Demeaco",
     "playerNumber" : 17,
-    "price" : 3500,
+    "price" : 4000,
     "clubName" : "Huddersfield"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Edmonds-Green Rarmani",
     "playerNumber" : 35,
-    "price" : 3000,
+    "price" : 2000,
     "clubName" : "Huddersfield"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Keogh Richard",
     "playerNumber" : 15,
-    "price" : 2000,
+    "price" : 4000,
     "clubName" : "Huddersfield"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Pipa",
     "playerNumber" : 2,
-    "price" : 500,
+    "price" : 4000,
     "clubName" : "Huddersfield"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Sarr Mouhamadou-Naby",
     "playerNumber" : 23,
-    "price" : 4000,
+    "price" : 3000,
     "clubName" : "Huddersfield"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Schindler Christopher",
     "playerNumber" : 26,
-    "price" : 5000,
+    "price" : 500,
     "clubName" : "Huddersfield"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Stearman Richard",
     "playerNumber" : 12,
-    "price" : 4500,
+    "price" : 500,
     "clubName" : "Huddersfield"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Toffolo Harry",
     "playerNumber" : 3,
-    "price" : 1000,
+    "price" : 1500,
     "clubName" : "Huddersfield"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Daly Matty",
     "playerNumber" : 34,
-    "price" : 1000,
+    "price" : 4000,
     "clubName" : "Huddersfield"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Diarra Brahima",
     "playerNumber" : 40,
-    "price" : 1000,
+    "price" : 1500,
     "clubName" : "Huddersfield"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Eiting Carel",
     "playerNumber" : 14,
-    "price" : 1000,
+    "price" : 2500,
     "clubName" : "Huddersfield"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "High Scott",
     "playerNumber" : 49,
-    "price" : 1000,
+    "price" : 1500,
     "clubName" : "Huddersfield"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Hogg Jonathan",
     "playerNumber" : 6,
-    "price" : 2000,
+    "price" : 3000,
     "clubName" : "Huddersfield"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Holmes Duane",
     "playerNumber" : 9,
-    "price" : 5000,
+    "price" : 3000,
     "clubName" : "Huddersfield"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "O'Brien Lewis",
     "playerNumber" : 8,
-    "price" : 5000,
+    "price" : 2500,
     "clubName" : "Huddersfield"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Pritchard Alex",
     "playerNumber" : 10,
-    "price" : 4000,
+    "price" : 3000,
     "clubName" : "Huddersfield"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Rowe Aaron",
     "playerNumber" : 29,
-    "price" : 500,
+    "price" : 4000,
     "clubName" : "Huddersfield"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Vallejo Alex",
     "playerNumber" : 5,
-    "price" : 2500,
+    "price" : 3000,
     "clubName" : "Huddersfield"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Aarons Rolando",
@@ -1555,47 +1555,47 @@
   } ], [ "com.company.model.Forward", {
     "playerName" : "Bacuna Juninho",
     "playerNumber" : 7,
-    "price" : 2500,
+    "price" : 3500,
     "clubName" : "Huddersfield"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Campbell Fraizer",
     "playerNumber" : 22,
-    "price" : 3500,
+    "price" : 2000,
     "clubName" : "Huddersfield"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Jones Patrick",
     "playerNumber" : 41,
-    "price" : 1000,
+    "price" : 5000,
     "clubName" : "Huddersfield"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Koroma Josh",
     "playerNumber" : 19,
-    "price" : 500,
+    "price" : 5000,
     "clubName" : "Huddersfield"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Mbenza Isaac",
     "playerNumber" : 18,
-    "price" : 500,
+    "price" : 1000,
     "clubName" : "Huddersfield"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Phillips Kieran",
     "playerNumber" : 36,
-    "price" : 1500,
+    "price" : 3500,
     "clubName" : "Huddersfield"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Sanogo Yaya",
     "playerNumber" : 55,
-    "price" : 2500,
+    "price" : 4500,
     "clubName" : "Huddersfield"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Thomas Sorba",
     "playerNumber" : 20,
-    "price" : 3000,
+    "price" : 1500,
     "clubName" : "Huddersfield"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Ward Danny",
     "playerNumber" : 25,
-    "price" : 2000,
+    "price" : 1000,
     "clubName" : "Huddersfield"
   } ] ] ]
 } ], [ "com.company.model.Club", {
@@ -1603,139 +1603,139 @@
   "playerList" : [ "java.util.ArrayList", [ [ "com.company.model.Goalkeeper", {
     "playerName" : "Bachmann Daniel",
     "playerNumber" : 26,
-    "price" : 4000,
+    "price" : 5000,
     "clubName" : "Watford",
     "withoutGoals" : false
   } ], [ "com.company.model.Goalkeeper", {
     "playerName" : "Foster Ben",
     "playerNumber" : 1,
-    "price" : 2500,
+    "price" : 1500,
     "clubName" : "Watford",
     "withoutGoals" : false
   } ], [ "com.company.model.Defender", {
     "playerName" : "Cathcart Craig",
     "playerNumber" : 15,
-    "price" : 500,
+    "price" : 2000,
     "clubName" : "Watford"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Hungbo Joseph",
     "playerNumber" : 44,
-    "price" : 1000,
+    "price" : 4500,
     "clubName" : "Watford"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Kabasele Christian",
     "playerNumber" : 27,
-    "price" : 5000,
+    "price" : 4500,
     "clubName" : "Watford"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Kiko",
     "playerNumber" : 21,
-    "price" : 2000,
+    "price" : 2500,
     "clubName" : "Watford"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Lazaar Achraf",
     "playerNumber" : 17,
-    "price" : 1000,
+    "price" : 2000,
     "clubName" : "Watford"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Masina Adam",
     "playerNumber" : 11,
-    "price" : 2000,
+    "price" : 1500,
     "clubName" : "Watford"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Navarro Marc",
     "playerNumber" : 32,
-    "price" : 4000,
+    "price" : 5000,
     "clubName" : "Watford"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Ngakia Jeremy",
     "playerNumber" : 3,
-    "price" : 2500,
+    "price" : 500,
     "clubName" : "Watford"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Sierralta Francisco",
     "playerNumber" : 31,
-    "price" : 3500,
+    "price" : 2000,
     "clubName" : "Watford"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Troost-Ekong William",
     "playerNumber" : 5,
-    "price" : 5000,
+    "price" : 4000,
     "clubName" : "Watford"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Wilmot Ben",
     "playerNumber" : 6,
-    "price" : 1000,
+    "price" : 3000,
     "clubName" : "Watford"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Chalobah Nathaniel",
     "playerNumber" : 14,
-    "price" : 1000,
+    "price" : 5000,
     "clubName" : "Watford"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Cleverley Tom",
     "playerNumber" : 8,
-    "price" : 3500,
+    "price" : 1000,
     "clubName" : "Watford"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Gosling Dan",
     "playerNumber" : 16,
-    "price" : 4000,
+    "price" : 4500,
     "clubName" : "Watford"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Hughes Will",
     "playerNumber" : 19,
-    "price" : 2000,
+    "price" : 3500,
     "clubName" : "Watford"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Philips Daniel",
     "playerNumber" : 52,
-    "price" : 4000,
+    "price" : 4500,
     "clubName" : "Watford"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Sanchez Carlos",
     "playerNumber" : 28,
-    "price" : 3500,
+    "price" : 500,
     "clubName" : "Watford"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Sema Ken",
     "playerNumber" : 12,
-    "price" : 2500,
+    "price" : 4000,
     "clubName" : "Watford"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Zinckernagel Philip",
     "playerNumber" : 7,
-    "price" : 3000,
+    "price" : 4500,
     "clubName" : "Watford"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Deeney Troy",
     "playerNumber" : 9,
-    "price" : 1500,
+    "price" : 1000,
     "clubName" : "Watford"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Gray Andre",
     "playerNumber" : 18,
-    "price" : 2000,
+    "price" : 4000,
     "clubName" : "Watford"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Pedro Joao",
     "playerNumber" : 10,
-    "price" : 2500,
+    "price" : 3500,
     "clubName" : "Watford"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Perica Stipe",
     "playerNumber" : 25,
-    "price" : 3000,
+    "price" : 1000,
     "clubName" : "Watford"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Sarr Ismaila",
     "playerNumber" : 23,
-    "price" : 3000,
+    "price" : 500,
     "clubName" : "Watford"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Success Isaac",
     "playerNumber" : 22,
-    "price" : 3000,
+    "price" : 4500,
     "clubName" : "Watford"
   } ] ] ]
 } ], [ "com.company.model.Club", {
@@ -1743,24 +1743,24 @@
   "playerList" : [ "java.util.ArrayList", [ [ "com.company.model.Goalkeeper", {
     "playerName" : "Davies Adam",
     "playerNumber" : 16,
-    "price" : 4500,
+    "price" : 500,
     "clubName" : "Stoke City",
     "withoutGoals" : false
   } ], [ "com.company.model.Goalkeeper", {
     "playerName" : "Gunn Angus",
     "playerNumber" : 1,
-    "price" : 1500,
+    "price" : 4500,
     "clubName" : "Stoke City",
     "withoutGoals" : false
   } ], [ "com.company.model.Defender", {
     "playerName" : "Batth Danny",
     "playerNumber" : 6,
-    "price" : 3500,
+    "price" : 1500,
     "clubName" : "Stoke City"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Chester James",
     "playerNumber" : 12,
-    "price" : 500,
+    "price" : 1000,
     "clubName" : "Stoke City"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Collins Nathan Michael",
@@ -1770,47 +1770,47 @@
   } ], [ "com.company.model.Defender", {
     "playerName" : "Cousins Jordan",
     "playerNumber" : 24,
-    "price" : 3000,
+    "price" : 500,
     "clubName" : "Stoke City"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Fox Morgan",
     "playerNumber" : 3,
-    "price" : 1000,
+    "price" : 5000,
     "clubName" : "Stoke City"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Norrington-Davies Rhys",
     "playerNumber" : 46,
-    "price" : 2500,
+    "price" : 5000,
     "clubName" : "Stoke City"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Smith Tom",
     "playerNumber" : 14,
-    "price" : 2000,
+    "price" : 4000,
     "clubName" : "Stoke City"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Souttar Harry",
     "playerNumber" : 36,
-    "price" : 5000,
+    "price" : 4000,
     "clubName" : "Stoke City"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Taylor Conner",
     "playerNumber" : 50,
-    "price" : 3000,
+    "price" : 5000,
     "clubName" : "Stoke City"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Tymon Josh",
     "playerNumber" : 35,
-    "price" : 4500,
+    "price" : 500,
     "clubName" : "Stoke City"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Allen Joe",
     "playerNumber" : 4,
-    "price" : 1000,
+    "price" : 2500,
     "clubName" : "Stoke City"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Clucas Sam",
     "playerNumber" : 22,
-    "price" : 1000,
+    "price" : 1500,
     "clubName" : "Stoke City"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "McClean James",
@@ -1820,17 +1820,17 @@
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Mikel John Obi",
     "playerNumber" : 13,
-    "price" : 3500,
+    "price" : 3000,
     "clubName" : "Stoke City"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Oakley-Boothe Tashan",
     "playerNumber" : 20,
-    "price" : 4500,
+    "price" : 2500,
     "clubName" : "Stoke City"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Thompson Jordan",
     "playerNumber" : 34,
-    "price" : 4500,
+    "price" : 5000,
     "clubName" : "Stoke City"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Brown Jacob",
@@ -1840,7 +1840,7 @@
   } ], [ "com.company.model.Forward", {
     "playerName" : "Campbell Tyrese",
     "playerNumber" : 26,
-    "price" : 4000,
+    "price" : 2000,
     "clubName" : "Stoke City"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Clarke Jack",
@@ -1850,7 +1850,7 @@
   } ], [ "com.company.model.Forward", {
     "playerName" : "Fletcher Steven",
     "playerNumber" : 21,
-    "price" : 3500,
+    "price" : 5000,
     "clubName" : "Stoke City"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Matondo Rabbi",
@@ -1860,17 +1860,17 @@
   } ], [ "com.company.model.Forward", {
     "playerName" : "Norton Christian",
     "playerNumber" : 44,
-    "price" : 2500,
+    "price" : 4500,
     "clubName" : "Stoke City"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Powell Nick",
     "playerNumber" : 25,
-    "price" : 2500,
+    "price" : 500,
     "clubName" : "Stoke City"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Vokes Sam",
     "playerNumber" : 9,
-    "price" : 1000,
+    "price" : 3500,
     "clubName" : "Stoke City"
   } ] ] ]
 } ], [ "com.company.model.Club", {
@@ -1878,104 +1878,104 @@
   "playerList" : [ "java.util.ArrayList", [ [ "com.company.model.Goalkeeper", {
     "playerName" : "Button David",
     "playerNumber" : 25,
-    "price" : 2000,
+    "price" : 500,
     "clubName" : "West Brom",
     "withoutGoals" : false
   } ], [ "com.company.model.Goalkeeper", {
     "playerName" : "Johnstone Sam",
     "playerNumber" : 1,
-    "price" : 2500,
+    "price" : 3000,
     "clubName" : "West Brom",
     "withoutGoals" : false
   } ], [ "com.company.model.Defender", {
     "playerName" : "Ajayi Semi",
     "playerNumber" : 6,
-    "price" : 2000,
+    "price" : 2500,
     "clubName" : "West Brom"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Bartley Kyle",
     "playerNumber" : 5,
-    "price" : 1000,
+    "price" : 3000,
     "clubName" : "West Brom"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Furlong Darnell",
     "playerNumber" : 2,
-    "price" : 5000,
+    "price" : 1000,
     "clubName" : "West Brom"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Gibbs Kieran",
     "playerNumber" : 3,
-    "price" : 3500,
+    "price" : 3000,
     "clubName" : "West Brom"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Ivanovic Branislav",
     "playerNumber" : 20,
-    "price" : 500,
+    "price" : 3500,
     "clubName" : "West Brom"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Maitland-Niles Ainsley",
     "playerNumber" : 30,
-    "price" : 3000,
+    "price" : 2000,
     "clubName" : "West Brom"
   } ], [ "com.company.model.Defender", {
     "playerName" : "O'Shea Dara",
     "playerNumber" : 27,
-    "price" : 5000,
+    "price" : 4500,
     "clubName" : "West Brom"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Peltier Lee",
     "playerNumber" : 22,
-    "price" : 1000,
+    "price" : 4000,
     "clubName" : "West Brom"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Townsend Conor",
     "playerNumber" : 14,
-    "price" : 3000,
+    "price" : 2500,
     "clubName" : "West Brom"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Diangana Grady",
     "playerNumber" : 11,
-    "price" : 4500,
+    "price" : 500,
     "clubName" : "West Brom"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Edwards Kyle",
     "playerNumber" : 11,
-    "price" : 4500,
+    "price" : 4000,
     "clubName" : "West Brom"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Gallagher Conor",
     "playerNumber" : 18,
-    "price" : 1500,
+    "price" : 3000,
     "clubName" : "West Brom"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Grosicki Kamil",
     "playerNumber" : 11,
-    "price" : 2500,
+    "price" : 2000,
     "clubName" : "West Brom"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Livermore Jake",
     "playerNumber" : 8,
-    "price" : 500,
+    "price" : 4500,
     "clubName" : "West Brom"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Pereira Matheus",
     "playerNumber" : 12,
-    "price" : 500,
+    "price" : 2000,
     "clubName" : "West Brom"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Phillips Matt",
     "playerNumber" : 10,
-    "price" : 4500,
+    "price" : 5000,
     "clubName" : "West Brom"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Sawyers Romaine",
     "playerNumber" : 19,
-    "price" : 2500,
+    "price" : 4000,
     "clubName" : "West Brom"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Snodgrass Robert",
     "playerNumber" : 23,
-    "price" : 2000,
+    "price" : 3000,
     "clubName" : "West Brom"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Yokuslu Okay",
@@ -1985,22 +1985,22 @@
   } ], [ "com.company.model.Forward", {
     "playerName" : "Diagne Mbaye",
     "playerNumber" : 17,
-    "price" : 5000,
+    "price" : 4000,
     "clubName" : "West Brom"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Grant Karlan",
     "playerNumber" : 29,
-    "price" : 500,
+    "price" : 3000,
     "clubName" : "West Brom"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Robinson Callum",
     "playerNumber" : 7,
-    "price" : 3000,
+    "price" : 1000,
     "clubName" : "West Brom"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Robson-Kanu Hal",
     "playerNumber" : 4,
-    "price" : 3500,
+    "price" : 1000,
     "clubName" : "West Brom"
   } ] ] ]
 } ], [ "com.company.model.Club", {
@@ -2008,7 +2008,7 @@
   "playerList" : [ "java.util.ArrayList", [ [ "com.company.model.Goalkeeper", {
     "playerName" : "Ederson",
     "playerNumber" : 31,
-    "price" : 2500,
+    "price" : 500,
     "clubName" : "Manchester City",
     "withoutGoals" : false
   } ], [ "com.company.model.Goalkeeper", {
@@ -2020,12 +2020,12 @@
   } ], [ "com.company.model.Defender", {
     "playerName" : "Ake Nathan",
     "playerNumber" : 6,
-    "price" : 500,
+    "price" : 3500,
     "clubName" : "Manchester City"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Cancelo Joao",
     "playerNumber" : 27,
-    "price" : 2000,
+    "price" : 4500,
     "clubName" : "Manchester City"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Dias Ruben",
@@ -2035,92 +2035,92 @@
   } ], [ "com.company.model.Defender", {
     "playerName" : "Garcia Eric",
     "playerNumber" : 50,
-    "price" : 1500,
+    "price" : 2000,
     "clubName" : "Manchester City"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Laporte Aymeric",
     "playerNumber" : 14,
-    "price" : 1500,
+    "price" : 500,
     "clubName" : "Manchester City"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Mendy Benjamin",
     "playerNumber" : 22,
-    "price" : 2000,
+    "price" : 4000,
     "clubName" : "Manchester City"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Stones John",
     "playerNumber" : 5,
-    "price" : 4000,
+    "price" : 2500,
     "clubName" : "Manchester City"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Walker Kyle",
     "playerNumber" : 2,
-    "price" : 4500,
+    "price" : 2000,
     "clubName" : "Manchester City"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Zinchenko Oleksandr",
     "playerNumber" : 11,
-    "price" : 5000,
+    "price" : 500,
     "clubName" : "Manchester City"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "De Bruyne Kevin",
     "playerNumber" : 17,
-    "price" : 500,
+    "price" : 5000,
     "clubName" : "Manchester City"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Fernandinho",
     "playerNumber" : 25,
-    "price" : 5000,
+    "price" : 2000,
     "clubName" : "Manchester City"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Foden Phil",
     "playerNumber" : 47,
-    "price" : 5000,
+    "price" : 4000,
     "clubName" : "Manchester City"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Gundogan Ilkay",
     "playerNumber" : 8,
-    "price" : 1000,
+    "price" : 5000,
     "clubName" : "Manchester City"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Rodri",
     "playerNumber" : 16,
-    "price" : 4000,
+    "price" : 500,
     "clubName" : "Manchester City"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Silva Bernardo",
     "playerNumber" : 20,
-    "price" : 2500,
+    "price" : 5000,
     "clubName" : "Manchester City"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Aguero Sergio",
     "playerNumber" : 10,
-    "price" : 1000,
+    "price" : 4000,
     "clubName" : "Manchester City"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Delap Liam",
     "playerNumber" : 9,
-    "price" : 4500,
+    "price" : 2000,
     "clubName" : "Manchester City"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Gabriel Jesus",
     "playerNumber" : 9,
-    "price" : 4500,
+    "price" : 500,
     "clubName" : "Manchester City"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Mahrez Riyad",
     "playerNumber" : 26,
-    "price" : 2500,
+    "price" : 4000,
     "clubName" : "Manchester City"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Sterling Raheem",
     "playerNumber" : 7,
-    "price" : 500,
+    "price" : 2500,
     "clubName" : "Manchester City"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Torres Ferran",
     "playerNumber" : 21,
-    "price" : 1000,
+    "price" : 2000,
     "clubName" : "Manchester City"
   } ] ] ]
 } ], [ "com.company.model.Club", {
@@ -2128,13 +2128,13 @@
   "playerList" : [ "java.util.ArrayList", [ [ "com.company.model.Goalkeeper", {
     "playerName" : "Henderson Dean",
     "playerNumber" : 26,
-    "price" : 3500,
+    "price" : 500,
     "clubName" : "Manchester United",
     "withoutGoals" : false
   } ], [ "com.company.model.Goalkeeper", {
     "playerName" : "de Gea David",
     "playerNumber" : 1,
-    "price" : 4500,
+    "price" : 3000,
     "clubName" : "Manchester United",
     "withoutGoals" : false
   } ], [ "com.company.model.Defender", {
@@ -2145,17 +2145,17 @@
   } ], [ "com.company.model.Defender", {
     "playerName" : "Lindelof Victor",
     "playerNumber" : 2,
-    "price" : 5000,
+    "price" : 2500,
     "clubName" : "Manchester United"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Maguire Harry",
     "playerNumber" : 5,
-    "price" : 3500,
+    "price" : 5000,
     "clubName" : "Manchester United"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Shaw Luke",
     "playerNumber" : 23,
-    "price" : 500,
+    "price" : 2000,
     "clubName" : "Manchester United"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Telles Alex Nicolao",
@@ -2165,47 +2165,47 @@
   } ], [ "com.company.model.Defender", {
     "playerName" : "Tuanzebe Axel",
     "playerNumber" : 38,
-    "price" : 1000,
+    "price" : 2500,
     "clubName" : "Manchester United"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Wan-Bissaka Aaron",
     "playerNumber" : 29,
-    "price" : 1500,
+    "price" : 2000,
     "clubName" : "Manchester United"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Williams Brandon",
     "playerNumber" : 33,
-    "price" : 4000,
+    "price" : 3000,
     "clubName" : "Manchester United"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Fernandes Bruno",
     "playerNumber" : 18,
-    "price" : 500,
+    "price" : 1000,
     "clubName" : "Manchester United"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Fred",
     "playerNumber" : 17,
-    "price" : 2500,
+    "price" : 500,
     "clubName" : "Manchester United"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "James Daniel",
     "playerNumber" : 21,
-    "price" : 2500,
+    "price" : 5000,
     "clubName" : "Manchester United"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Mata Juan Manuel",
     "playerNumber" : 8,
-    "price" : 3000,
+    "price" : 2000,
     "clubName" : "Manchester United"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Matic Nemanja",
     "playerNumber" : 31,
-    "price" : 1500,
+    "price" : 4500,
     "clubName" : "Manchester United"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "McTominay Scott",
     "playerNumber" : 39,
-    "price" : 4000,
+    "price" : 500,
     "clubName" : "Manchester United"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Pogba Paul",
@@ -2220,27 +2220,27 @@
   } ], [ "com.company.model.Forward", {
     "playerName" : "Cavani Edinson",
     "playerNumber" : 7,
-    "price" : 4500,
+    "price" : 1500,
     "clubName" : "Manchester United"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Greenwood Mason",
     "playerNumber" : 11,
-    "price" : 3000,
+    "price" : 5000,
     "clubName" : "Manchester United"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Martial Anthony",
     "playerNumber" : 9,
-    "price" : 500,
+    "price" : 3500,
     "clubName" : "Manchester United"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Rashford Marcus",
     "playerNumber" : 10,
-    "price" : 2500,
+    "price" : 4000,
     "clubName" : "Manchester United"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Shoretire Shola",
     "playerNumber" : 7,
-    "price" : 4000,
+    "price" : 1000,
     "clubName" : "Manchester United"
   } ] ] ]
 } ], [ "com.company.model.Club", {
@@ -2248,18 +2248,18 @@
   "playerList" : [ "java.util.ArrayList", [ [ "com.company.model.Goalkeeper", {
     "playerName" : "Lloris Hugo",
     "playerNumber" : 1,
-    "price" : 1000,
+    "price" : 1500,
     "clubName" : "Tottenham",
     "withoutGoals" : false
   } ], [ "com.company.model.Defender", {
     "playerName" : "Alderweireld Toby",
     "playerNumber" : 4,
-    "price" : 1000,
+    "price" : 3500,
     "clubName" : "Tottenham"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Aurier Serge",
     "playerNumber" : 24,
-    "price" : 2000,
+    "price" : 4000,
     "clubName" : "Tottenham"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Davies Ben",
@@ -2269,32 +2269,32 @@
   } ], [ "com.company.model.Defender", {
     "playerName" : "Doherty Matt",
     "playerNumber" : 2,
-    "price" : 4500,
+    "price" : 500,
     "clubName" : "Tottenham"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Reguilon Sergio",
     "playerNumber" : 3,
-    "price" : 3500,
+    "price" : 3000,
     "clubName" : "Tottenham"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Rodon Joe",
     "playerNumber" : 14,
-    "price" : 4500,
+    "price" : 3000,
     "clubName" : "Tottenham"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Sanchez Davinson",
     "playerNumber" : 6,
-    "price" : 1000,
+    "price" : 2500,
     "clubName" : "Tottenham"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Tanganga Japhet",
     "playerNumber" : 25,
-    "price" : 1500,
+    "price" : 4000,
     "clubName" : "Tottenham"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Alli Dele",
     "playerNumber" : 20,
-    "price" : 3000,
+    "price" : 5000,
     "clubName" : "Tottenham"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Bergwijn Steven",
@@ -2304,22 +2304,22 @@
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Dier Eric",
     "playerNumber" : 15,
-    "price" : 4500,
+    "price" : 3000,
     "clubName" : "Tottenham"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Hojbjerg Pierre-Emile",
     "playerNumber" : 5,
-    "price" : 1000,
+    "price" : 5000,
     "clubName" : "Tottenham"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Lamela Erik",
     "playerNumber" : 11,
-    "price" : 1500,
+    "price" : 500,
     "clubName" : "Tottenham"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Lo Celso Giovani",
     "playerNumber" : 18,
-    "price" : 2000,
+    "price" : 4000,
     "clubName" : "Tottenham"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Lucas",
@@ -2329,22 +2329,22 @@
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Ndombele Tanguy",
     "playerNumber" : 28,
-    "price" : 1500,
+    "price" : 3500,
     "clubName" : "Tottenham"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Sissoko Moussa",
     "playerNumber" : 17,
-    "price" : 4500,
+    "price" : 1000,
     "clubName" : "Tottenham"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Winks Harry",
     "playerNumber" : 8,
-    "price" : 5000,
+    "price" : 4000,
     "clubName" : "Tottenham"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Bale Gareth",
     "playerNumber" : 9,
-    "price" : 1000,
+    "price" : 3000,
     "clubName" : "Tottenham"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Carlos Vinicius",
@@ -2354,17 +2354,17 @@
   } ], [ "com.company.model.Forward", {
     "playerName" : "Kane Harry",
     "playerNumber" : 10,
-    "price" : 5000,
+    "price" : 2500,
     "clubName" : "Tottenham"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Scarlett Dane",
     "playerNumber" : 53,
-    "price" : 4000,
+    "price" : 4500,
     "clubName" : "Tottenham"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Son Heung-Min",
     "playerNumber" : 7,
-    "price" : 2500,
+    "price" : 3500,
     "clubName" : "Tottenham"
   } ] ] ]
 } ], [ "com.company.model.Club", {
@@ -2372,90 +2372,90 @@
   "playerList" : [ "java.util.ArrayList", [ [ "com.company.model.Goalkeeper", {
     "playerName" : "Norris Will",
     "playerNumber" : 25,
-    "price" : 500,
+    "price" : 4000,
     "clubName" : "Burnley",
     "withoutGoals" : false
   } ], [ "com.company.model.Goalkeeper", {
     "playerName" : "Peacock-Farrell Bailey",
     "playerNumber" : 15,
-    "price" : 2500,
+    "price" : 3500,
     "clubName" : "Burnley",
     "withoutGoals" : false
   } ], [ "com.company.model.Goalkeeper", {
     "playerName" : "Pope Nick",
     "playerNumber" : 1,
-    "price" : 1000,
+    "price" : 4500,
     "clubName" : "Burnley",
     "withoutGoals" : false
   } ], [ "com.company.model.Defender", {
     "playerName" : "Bardsley Phillip",
     "playerNumber" : 26,
-    "price" : 2000,
+    "price" : 3500,
     "clubName" : "Burnley"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Long Kevin",
     "playerNumber" : 28,
-    "price" : 3000,
+    "price" : 3500,
     "clubName" : "Burnley"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Lowton Matthew",
     "playerNumber" : 2,
-    "price" : 3000,
+    "price" : 1500,
     "clubName" : "Burnley"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Mee Ben",
     "playerNumber" : 6,
-    "price" : 3500,
+    "price" : 1000,
     "clubName" : "Burnley"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Pieters Erik",
     "playerNumber" : 23,
-    "price" : 2000,
+    "price" : 1500,
     "clubName" : "Burnley"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Tarkowski James",
     "playerNumber" : 5,
-    "price" : 3000,
+    "price" : 2000,
     "clubName" : "Burnley"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Taylor Charlie",
     "playerNumber" : 3,
-    "price" : 5000,
+    "price" : 4500,
     "clubName" : "Burnley"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Benson Josh",
     "playerNumber" : 4,
-    "price" : 500,
+    "price" : 4500,
     "clubName" : "Burnley"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Brady Robbie",
     "playerNumber" : 12,
-    "price" : 3000,
+    "price" : 1000,
     "clubName" : "Burnley"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Brownhill Josh",
     "playerNumber" : 8,
-    "price" : 1500,
+    "price" : 1000,
     "clubName" : "Burnley"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Cork Jack",
     "playerNumber" : 4,
-    "price" : 2500,
+    "price" : 4000,
     "clubName" : "Burnley"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Dunne Jimmy",
     "playerNumber" : 34,
-    "price" : 1000,
+    "price" : 4000,
     "clubName" : "Burnley"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Gudmundsson Johann",
     "playerNumber" : 7,
-    "price" : 1000,
+    "price" : 2500,
     "clubName" : "Burnley"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "McNeil Dwight",
     "playerNumber" : 11,
-    "price" : 2000,
+    "price" : 4000,
     "clubName" : "Burnley"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Stephens Dale",
@@ -2465,37 +2465,37 @@
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Westwood Ashley",
     "playerNumber" : 18,
-    "price" : 2500,
+    "price" : 1000,
     "clubName" : "Burnley"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Barnes Ashley",
     "playerNumber" : 10,
-    "price" : 4000,
+    "price" : 4500,
     "clubName" : "Burnley"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Mumbongo Joel",
     "playerNumber" : 10,
-    "price" : 500,
+    "price" : 2000,
     "clubName" : "Burnley"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Richardson Lewis",
     "playerNumber" : 38,
-    "price" : 4000,
+    "price" : 2500,
     "clubName" : "Burnley"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Rodriguez Jay",
     "playerNumber" : 19,
-    "price" : 5000,
+    "price" : 500,
     "clubName" : "Burnley"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Vydra Matej",
     "playerNumber" : 27,
-    "price" : 2000,
+    "price" : 2500,
     "clubName" : "Burnley"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Wood Chris",
     "playerNumber" : 9,
-    "price" : 3000,
+    "price" : 500,
     "clubName" : "Burnley"
   } ] ] ]
 } ], [ "com.company.model.Club", {
@@ -2503,29 +2503,29 @@
   "playerList" : [ "java.util.ArrayList", [ [ "com.company.model.Goalkeeper", {
     "playerName" : "Darlow Karl",
     "playerNumber" : 26,
-    "price" : 5000,
+    "price" : 500,
     "clubName" : "Newcastle",
     "withoutGoals" : false
   } ], [ "com.company.model.Goalkeeper", {
     "playerName" : "Dubravka Martin",
     "playerNumber" : 1,
-    "price" : 3000,
+    "price" : 500,
     "clubName" : "Newcastle",
     "withoutGoals" : false
   } ], [ "com.company.model.Defender", {
     "playerName" : "Clark Ciaran",
     "playerNumber" : 2,
-    "price" : 500,
+    "price" : 2500,
     "clubName" : "Newcastle"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Dummett Paul",
     "playerNumber" : 3,
-    "price" : 3000,
+    "price" : 2000,
     "clubName" : "Newcastle"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Fernandez Federico",
     "playerNumber" : 18,
-    "price" : 1000,
+    "price" : 2000,
     "clubName" : "Newcastle"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Hayden Isaac",
@@ -2535,67 +2535,67 @@
   } ], [ "com.company.model.Defender", {
     "playerName" : "Krafth Emil",
     "playerNumber" : 17,
-    "price" : 2500,
+    "price" : 500,
     "clubName" : "Newcastle"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Lascelles Jamaal",
     "playerNumber" : 6,
-    "price" : 3500,
+    "price" : 2000,
     "clubName" : "Newcastle"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Manquillo Javier",
     "playerNumber" : 19,
-    "price" : 5000,
+    "price" : 2500,
     "clubName" : "Newcastle"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Schar Fabian",
     "playerNumber" : 5,
-    "price" : 3000,
+    "price" : 1500,
     "clubName" : "Newcastle"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Almiron Miguel",
     "playerNumber" : 24,
-    "price" : 5000,
+    "price" : 500,
     "clubName" : "Newcastle"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Anderson Elliott",
     "playerNumber" : 57,
-    "price" : 500,
+    "price" : 2500,
     "clubName" : "Newcastle"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Fraser Ryan",
     "playerNumber" : 21,
-    "price" : 500,
+    "price" : 3500,
     "clubName" : "Newcastle"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Hendrick Jeff",
     "playerNumber" : 16,
-    "price" : 3500,
+    "price" : 4000,
     "clubName" : "Newcastle"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Lewis Jamal",
     "playerNumber" : 15,
-    "price" : 2500,
+    "price" : 5000,
     "clubName" : "Newcastle"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Longstaff Matthew",
     "playerNumber" : 4,
-    "price" : 500,
+    "price" : 5000,
     "clubName" : "Newcastle"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Longstaff Sean",
     "playerNumber" : 36,
-    "price" : 1000,
+    "price" : 4500,
     "clubName" : "Newcastle"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Ritchie Matt",
     "playerNumber" : 11,
-    "price" : 3000,
+    "price" : 3500,
     "clubName" : "Newcastle"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Saint-Maximin Allan",
     "playerNumber" : 10,
-    "price" : 3500,
+    "price" : 5000,
     "clubName" : "Newcastle"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Shelvey Jonjo",
@@ -2605,7 +2605,7 @@
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Willock Joseph",
     "playerNumber" : 28,
-    "price" : 2500,
+    "price" : 500,
     "clubName" : "Newcastle"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Carroll Andy",
@@ -2615,22 +2615,22 @@
   } ], [ "com.company.model.Forward", {
     "playerName" : "Gayle Dwight",
     "playerNumber" : 12,
-    "price" : 2000,
+    "price" : 4500,
     "clubName" : "Newcastle"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Joelinton",
     "playerNumber" : 9,
-    "price" : 4000,
+    "price" : 2000,
     "clubName" : "Newcastle"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Murphy Jacob",
     "playerNumber" : 23,
-    "price" : 500,
+    "price" : 2500,
     "clubName" : "Newcastle"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Wilson Callum",
     "playerNumber" : 13,
-    "price" : 1500,
+    "price" : 1000,
     "clubName" : "Newcastle"
   } ] ] ]
 } ], [ "com.company.model.Club", {
@@ -2638,63 +2638,63 @@
   "playerList" : [ "java.util.ArrayList", [ [ "com.company.model.Goalkeeper", {
     "playerName" : "Etheridge Neil",
     "playerNumber" : 30,
-    "price" : 1500,
+    "price" : 500,
     "clubName" : "Birmingham",
     "withoutGoals" : false
   } ], [ "com.company.model.Defender", {
     "playerName" : "Cogley Josh",
     "playerNumber" : 25,
-    "price" : 5000,
+    "price" : 2000,
     "clubName" : "Birmingham"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Colin Maxime",
     "playerNumber" : 2,
-    "price" : 3000,
+    "price" : 1000,
     "clubName" : "Birmingham"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Dean Harlee",
     "playerNumber" : 12,
-    "price" : 2000,
+    "price" : 3500,
     "clubName" : "Birmingham"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Friend George",
     "playerNumber" : 5,
-    "price" : 5000,
+    "price" : 1000,
     "clubName" : "Birmingham"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Pedersen Kristian",
     "playerNumber" : 3,
-    "price" : 2500,
+    "price" : 3000,
     "clubName" : "Birmingham"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Roberts Marc",
     "playerNumber" : 4,
-    "price" : 1500,
+    "price" : 1000,
     "clubName" : "Birmingham"
   } ], [ "com.company.model.Defender", {
     "playerName" : "San Jose Mikel",
     "playerNumber" : 19,
-    "price" : 2000,
+    "price" : 5000,
     "clubName" : "Birmingham"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Seddon Steve",
     "playerNumber" : 42,
-    "price" : 3500,
+    "price" : 4500,
     "clubName" : "Birmingham"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Valery Yan",
     "playerNumber" : 6,
-    "price" : 5000,
+    "price" : 1500,
     "clubName" : "Birmingham"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Bela Jeremie",
     "playerNumber" : 11,
-    "price" : 4000,
+    "price" : 1000,
     "clubName" : "Birmingham"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Clarke-Salter Jake",
     "playerNumber" : 15,
-    "price" : 3500,
+    "price" : 4000,
     "clubName" : "Birmingham"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Clayton Adam",
@@ -2704,57 +2704,57 @@
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Gardner Gary",
     "playerNumber" : 20,
-    "price" : 4500,
+    "price" : 1000,
     "clubName" : "Birmingham"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Halilovic Alen",
     "playerNumber" : 35,
-    "price" : 4000,
+    "price" : 4500,
     "clubName" : "Birmingham"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Harper Rekeem",
     "playerNumber" : 24,
-    "price" : 3000,
+    "price" : 500,
     "clubName" : "Birmingham"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "McGree Riley",
     "playerNumber" : 18,
-    "price" : 4500,
+    "price" : 1500,
     "clubName" : "Birmingham"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Miller Amari",
     "playerNumber" : 41,
-    "price" : 1500,
+    "price" : 3000,
     "clubName" : "Birmingham"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Sanchez Ivan",
     "playerNumber" : 17,
-    "price" : 3500,
+    "price" : 2000,
     "clubName" : "Birmingham"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Sunjic Ivan",
     "playerNumber" : 34,
-    "price" : 5000,
+    "price" : 500,
     "clubName" : "Birmingham"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Toral Jon",
     "playerNumber" : 23,
-    "price" : 1000,
+    "price" : 2000,
     "clubName" : "Birmingham"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Boyd-Munce Caolan",
     "playerNumber" : 44,
-    "price" : 5000,
+    "price" : 3500,
     "clubName" : "Birmingham"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Cosgrove Sam",
     "playerNumber" : 16,
-    "price" : 500,
+    "price" : 2000,
     "clubName" : "Birmingham"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Hogan Scott",
     "playerNumber" : 9,
-    "price" : 4500,
+    "price" : 500,
     "clubName" : "Birmingham"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Jutkiewicz Lukas",
@@ -2764,7 +2764,7 @@
   } ], [ "com.company.model.Forward", {
     "playerName" : "Leko Jonathan",
     "playerNumber" : 14,
-    "price" : 1000,
+    "price" : 4000,
     "clubName" : "Birmingham"
   } ] ] ]
 } ], [ "com.company.model.Club", {
@@ -2778,12 +2778,12 @@
   } ], [ "com.company.model.Defender", {
     "playerName" : "Elmohamady Ahmed",
     "playerNumber" : 27,
-    "price" : 1000,
+    "price" : 5000,
     "clubName" : "Aston Villa"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Hause Kortney",
     "playerNumber" : 30,
-    "price" : 2500,
+    "price" : 3000,
     "clubName" : "Aston Villa"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Konsa Ezri",
@@ -2793,7 +2793,7 @@
   } ], [ "com.company.model.Defender", {
     "playerName" : "Mings Tyrone",
     "playerNumber" : 5,
-    "price" : 1000,
+    "price" : 500,
     "clubName" : "Aston Villa"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Targett Matt",
@@ -2808,57 +2808,57 @@
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Barkley Ross",
     "playerNumber" : 20,
-    "price" : 4000,
+    "price" : 3000,
     "clubName" : "Aston Villa"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Cash Matty",
     "playerNumber" : 2,
-    "price" : 4500,
+    "price" : 2000,
     "clubName" : "Aston Villa"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "El-Ghazi Anwar",
     "playerNumber" : 21,
-    "price" : 2500,
+    "price" : 500,
     "clubName" : "Aston Villa"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Grealish Jack",
     "playerNumber" : 10,
-    "price" : 4000,
+    "price" : 5000,
     "clubName" : "Aston Villa"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Luiz Douglas",
     "playerNumber" : 6,
-    "price" : 3000,
+    "price" : 2000,
     "clubName" : "Aston Villa"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "McGinn John",
     "playerNumber" : 7,
-    "price" : 4500,
+    "price" : 500,
     "clubName" : "Aston Villa"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Nakamba Marvelous",
     "playerNumber" : 19,
-    "price" : 500,
+    "price" : 2500,
     "clubName" : "Aston Villa"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Ramsey Jacob",
     "playerNumber" : 41,
-    "price" : 4500,
+    "price" : 3500,
     "clubName" : "Aston Villa"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Sanson Morgan",
     "playerNumber" : 25,
-    "price" : 5000,
+    "price" : 4500,
     "clubName" : "Aston Villa"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Trezeguet",
     "playerNumber" : 17,
-    "price" : 1000,
+    "price" : 2000,
     "clubName" : "Aston Villa"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Davis Keinan",
     "playerNumber" : 39,
-    "price" : 1500,
+    "price" : 2000,
     "clubName" : "Aston Villa"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Traore Bertrand",
@@ -2868,12 +2868,12 @@
   } ], [ "com.company.model.Forward", {
     "playerName" : "Watkins Ollie",
     "playerNumber" : 11,
-    "price" : 500,
+    "price" : 5000,
     "clubName" : "Aston Villa"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Wesley",
     "playerNumber" : 9,
-    "price" : 4000,
+    "price" : 3500,
     "clubName" : "Aston Villa"
   } ] ] ]
 } ], [ "com.company.model.Club", {
@@ -2881,39 +2881,39 @@
   "playerList" : [ "java.util.ArrayList", [ [ "com.company.model.Goalkeeper", {
     "playerName" : "Ingram Matt",
     "playerNumber" : 13,
-    "price" : 500,
+    "price" : 3500,
     "clubName" : "Hull City",
     "withoutGoals" : false
   } ], [ "com.company.model.Goalkeeper", {
     "playerName" : "Long George",
     "playerNumber" : 1,
-    "price" : 1500,
+    "price" : 500,
     "clubName" : "Hull City",
     "withoutGoals" : false
   } ], [ "com.company.model.Defender", {
     "playerName" : "Burke Reece",
     "playerNumber" : 5,
-    "price" : 500,
+    "price" : 2000,
     "clubName" : "Hull City"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Coyle Lewie",
     "playerNumber" : 2,
-    "price" : 500,
+    "price" : 3000,
     "clubName" : "Hull City"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Elder Callum",
     "playerNumber" : 3,
-    "price" : 4000,
+    "price" : 500,
     "clubName" : "Hull City"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Emmanuel Joshua",
     "playerNumber" : 12,
-    "price" : 1000,
+    "price" : 2000,
     "clubName" : "Hull City"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Fleming Brandon",
     "playerNumber" : 21,
-    "price" : 2000,
+    "price" : 1000,
     "clubName" : "Hull City"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Greaves Jacob",
@@ -2923,32 +2923,32 @@
   } ], [ "com.company.model.Defender", {
     "playerName" : "Jones Alfie",
     "playerNumber" : 15,
-    "price" : 1500,
+    "price" : 3500,
     "clubName" : "Hull City"
   } ], [ "com.company.model.Defender", {
     "playerName" : "McLoughlin Sean",
     "playerNumber" : 17,
-    "price" : 1000,
+    "price" : 3000,
     "clubName" : "Hull City"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Chadwick Billy",
     "playerNumber" : 36,
-    "price" : 4000,
+    "price" : 5000,
     "clubName" : "Hull City"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Crowley Dan",
     "playerNumber" : 20,
-    "price" : 4000,
+    "price" : 1000,
     "clubName" : "Hull City"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Docherty Greg",
     "playerNumber" : 33,
-    "price" : 5000,
+    "price" : 2000,
     "clubName" : "Hull City"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Flores Jordan",
     "playerNumber" : 16,
-    "price" : 3000,
+    "price" : 4000,
     "clubName" : "Hull City"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Honeyman George",
@@ -2958,52 +2958,52 @@
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Jones Callum",
     "playerNumber" : 34,
-    "price" : 2000,
+    "price" : 5000,
     "clubName" : "Hull City"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Slater Regan",
     "playerNumber" : 18,
-    "price" : 1500,
+    "price" : 500,
     "clubName" : "Hull City"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Smallwood Richard",
     "playerNumber" : 6,
-    "price" : 2000,
+    "price" : 3500,
     "clubName" : "Hull City"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Eaves Tom",
     "playerNumber" : 9,
-    "price" : 4000,
+    "price" : 3000,
     "clubName" : "Hull City"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Lewis-Potter Keane",
     "playerNumber" : 19,
-    "price" : 3000,
+    "price" : 500,
     "clubName" : "Hull City"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Magennis Josh",
     "playerNumber" : 27,
-    "price" : 1500,
+    "price" : 500,
     "clubName" : "Hull City"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Mayer Thomas",
     "playerNumber" : 22,
-    "price" : 2500,
+    "price" : 1000,
     "clubName" : "Hull City"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Scott James",
     "playerNumber" : 11,
-    "price" : 500,
+    "price" : 1000,
     "clubName" : "Hull City"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Whyte Gavin",
     "playerNumber" : 23,
-    "price" : 5000,
+    "price" : 4000,
     "clubName" : "Hull City"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Wilks Mallik",
     "playerNumber" : 7,
-    "price" : 4000,
+    "price" : 2500,
     "clubName" : "Hull City"
   } ] ] ]
 } ], [ "com.company.model.Club", {
@@ -3011,59 +3011,59 @@
   "playerList" : [ "java.util.ArrayList", [ [ "com.company.model.Goalkeeper", {
     "playerName" : "Samba Brice",
     "playerNumber" : 30,
-    "price" : 5000,
+    "price" : 3000,
     "clubName" : "Nottingham",
     "withoutGoals" : false
   } ], [ "com.company.model.Goalkeeper", {
     "playerName" : "Smith Jordan",
     "playerNumber" : 12,
-    "price" : 2500,
+    "price" : 1000,
     "clubName" : "Nottingham",
     "withoutGoals" : false
   } ], [ "com.company.model.Defender", {
     "playerName" : "Blackett Tyler",
     "playerNumber" : 24,
-    "price" : 1500,
+    "price" : 4000,
     "clubName" : "Nottingham"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Bong Gaetan",
     "playerNumber" : 13,
-    "price" : 2000,
+    "price" : 2500,
     "clubName" : "Nottingham"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Christie Cyrus",
     "playerNumber" : 2,
-    "price" : 2500,
+    "price" : 5000,
     "clubName" : "Nottingham"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Figueiredo Tobias",
     "playerNumber" : 3,
-    "price" : 4000,
+    "price" : 500,
     "clubName" : "Nottingham"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Jenkinson Carl",
     "playerNumber" : 16,
-    "price" : 3000,
+    "price" : 500,
     "clubName" : "Nottingham"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Mbe Soh Loic",
     "playerNumber" : 6,
-    "price" : 2000,
+    "price" : 3000,
     "clubName" : "Nottingham"
   } ], [ "com.company.model.Defender", {
     "playerName" : "McKenna Scott",
     "playerNumber" : 26,
-    "price" : 4500,
+    "price" : 2000,
     "clubName" : "Nottingham"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Ribeiro Yuri",
     "playerNumber" : 5,
-    "price" : 3000,
+    "price" : 500,
     "clubName" : "Nottingham"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Worrall Joe",
     "playerNumber" : 4,
-    "price" : 2500,
+    "price" : 4000,
     "clubName" : "Nottingham"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Arter Harry",
@@ -3073,27 +3073,27 @@
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Bachirou Fouad",
     "playerNumber" : 14,
-    "price" : 2000,
+    "price" : 4000,
     "clubName" : "Nottingham"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Cafu Carlos Miguel",
     "playerNumber" : 18,
-    "price" : 1000,
+    "price" : 4000,
     "clubName" : "Nottingham"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Colback Jack",
     "playerNumber" : 8,
-    "price" : 4000,
+    "price" : 1000,
     "clubName" : "Nottingham"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Freeman Luke",
     "playerNumber" : 15,
-    "price" : 500,
+    "price" : 4500,
     "clubName" : "Nottingham"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Garner James",
     "playerNumber" : 37,
-    "price" : 4000,
+    "price" : 4500,
     "clubName" : "Nottingham"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Knockaert Anthony",
@@ -3103,7 +3103,7 @@
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Krovinovic Filip",
     "playerNumber" : 27,
-    "price" : 4000,
+    "price" : 500,
     "clubName" : "Nottingham"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Sow Samba",
@@ -3113,42 +3113,42 @@
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Yates Ryan",
     "playerNumber" : 22,
-    "price" : 5000,
+    "price" : 3000,
     "clubName" : "Nottingham"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Ameobi Sammy",
     "playerNumber" : 11,
-    "price" : 4000,
+    "price" : 2000,
     "clubName" : "Nottingham"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Grabban Lewis",
     "playerNumber" : 7,
-    "price" : 2000,
+    "price" : 5000,
     "clubName" : "Nottingham"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Lolley Joe",
     "playerNumber" : 23,
-    "price" : 4000,
+    "price" : 4500,
     "clubName" : "Nottingham"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Mighten Alex",
     "playerNumber" : 17,
-    "price" : 3000,
+    "price" : 2500,
     "clubName" : "Nottingham"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Murray Glenn",
     "playerNumber" : 25,
-    "price" : 3000,
+    "price" : 500,
     "clubName" : "Nottingham"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Swan Will",
     "playerNumber" : 34,
-    "price" : 5000,
+    "price" : 2500,
     "clubName" : "Nottingham"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Taylor Lyle",
     "playerNumber" : 33,
-    "price" : 1000,
+    "price" : 500,
     "clubName" : "Nottingham"
   } ] ] ]
 } ], [ "com.company.model.Club", {
@@ -3156,49 +3156,49 @@
   "playerList" : [ "java.util.ArrayList", [ [ "com.company.model.Goalkeeper", {
     "playerName" : "Garratt Ben",
     "playerNumber" : 24,
-    "price" : 4500,
+    "price" : 500,
     "clubName" : "Burton",
     "withoutGoals" : false
   } ], [ "com.company.model.Goalkeeper", {
     "playerName" : "O'Hara Kieran",
     "playerNumber" : 1,
-    "price" : 500,
+    "price" : 2500,
     "clubName" : "Burton",
     "withoutGoals" : false
   } ], [ "com.company.model.Defender", {
     "playerName" : "Brayford John",
     "playerNumber" : 2,
-    "price" : 1000,
+    "price" : 500,
     "clubName" : "Burton"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Carter Hayden",
     "playerNumber" : 17,
-    "price" : 3000,
+    "price" : 2000,
     "clubName" : "Burton"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Earl Josh",
     "playerNumber" : 16,
-    "price" : 1000,
+    "price" : 5000,
     "clubName" : "Burton"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Hamer Tom",
     "playerNumber" : 37,
-    "price" : 3000,
+    "price" : 4500,
     "clubName" : "Burton"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Hutchinson Reece",
     "playerNumber" : 15,
-    "price" : 5000,
+    "price" : 2000,
     "clubName" : "Burton"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Mancienne Michael Ian",
     "playerNumber" : 38,
-    "price" : 2000,
+    "price" : 2500,
     "clubName" : "Burton"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Smith Jonny",
     "playerNumber" : 11,
-    "price" : 2500,
+    "price" : 1500,
     "clubName" : "Burton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Bostwick Michael",
@@ -3208,77 +3208,77 @@
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Broom Ryan",
     "playerNumber" : 18,
-    "price" : 3000,
+    "price" : 2500,
     "clubName" : "Burton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Clare Sean",
     "playerNumber" : 28,
-    "price" : 1000,
+    "price" : 2500,
     "clubName" : "Burton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Daniel Colin",
     "playerNumber" : 3,
-    "price" : 3500,
+    "price" : 1500,
     "clubName" : "Burton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Edwards Ryan",
     "playerNumber" : 4,
-    "price" : 2500,
+    "price" : 1500,
     "clubName" : "Burton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Fox Ben",
     "playerNumber" : 12,
-    "price" : 2500,
+    "price" : 3000,
     "clubName" : "Burton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Gilligan Ciaran",
     "playerNumber" : 25,
-    "price" : 2500,
+    "price" : 1000,
     "clubName" : "Burton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "O'Toole John Joe",
     "playerNumber" : 21,
-    "price" : 2000,
+    "price" : 1000,
     "clubName" : "Burton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Powell Joe",
     "playerNumber" : 8,
-    "price" : 4000,
+    "price" : 2000,
     "clubName" : "Burton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Rowe Danny",
     "playerNumber" : 40,
-    "price" : 1500,
+    "price" : 500,
     "clubName" : "Burton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Taylor Terry",
     "playerNumber" : 39,
-    "price" : 2000,
+    "price" : 4000,
     "clubName" : "Burton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Wallace Kieran",
     "playerNumber" : 6,
-    "price" : 4500,
+    "price" : 4000,
     "clubName" : "Burton"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Akins Lucas",
     "playerNumber" : 10,
-    "price" : 2500,
+    "price" : 4500,
     "clubName" : "Burton"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Fondop-Talum Mike",
     "playerNumber" : 33,
-    "price" : 4000,
+    "price" : 1500,
     "clubName" : "Burton"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Gallacher Owen",
     "playerNumber" : 22,
-    "price" : 500,
+    "price" : 3000,
     "clubName" : "Burton"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Hemmings Kane",
     "playerNumber" : 9,
-    "price" : 500,
+    "price" : 2500,
     "clubName" : "Burton"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Hewlett Tom",
@@ -3288,12 +3288,12 @@
   } ], [ "com.company.model.Forward", {
     "playerName" : "Parker Josh",
     "playerNumber" : 13,
-    "price" : 2500,
+    "price" : 5000,
     "clubName" : "Burton"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Varney Luke",
     "playerNumber" : 14,
-    "price" : 1000,
+    "price" : 2000,
     "clubName" : "Burton"
   } ] ] ]
 } ], [ "com.company.model.Club", {
@@ -3301,19 +3301,19 @@
   "playerList" : [ "java.util.ArrayList", [ [ "com.company.model.Goalkeeper", {
     "playerName" : "Cornell David",
     "playerNumber" : 28,
-    "price" : 500,
+    "price" : 3500,
     "clubName" : "Ipswich",
     "withoutGoals" : false
   } ], [ "com.company.model.Goalkeeper", {
     "playerName" : "Holy Tomas",
     "playerNumber" : 1,
-    "price" : 4500,
+    "price" : 4000,
     "clubName" : "Ipswich",
     "withoutGoals" : false
   } ], [ "com.company.model.Defender", {
     "playerName" : "Chambers Luke",
     "playerNumber" : 4,
-    "price" : 2500,
+    "price" : 3000,
     "clubName" : "Ipswich"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Kenlock Myles",
@@ -3323,72 +3323,72 @@
   } ], [ "com.company.model.Defender", {
     "playerName" : "Matheson Luke",
     "playerNumber" : 41,
-    "price" : 2000,
+    "price" : 4000,
     "clubName" : "Ipswich"
   } ], [ "com.company.model.Defender", {
     "playerName" : "McGuinness Mark",
     "playerNumber" : 2,
-    "price" : 2500,
+    "price" : 2000,
     "clubName" : "Ipswich"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Nsiala Aristote",
     "playerNumber" : 22,
-    "price" : 3000,
+    "price" : 500,
     "clubName" : "Ipswich"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Vincent-Young Kane",
     "playerNumber" : 24,
-    "price" : 3500,
+    "price" : 5000,
     "clubName" : "Ipswich"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Ward Stephen",
     "playerNumber" : 3,
-    "price" : 4000,
+    "price" : 5000,
     "clubName" : "Ipswich"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Wilson James",
     "playerNumber" : 5,
-    "price" : 3500,
+    "price" : 2500,
     "clubName" : "Ipswich"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Woolfenden Luke",
     "playerNumber" : 6,
-    "price" : 3500,
+    "price" : 2500,
     "clubName" : "Ipswich"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Bishop Teddy",
     "playerNumber" : 15,
-    "price" : 3000,
+    "price" : 4000,
     "clubName" : "Ipswich"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Downes Flynn",
     "playerNumber" : 21,
-    "price" : 1000,
+    "price" : 2000,
     "clubName" : "Ipswich"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Dozzell Andre",
     "playerNumber" : 23,
-    "price" : 4000,
+    "price" : 1500,
     "clubName" : "Ipswich"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Edwards Gwion",
     "playerNumber" : 7,
-    "price" : 4500,
+    "price" : 3000,
     "clubName" : "Ipswich"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Gibbs Liam",
     "playerNumber" : 48,
-    "price" : 1000,
+    "price" : 2500,
     "clubName" : "Ipswich"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Harrop Joshua Andrew",
     "playerNumber" : 33,
-    "price" : 4000,
+    "price" : 2000,
     "clubName" : "Ipswich"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Judge Alan",
     "playerNumber" : 18,
-    "price" : 4500,
+    "price" : 4000,
     "clubName" : "Ipswich"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "McGavin Brett",
@@ -3398,42 +3398,42 @@
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Nolan Jon",
     "playerNumber" : 11,
-    "price" : 500,
+    "price" : 5000,
     "clubName" : "Ipswich"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Nydam Tristan",
     "playerNumber" : 16,
-    "price" : 500,
+    "price" : 1500,
     "clubName" : "Ipswich"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Skuse Cole",
     "playerNumber" : 8,
-    "price" : 2000,
+    "price" : 4500,
     "clubName" : "Ipswich"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Bennetts Keanen",
     "playerNumber" : 17,
-    "price" : 500,
+    "price" : 1500,
     "clubName" : "Ipswich"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Dobra Armando",
     "playerNumber" : 36,
-    "price" : 5000,
+    "price" : 2000,
     "clubName" : "Ipswich"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Drinan Aaron",
     "playerNumber" : 25,
-    "price" : 500,
+    "price" : 4000,
     "clubName" : "Ipswich"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Hawkins Oliver",
     "playerNumber" : 32,
-    "price" : 5000,
+    "price" : 3500,
     "clubName" : "Ipswich"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Huws Emyr",
     "playerNumber" : 44,
-    "price" : 1000,
+    "price" : 5000,
     "clubName" : "Ipswich"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Jackson Kayden",
@@ -3443,32 +3443,32 @@
   } ], [ "com.company.model.Forward", {
     "playerName" : "Lankester Jack",
     "playerNumber" : 14,
-    "price" : 2000,
+    "price" : 3500,
     "clubName" : "Ipswich"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Norwood James",
     "playerNumber" : 10,
-    "price" : 1000,
+    "price" : 3500,
     "clubName" : "Ipswich"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Parrott Troy",
     "playerNumber" : 40,
-    "price" : 5000,
+    "price" : 4000,
     "clubName" : "Ipswich"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Sears Freddie",
     "playerNumber" : 20,
-    "price" : 5000,
+    "price" : 500,
     "clubName" : "Ipswich"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Simpson Tyreece",
     "playerNumber" : 47,
-    "price" : 4500,
+    "price" : 1500,
     "clubName" : "Ipswich"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Thomas Luke",
     "playerNumber" : 27,
-    "price" : 1000,
+    "price" : 500,
     "clubName" : "Ipswich"
   } ] ] ]
 } ], [ "com.company.model.Club", {
@@ -3476,13 +3476,13 @@
   "playerList" : [ "java.util.ArrayList", [ [ "com.company.model.Goalkeeper", {
     "playerName" : "Phillips Dillon",
     "playerNumber" : 1,
-    "price" : 2500,
+    "price" : 4000,
     "clubName" : "Cardiff",
     "withoutGoals" : false
   } ], [ "com.company.model.Goalkeeper", {
     "playerName" : "Smithies Alex",
     "playerNumber" : 12,
-    "price" : 2000,
+    "price" : 3000,
     "clubName" : "Cardiff",
     "withoutGoals" : false
   } ], [ "com.company.model.Defender", {
@@ -3493,117 +3493,117 @@
   } ], [ "com.company.model.Defender", {
     "playerName" : "Bamba Sol",
     "playerNumber" : 22,
-    "price" : 4000,
+    "price" : 1500,
     "clubName" : "Cardiff"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Bennett Joe",
     "playerNumber" : 3,
-    "price" : 4500,
+    "price" : 3500,
     "clubName" : "Cardiff"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Brown Ciaron",
     "playerNumber" : 30,
-    "price" : 3500,
+    "price" : 5000,
     "clubName" : "Cardiff"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Flint Aden",
     "playerNumber" : 5,
-    "price" : 1000,
+    "price" : 500,
     "clubName" : "Cardiff"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Morrison Sean",
     "playerNumber" : 4,
-    "price" : 4000,
+    "price" : 2000,
     "clubName" : "Cardiff"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Nelson Curtis",
     "playerNumber" : 16,
-    "price" : 1500,
+    "price" : 3500,
     "clubName" : "Cardiff"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Ng Perry",
     "playerNumber" : 38,
-    "price" : 3000,
+    "price" : 2000,
     "clubName" : "Cardiff"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Osei-Tutu Jordi",
     "playerNumber" : 2,
-    "price" : 3500,
+    "price" : 2000,
     "clubName" : "Cardiff"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Vaulks Will",
     "playerNumber" : 6,
-    "price" : 1000,
+    "price" : 4500,
     "clubName" : "Cardiff"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Bacuna Leandro",
     "playerNumber" : 7,
-    "price" : 4500,
+    "price" : 3000,
     "clubName" : "Cardiff"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Colwill Rubin",
     "playerNumber" : 40,
-    "price" : 5000,
+    "price" : 2000,
     "clubName" : "Cardiff"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Murphy Josh",
     "playerNumber" : 11,
-    "price" : 500,
+    "price" : 5000,
     "clubName" : "Cardiff"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Ojo Sheyi",
     "playerNumber" : 27,
-    "price" : 500,
+    "price" : 2000,
     "clubName" : "Cardiff"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Pack Marlon",
     "playerNumber" : 21,
-    "price" : 4000,
+    "price" : 2000,
     "clubName" : "Cardiff"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Ralls Joe",
     "playerNumber" : 8,
-    "price" : 3000,
+    "price" : 5000,
     "clubName" : "Cardiff"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Sang Thomas",
     "playerNumber" : 28,
-    "price" : 2000,
+    "price" : 2500,
     "clubName" : "Cardiff"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Williams Jonathan",
     "playerNumber" : 15,
-    "price" : 2000,
+    "price" : 4500,
     "clubName" : "Cardiff"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Wilson Harry",
     "playerNumber" : 23,
-    "price" : 2000,
+    "price" : 4000,
     "clubName" : "Cardiff"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Harris Mark",
     "playerNumber" : 29,
-    "price" : 500,
+    "price" : 3000,
     "clubName" : "Cardiff"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Hoilett Junior",
     "playerNumber" : 33,
-    "price" : 2500,
+    "price" : 2000,
     "clubName" : "Cardiff"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Moore Kieffer",
     "playerNumber" : 10,
-    "price" : 3000,
+    "price" : 2500,
     "clubName" : "Cardiff"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Tomlin Lee",
     "playerNumber" : 17,
-    "price" : 4500,
+    "price" : 3000,
     "clubName" : "Cardiff"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Watters Max",
     "playerNumber" : 19,
-    "price" : 2000,
+    "price" : 3000,
     "clubName" : "Cardiff"
   } ] ] ]
 } ], [ "com.company.model.Club", {
@@ -3611,123 +3611,123 @@
   "playerList" : [ "java.util.ArrayList", [ [ "com.company.model.Goalkeeper", {
     "playerName" : "Bialkowski Bartosz",
     "playerNumber" : 33,
-    "price" : 4500,
+    "price" : 1000,
     "clubName" : "Millwall",
     "withoutGoals" : false
   } ], [ "com.company.model.Defender", {
     "playerName" : "Cooper Jake",
     "playerNumber" : 5,
-    "price" : 2000,
+    "price" : 1000,
     "clubName" : "Millwall"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Hutchinson Shaun",
     "playerNumber" : 4,
-    "price" : 3000,
+    "price" : 1000,
     "clubName" : "Millwall"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Leonard Ryan",
     "playerNumber" : 18,
-    "price" : 1500,
+    "price" : 3000,
     "clubName" : "Millwall"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Malone Scott",
     "playerNumber" : 14,
-    "price" : 4500,
+    "price" : 2500,
     "clubName" : "Millwall"
   } ], [ "com.company.model.Defender", {
     "playerName" : "McNamara Dan",
     "playerNumber" : 23,
-    "price" : 5000,
+    "price" : 2500,
     "clubName" : "Millwall"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Pearce Alex",
     "playerNumber" : 15,
-    "price" : 2000,
+    "price" : 4500,
     "clubName" : "Millwall"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Romeo Mahlon",
     "playerNumber" : 12,
-    "price" : 1500,
+    "price" : 2500,
     "clubName" : "Millwall"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Wallace Murray",
     "playerNumber" : 3,
-    "price" : 500,
+    "price" : 4500,
     "clubName" : "Millwall"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Burey Tyler",
     "playerNumber" : 32,
-    "price" : 3500,
+    "price" : 3000,
     "clubName" : "Millwall"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Evans George",
     "playerNumber" : 28,
-    "price" : 4500,
+    "price" : 500,
     "clubName" : "Millwall"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Ferguson Shane",
     "playerNumber" : 11,
-    "price" : 3500,
+    "price" : 4500,
     "clubName" : "Millwall"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Kieftenbeld Maikel",
     "playerNumber" : 16,
-    "price" : 2500,
+    "price" : 1000,
     "clubName" : "Millwall"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Mitchell Billy",
     "playerNumber" : 24,
-    "price" : 4000,
+    "price" : 1000,
     "clubName" : "Millwall"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Thompson Ben",
     "playerNumber" : 8,
-    "price" : 500,
+    "price" : 5000,
     "clubName" : "Millwall"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Wallace Jed",
     "playerNumber" : 7,
-    "price" : 500,
+    "price" : 4000,
     "clubName" : "Millwall"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Williams Shaun",
     "playerNumber" : 6,
-    "price" : 3500,
+    "price" : 2000,
     "clubName" : "Millwall"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Woods Ryan",
     "playerNumber" : 19,
-    "price" : 1500,
+    "price" : 3500,
     "clubName" : "Millwall"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Bennett Mason",
     "playerNumber" : 20,
-    "price" : 3000,
+    "price" : 5000,
     "clubName" : "Millwall"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Bodvarsson Jon Dadi",
     "playerNumber" : 22,
-    "price" : 4500,
+    "price" : 1500,
     "clubName" : "Millwall"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Bradshaw Tom",
     "playerNumber" : 9,
-    "price" : 1500,
+    "price" : 3000,
     "clubName" : "Millwall"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Mahoney Connor",
     "playerNumber" : 21,
-    "price" : 1000,
+    "price" : 4000,
     "clubName" : "Millwall"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Smith Matt",
     "playerNumber" : 10,
-    "price" : 2500,
+    "price" : 4000,
     "clubName" : "Millwall"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Zohore Kenneth",
     "playerNumber" : 13,
-    "price" : 2000,
+    "price" : 1000,
     "clubName" : "Millwall"
   } ] ] ]
 } ], [ "com.company.model.Club", {
@@ -3735,29 +3735,29 @@
   "playerList" : [ "java.util.ArrayList", [ [ "com.company.model.Goalkeeper", {
     "playerName" : "Areola Alphonse",
     "playerNumber" : 1,
-    "price" : 1000,
+    "price" : 500,
     "clubName" : "Fulham",
     "withoutGoals" : false
   } ], [ "com.company.model.Goalkeeper", {
     "playerName" : "Rodak Marek",
     "playerNumber" : 12,
-    "price" : 500,
+    "price" : 5000,
     "clubName" : "Fulham",
     "withoutGoals" : false
   } ], [ "com.company.model.Defender", {
     "playerName" : "Adarabioyo Abdul-Nasir",
     "playerNumber" : 16,
-    "price" : 3000,
+    "price" : 5000,
     "clubName" : "Fulham"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Aina Ola",
     "playerNumber" : 34,
-    "price" : 3500,
+    "price" : 5000,
     "clubName" : "Fulham"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Andersen Joachim",
     "playerNumber" : 5,
-    "price" : 500,
+    "price" : 4500,
     "clubName" : "Fulham"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Bryan Joe",
@@ -3767,37 +3767,37 @@
   } ], [ "com.company.model.Defender", {
     "playerName" : "Hector Michael",
     "playerNumber" : 3,
-    "price" : 3000,
+    "price" : 1500,
     "clubName" : "Fulham"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Kongolo Terence",
     "playerNumber" : 30,
-    "price" : 4500,
+    "price" : 2500,
     "clubName" : "Fulham"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Odoi Dennis",
     "playerNumber" : 4,
-    "price" : 4500,
+    "price" : 3000,
     "clubName" : "Fulham"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Ream Tim",
     "playerNumber" : 13,
-    "price" : 1500,
+    "price" : 500,
     "clubName" : "Fulham"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Robinson Antonee",
     "playerNumber" : 33,
-    "price" : 2000,
+    "price" : 4500,
     "clubName" : "Fulham"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Tete Kenny",
     "playerNumber" : 2,
-    "price" : 4500,
+    "price" : 4000,
     "clubName" : "Fulham"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Cairney Tom",
     "playerNumber" : 10,
-    "price" : 1500,
+    "price" : 500,
     "clubName" : "Fulham"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Carvalho Fabio",
@@ -3807,57 +3807,57 @@
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Francois Tyrese",
     "playerNumber" : 35,
-    "price" : 4000,
+    "price" : 1000,
     "clubName" : "Fulham"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Lemina Mario",
     "playerNumber" : 18,
-    "price" : 3500,
+    "price" : 3000,
     "clubName" : "Fulham"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Loftus-Cheek Ruben",
     "playerNumber" : 15,
-    "price" : 2000,
+    "price" : 3500,
     "clubName" : "Fulham"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Onomah Joshua",
     "playerNumber" : 25,
-    "price" : 4500,
+    "price" : 1500,
     "clubName" : "Fulham"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Reed Harrison",
     "playerNumber" : 21,
-    "price" : 4500,
+    "price" : 3000,
     "clubName" : "Fulham"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Reid Bobby",
     "playerNumber" : 14,
-    "price" : 4000,
+    "price" : 5000,
     "clubName" : "Fulham"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Zambo Anguissa Andre-Frank",
     "playerNumber" : 29,
-    "price" : 1500,
+    "price" : 4000,
     "clubName" : "Fulham"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Cavaleiro Ivan",
     "playerNumber" : 17,
-    "price" : 3000,
+    "price" : 4000,
     "clubName" : "Fulham"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Lookman Ademola",
     "playerNumber" : 19,
-    "price" : 2000,
+    "price" : 4000,
     "clubName" : "Fulham"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Maja Josh",
     "playerNumber" : 27,
-    "price" : 4000,
+    "price" : 3500,
     "clubName" : "Fulham"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Mitrovic Aleksandar",
     "playerNumber" : 9,
-    "price" : 1500,
+    "price" : 3000,
     "clubName" : "Fulham"
   } ] ] ]
 } ], [ "com.company.model.Club", {
@@ -3871,23 +3871,23 @@
   } ], [ "com.company.model.Goalkeeper", {
     "playerName" : "Gilks Matthew",
     "playerNumber" : 13,
-    "price" : 5000,
+    "price" : 1000,
     "clubName" : "Bolton",
     "withoutGoals" : false
   } ], [ "com.company.model.Defender", {
     "playerName" : "Baptiste Alex",
     "playerNumber" : 27,
-    "price" : 3000,
+    "price" : 4500,
     "clubName" : "Bolton"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Brockbank Harry",
     "playerNumber" : 21,
-    "price" : 500,
+    "price" : 1000,
     "clubName" : "Bolton"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Delaney Ryan",
     "playerNumber" : 6,
-    "price" : 500,
+    "price" : 5000,
     "clubName" : "Bolton"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Greenidge Reiss",
@@ -3897,22 +3897,22 @@
   } ], [ "com.company.model.Defender", {
     "playerName" : "John Declan",
     "playerNumber" : 28,
-    "price" : 4500,
+    "price" : 3000,
     "clubName" : "Bolton"
   } ], [ "com.company.model.Defender", {
     "playerName" : "Santos Ricardo",
     "playerNumber" : 5,
-    "price" : 4500,
+    "price" : 2000,
     "clubName" : "Bolton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Comley Brandon",
     "playerNumber" : 8,
-    "price" : 2000,
+    "price" : 1000,
     "clubName" : "Bolton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Elbouzedi Zachary",
     "playerNumber" : 31,
-    "price" : 500,
+    "price" : 5000,
     "clubName" : "Bolton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Isgrove Lloyd",
@@ -3922,12 +3922,12 @@
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Jackson Ben",
     "playerNumber" : 32,
-    "price" : 500,
+    "price" : 4000,
     "clubName" : "Bolton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Jones Gethin",
     "playerNumber" : 2,
-    "price" : 5000,
+    "price" : 1500,
     "clubName" : "Bolton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Lee Kieran",
@@ -3937,57 +3937,57 @@
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Sarcevic Antoni",
     "playerNumber" : 10,
-    "price" : 1000,
+    "price" : 3500,
     "clubName" : "Bolton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Tutte Andrew",
     "playerNumber" : 18,
-    "price" : 2500,
+    "price" : 3000,
     "clubName" : "Bolton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "White Tom",
     "playerNumber" : 19,
-    "price" : 2500,
+    "price" : 4500,
     "clubName" : "Bolton"
   } ], [ "com.company.model.Midfielder", {
     "playerName" : "Williams Jordan",
     "playerNumber" : 4,
-    "price" : 3000,
+    "price" : 1000,
     "clubName" : "Bolton"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Afolayan Oladapo",
     "playerNumber" : 30,
-    "price" : 5000,
+    "price" : 500,
     "clubName" : "Bolton"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Darcy Ronan",
     "playerNumber" : 17,
-    "price" : 4000,
+    "price" : 3500,
     "clubName" : "Bolton"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Delfouneso Nathan",
     "playerNumber" : 7,
-    "price" : 4500,
+    "price" : 3500,
     "clubName" : "Bolton"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Doyle Eoin",
     "playerNumber" : 9,
-    "price" : 500,
+    "price" : 1500,
     "clubName" : "Bolton"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Gnahoua Arthur",
     "playerNumber" : 24,
-    "price" : 3500,
+    "price" : 2500,
     "clubName" : "Bolton"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Maddison Marcus",
     "playerNumber" : 14,
-    "price" : 2000,
+    "price" : 3500,
     "clubName" : "Bolton"
   } ], [ "com.company.model.Forward", {
     "playerName" : "Miller Shaun",
     "playerNumber" : 20,
-    "price" : 3000,
+    "price" : 1500,
     "clubName" : "Bolton"
   } ] ] ]
 } ] ] ]

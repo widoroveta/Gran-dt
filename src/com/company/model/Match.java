@@ -56,7 +56,7 @@ public class Match {
         String nameVisitor = this.getNameVisitor();
         this.setLocalTeam(new Club().getTeam(nameLocal));
         this.setVisitorTeam(new Club().getTeam(nameVisitor));
-
+        simulationDate();
 
     }
     public void simulationDate() {

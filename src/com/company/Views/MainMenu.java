@@ -24,12 +24,12 @@ public class MainMenu {
                 case 1:
                     System.out.println("Ingreso");
                     login();
-                    ///Llamar a la funcion login
+
                     break;
                 case 2:
                     System.out.println("Registro");
                     regist();
-                    ///Llamar a la funcion regist
+
                     break;
                 case 3:
                     break;

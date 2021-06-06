@@ -70,7 +70,7 @@ public class Fixture {
                 n = size - d + i;
                 i++;
             }
-            m.assembleMatch();
+
             m.setDate(values[n].getDate());
         }
     }

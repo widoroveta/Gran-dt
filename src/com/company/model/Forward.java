@@ -13,10 +13,10 @@ public class Forward extends Player {
 
     @Override
     public void doPoints() {
-        int random = 1 + (int) (Math.random() * ((1000 - 1) + 1));
+        int random = 951;// 1 + (int) (Math.random() * ((1000 - 1) + 1));
 
         //Goals
-        if (random < 450) {
+        if (random < 950) {
             super.setGoals(0);
         } else if (random >= 950 && random < 975) {
 
@@ -27,14 +27,13 @@ public class Forward extends Player {
 
             super.setGoals(3);
         }
-        super.points = super.getGoals() * Points.GOAL_DEFENDER.getPoints();
+        super.setPoints(super.getGoals() * Points.GOAL_DEFENDER.getPoints());
         //Cards
         if (super.playYellowCard()) {
-            super.points -= Points.YELLOW_CARD.getPoints();
+            super.setPoints(super.getPoints()-Points.YELLOW_CARD.getPoints());
         }
         if (super.playRedCard()) {
-            super.points -= Points.RED_CARD.getPoints();
-        }
+            super.setPoints(super.getPoints()-Points.RED_CARD.getPoints());}
 
     }
 
