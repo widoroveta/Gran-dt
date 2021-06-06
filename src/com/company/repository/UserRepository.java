@@ -79,9 +79,22 @@ public class UserRepository implements Repository<User> {
         return false;
     }
 
+    public List<User> getUsers() {
+        return users;
+    }
+
+    public void setUsers(List<User> users) {
+        this.users = users;
+    }
+
     @Override
     public boolean save() {
-        return false;
+        try {
+            mapper.writerWithDefaultPrettyPrinter().writeValue(FILE,users);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return true;
     }
 
 

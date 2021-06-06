@@ -1,11 +1,9 @@
 package com.company.Views;
 
-import com.company.model.Fixture;
-import com.company.model.Match;
-import com.company.model.Player;
-import com.company.model.User;
+import com.company.model.*;
 import com.company.repository.ClubRepository;
 import com.company.repository.FixtureRepository;
+import com.company.repository.UserRepository;
 
 import java.util.Date;
 import java.util.List;
@@ -13,6 +11,7 @@ import java.util.Scanner;
 
 public class UserMenu {
     private User user;
+    private UserRepository userRepo=new UserRepository();
     private Scanner sc = new Scanner(System.in);
     private int s;
 
@@ -50,6 +49,14 @@ public class UserMenu {
 
     }
 
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
     public UserMenu(User user) {
         this.user = user;
     }
@@ -61,6 +68,7 @@ public class UserMenu {
     ///////////////Menu Team Class
     private class menuTeam{
         private ClubRepository cRepo=new ClubRepository();
+
         private Player playerAux=new Player();
 
         public menuTeam(){tMenu();}
@@ -85,7 +93,12 @@ public class UserMenu {
         }
         //tMenu 1
         private void viewTeam(){
-        user.getMyTeam().getPlayers().stream().forEach(System.out::println);
+        if(user.getMyTeam()!=null){
+            user.getMyTeam().getPlayers().stream().forEach(System.out::println);
+        }
+        else{
+                System.out.println("No hay un equipo cargado");
+            }
         }
         //tMenu 2
         private void modifyTeam () {
@@ -93,21 +106,39 @@ public class UserMenu {
         System.out.println("1)Agregar Jugador.");
         System.out.println("2)Cambiar Jugador.");
         System.out.println("3)Elininar Jugador");
-        System.out.println("4)Volver al menu anterior");
+        System.out.println("4)Cambiar nombre de tu equipo");
+        System.out.println("5)Volver al menu anterior");
         switch (sc.nextInt()) {
             case 1:
+                boolean accept=false;
+                while(!accept){
                 addPlayerTeam();
+                System.out.println("Quieres seguir agregando juagdores?");
+                char c = sc.next().charAt(0);
+                if (c == 'n' || c == 'N') {
+                    accept=true;
+                }
+                if (c == 'r' || c == 'R') {
+                    modifyTeam();
+                    }
+                }
                 break;
 
             case 2:
                 changePlayerTeam();
                 break;
+
             case 3:
                 removePlayerTeam();
                 break;
+
             case 4:
+                changeTeamName();
+                break;
+            case 5:
                 tMenu();
                 break;
+
             default:
                 System.out.println("Ingrese una opcion valida.");
                 modifyTeam();
@@ -138,12 +169,27 @@ public class UserMenu {
             }
             return select;
         }
+        private void changeMyTeam(MyTeam t1){
+            //boolean flag=false;
+            List<User> all = userRepo.getAll();
+            for (User u: all
+                 ) {
+                if(u.getUserName().equalsIgnoreCase(getUser().getUserName())){
+                    all.remove(u);
+                    getUser().setMyTeam(t1);
+                    all.add(getUser());
+                    break;
+                }
+            }
+            userRepo.setUsers(all);
+            userRepo.save();
+        }
+
         private void addPlayerTeam(){
-            //cRepo.getAll().stream().forEach(System.out::println);
-            //user.getMyTeam().addPlayer()
             Player player1 = searchPlayer();
-            user.getMyTeam().addPlayer(player1);
-            System.out.println(user.getMyTeam());
+            MyTeam t1= getUser().getMyTeam();
+            t1.addPlayer(player1);
+            changeMyTeam(t1);
         }
 
         private void changePlayerTeam(){
@@ -152,6 +198,17 @@ public class UserMenu {
 
         private void removePlayerTeam(){
             //        user.getMyTeam().remove(player);
+        }
+
+        private void changeTeamName(){
+            String teamName;
+            System.out.println("\nIngrese el nombre de su equipo:");
+            sc.skip("\n");
+            teamName=sc.nextLine();
+            MyTeam t1=user.getMyTeam();
+            t1.setTeamName(teamName);
+            changeMyTeam(t1);
+            modifyTeam();
         }
 
     }

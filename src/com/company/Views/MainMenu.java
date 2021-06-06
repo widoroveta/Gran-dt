@@ -50,7 +50,8 @@ public class MainMenu {
         if(!new User().browsUser(userName)) {
             System.out.println("\nIngresar contraseña ");
             String password =scanner.nextLine();
-            u1 = u1.login(userName, password);
+            u1 = u1.login(userName,
+                    password);
             if (u1!= null) {
                 System.out.println("Su usuario se ha conectado correctamente\n");
                 UserMenu uMenu = new UserMenu(u1);

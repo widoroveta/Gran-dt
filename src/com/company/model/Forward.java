@@ -45,13 +45,12 @@ public class Forward extends Player {
     @Override
     public String toString() {
       return  "\nForward {"+super.toString()+"}";
-<<<<<<< HEAD
+
     }
     
     @Override
     public Object clone() throws CloneNotSupportedException {
         return super.clone();
-=======
->>>>>>> 4206238ad8d1fa2fe45c6dc78b339c5d1c417a35
+
     }
 }

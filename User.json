@@ -25,19 +25,6 @@
     "pointDate" : 0
   } ]
 } ], [ "com.company.model.User", {
-  "userName" : "p1",
-  "password" : "1234",
-  "name" : "pedro",
-  "surname" : "peres",
-  "email" : "mail",
-  "phone" : 456789,
-  "myTeam" : [ "com.company.model.MyTeam", {
-    "players" : [ "java.util.ArrayList", [ ] ],
-    "teamName" : null,
-    "money" : 0,
-    "pointDate" : 0
-  } ]
-} ], [ "com.company.model.User", {
   "userName" : "guido",
   "password" : "123",
   "name" : "guid",
@@ -48,6 +35,56 @@
     "players" : [ "java.util.ArrayList", [ ] ],
     "teamName" : null,
     "money" : 35000,
+    "pointDate" : 0
+  } ]
+} ], [ "com.company.model.User", {
+  "userName" : "p1",
+  "password" : "1234",
+  "name" : "pedro",
+  "surname" : "peres",
+  "email" : "mail",
+  "phone" : 456789,
+  "myTeam" : [ "com.company.model.MyTeam", {
+    "players" : [ "java.util.ArrayList", [ [ "com.company.model.Midfielder", {
+      "playerName" : "Jones Gethin",
+      "playerNumber" : 2,
+      "price" : 1500,
+      "clubName" : "Bolton"
+    } ], [ "com.company.model.Goalkeeper", {
+      "playerName" : "Virginia Joao",
+      "playerNumber" : 31,
+      "price" : 3500,
+      "clubName" : "Everton",
+      "withoutGoals" : false
+    } ], [ "com.company.model.Defender", {
+      "playerName" : "Burke Reece",
+      "playerNumber" : 5,
+      "price" : 2000,
+      "clubName" : "Hull City"
+    } ], [ "com.company.model.Forward", {
+      "playerName" : "Miller Shaun",
+      "playerNumber" : 20,
+      "price" : 1500,
+      "clubName" : "Bolton"
+    } ], [ "com.company.model.Forward", {
+      "playerName" : "Gnahoua Arthur",
+      "playerNumber" : 24,
+      "price" : 2500,
+      "clubName" : "Bolton"
+    } ], [ "com.company.model.Goalkeeper", {
+      "playerName" : "Billy",
+      "playerNumber" : 1,
+      "price" : 3000,
+      "clubName" : "Bolton",
+      "withoutGoals" : false
+    } ], [ "com.company.model.Defender", {
+      "playerName" : "Brockbank Harry",
+      "playerNumber" : 21,
+      "price" : 1000,
+      "clubName" : "Bolton"
+    } ] ] ],
+    "teamName" : "C90",
+    "money" : 3000,
     "pointDate" : 0
   } ]
 } ] ] ]

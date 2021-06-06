@@ -1,5 +1,6 @@
 package com.company;
 
+import com.company.Views.MainMenu;
 import com.company.model.Forward;
 import com.company.model.Match;
 import com.company.model.Player;
@@ -13,6 +14,8 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
+        MainMenu mainMenu=new MainMenu();
+        mainMenu.menuMain();
      /*   AdminMenu adminMenu = new AdminMenu();
         //adminMenu.menu();
        /* SimpleDateFormat formatter= new SimpleDateFormat("yyyy-MM-dd 'at' HH:mm:ss z");
@@ -36,12 +39,12 @@ public class Main {
 /
       *
 
-      */
+      *//*
         ClubRepository clubRepository =new ClubRepository();
         Player player = clubRepository.getClubs().get(1).getPlayerList().get(22);
         player.doPoints();
         System.out.println(player
-        );
+        );*/
     }
 
 }

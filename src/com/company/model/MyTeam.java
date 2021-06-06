@@ -14,7 +14,7 @@ public class MyTeam implements Tactic {
 
     public MyTeam() {
         this.score = 0;
-        this.money = 35000;
+        this.money = 65000;
     }
 
     public boolean change(Player player1, Player player2) {
@@ -90,7 +90,7 @@ public class MyTeam implements Tactic {
                     }
 
                 }
-                if (player instanceof Goalkeeper) return i > 1 ? false : true;
+                if (player instanceof Goalkeeper) return i > 0 ? false : true;
                 if (player instanceof Defender) return i > 3 ? false : true;
                 if (player instanceof Midfielder) return i > 3 ? false : true;
                 if (player instanceof Forward) return i > 1 ? false : true;
