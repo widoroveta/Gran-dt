@@ -1,0 +1,53 @@
+[ "java.util.ArrayList", [ [ "com.company.model.User", {
+  "userName" : "pablo",
+  "password" : "1234",
+  "name" : "Pablo",
+  "surname" : "Morales",
+  "email" : "mail",
+  "phone" : 123456,
+  "myTeam" : [ "com.company.model.MyTeam", {
+    "players" : [ "java.util.ArrayList", [ ] ],
+    "teamName" : null,
+    "money" : 0,
+    "pointDate" : 0
+  } ]
+} ], [ "com.company.model.User", {
+  "userName" : "jose",
+  "password" : "456",
+  "name" : "Jose",
+  "surname" : "carlos",
+  "email" : "maç",
+  "phone" : 74145,
+  "myTeam" : [ "com.company.model.MyTeam", {
+    "players" : [ "java.util.ArrayList", [ ] ],
+    "teamName" : null,
+    "money" : 35000,
+    "pointDate" : 0
+  } ]
+} ], [ "com.company.model.User", {
+  "userName" : "p1",
+  "password" : "1234",
+  "name" : "pedro",
+  "surname" : "peres",
+  "email" : "mail",
+  "phone" : 456789,
+  "myTeam" : [ "com.company.model.MyTeam", {
+    "players" : [ "java.util.ArrayList", [ ] ],
+    "teamName" : null,
+    "money" : 0,
+    "pointDate" : 0
+  } ]
+} ], [ "com.company.model.User", {
+  "userName" : "guido",
+  "password" : "123",
+  "name" : "guid",
+  "surname" : "rov",
+  "email" : "mai",
+  "phone" : 456,
+  "myTeam" : [ "com.company.model.MyTeam", {
+    "players" : [ "java.util.ArrayList", [ ] ],
+    "teamName" : null,
+    "money" : 35000,
+    "pointDate" : 0
+  } ]
+} ] ] ]
