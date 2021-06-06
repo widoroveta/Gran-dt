@@ -2,12 +2,11 @@ package com.company.model;
 
 import com.company.interfaz.Simulation;
 
-public class Player implements Simulation,Comparable<Player> {
+public class Player implements Simulation,Comparable<Player>,Cloneable {
     protected String playerName;
     protected int playerNumber;
     protected int price;
     protected String clubName;
-
 
     //Transient
     protected transient boolean playerStatus;
@@ -144,8 +143,6 @@ public class Player implements Simulation,Comparable<Player> {
 
     public void doPoints() { }
 
-
-
     @Override
     public int compareTo(Player o) {
      if(this instanceof Goalkeeper && (o instanceof Defender || o instanceof Midfielder || o instanceof Forward ))
@@ -161,5 +158,10 @@ public class Player implements Simulation,Comparable<Player> {
             return -1;
         }
         return 0;
+    }
+    
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
     }
 }
