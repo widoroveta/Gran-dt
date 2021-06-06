@@ -27,12 +27,12 @@ public class User {
         this.myTeam=new MyTeam();
     }
 
-    public Boolean login(String userName, String password) {
+    public User login(String userName, String password) {
         UserRepository userRepository = new UserRepository();
         User userLogin = null;
         List<User> all = userRepository.getAll();
         if (all==null) {
-            return false;
+            return null;
         }
         for (User user :
                 all) {
@@ -41,19 +41,19 @@ public class User {
             }
         }
         if (userLogin != null) {
-            return userLogin.getPassword().equals(password);
+            return userLogin.getPassword().equals(password)?userLogin:null;
 
         } else {
-            return false;
+            return null;
         }
     }
 
     public boolean browsUser(String userName) {
         UserRepository userRepository = new UserRepository();
-        User userBrows = null;
+        User userBrows;
         List<User> all = userRepository.getAll();
         if (all==null) {
-            return false;
+            return true;
         }
         for (User user :
                 all) {

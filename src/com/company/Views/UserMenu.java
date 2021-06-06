@@ -12,11 +12,15 @@ public class UserMenu {
     private Scanner sc = new Scanner(System.in);
     private int s;
 
+
+    //public UserMenu(User u){this.user=u;}
+
     public void menu() {
         System.out.println("Hola " + user.getName() + ",que quieres hacer?");
         System.out.println("1)Ver mi perfil");
         System.out.println("2)Menu equipo");
         System.out.println("3)Menu de fixture");
+        System.out.println("4)Cerrar sesion y volver al menu principal");
         System.out.println("Aprete cualquier otro numero para salir.");
         System.out.println("Ingrese una opcion");
 
@@ -29,6 +33,9 @@ public class UserMenu {
                 break;
             case 3:
                 menuFixture menuF=new menuFixture();
+                break;
+            case 4:
+                new MainMenu().menuMain();
                 break;
 
             default:

@@ -1,7 +1,9 @@
 package com.company.Views;
 
 import com.company.model.User;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
+import java.io.File;
 import java.util.Scanner;
 
 public class MainMenu {
@@ -42,17 +44,19 @@ public class MainMenu {
     private void login() {
 
         User u1 = new User();
+        //File uJson= new File("User.json");
+        //ObjectMapper mapper=new ObjectMapper();
         System.out.println("\nIngresar nombre ");
         scanner.skip("\n");
         String userName = scanner.nextLine();
-        if(new User().browsUser(userName)) {
+        if(!new User().browsUser(userName)) {
             System.out.println("\nIngresar contraseña ");
             String password =scanner.nextLine();
-
-            boolean l = u1.login(userName, password);
-            if (l) {
-                System.out.println("Su usuario se ha conectado correctamente");
-            ///    UserMenu u2 = new UserMenu(u1);
+            u1 = u1.login(userName, password);
+            if (u1!= null) {
+                System.out.println("Su usuario se ha conectado correctamente\n");
+                UserMenu uMenu = new UserMenu(u1);
+                uMenu.menu();
             } else {
                 ///Su usuario no se ha conectado correctamente
                 this.menuMain();
