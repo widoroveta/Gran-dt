@@ -44,8 +44,6 @@ public class MainMenu {
     private void login() {
 
         User u1 = new User();
-        //File uJson= new File("User.json");
-        //ObjectMapper mapper=new ObjectMapper();
         System.out.println("\nIngresar nombre ");
         scanner.skip("\n");
         String userName = scanner.nextLine();
