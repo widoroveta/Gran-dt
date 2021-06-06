@@ -165,4 +165,3 @@ public class Player implements Simulation,Comparable<Player>,Cloneable {
         return super.clone();
     }
 }
-
