@@ -74,6 +74,10 @@ public class UserMenu {
         public menuTeam(){tMenu();}
 
         private void tMenu(){
+            if(user.getMyTeam().getTeamName()==null){
+                setTeamName();
+            }//else{}
+
             System.out.println("\nMenu Equipo:");
             System.out.println("1)Ver Equipo.");
             System.out.println("2)Modificar Equipo.");
@@ -92,9 +96,22 @@ public class UserMenu {
                     break;
             }
         }
+        private void setTeamName(){
+            String teamName;
+            System.out.println("\nIngrese el nombre de su equipo por unica vez:");
+            sc.skip("\n");
+            teamName=sc.nextLine();
+            MyTeam t1=user.getMyTeam();
+            t1.setTeamName(teamName);
+            t1.setMoney(70000);
+            changeMyTeam(t1);
+            tMenu();
+        }
         //tMenu 1
         private void viewTeam(){
-        if(user.getMyTeam()!=null){
+            System.out.println("\nNombre de tu equipo: "+user.getMyTeam().getTeamName());
+            System.out.println("\nFondos: $"+user.getMyTeam().getMoney());
+            if(user.getMyTeam()!=null){             //siempre es distinto de null
             user.getMyTeam().getPlayers().stream().forEach(System.out::println);
         }
         else{
@@ -103,11 +120,11 @@ public class UserMenu {
         }
         //tMenu 2
         private void modifyTeam () {
-        System.out.println("Modificacion de equipo:");
+        System.out.println("\nModificacion de equipo:");
         System.out.println("1)Agregar Jugador.");
         System.out.println("2)Cambiar Jugador.");
         System.out.println("3)Elininar Jugador");
-        System.out.println("4)Cambiar nombre de tu equipo");
+        //System.out.println("4)Cambiar nombre de tu equipo");
         System.out.println("5)Volver al menu anterior");
         switch (sc.nextInt()) {
             case 1:
@@ -133,9 +150,9 @@ public class UserMenu {
                 removePlayerTeam();
                 break;
 
-            case 4:
+            /*case 4:
                 changeTeamName();
-                break;
+                break;*/
             case 5:
                 tMenu();
                 break;
@@ -201,16 +218,7 @@ public class UserMenu {
             //        user.getMyTeam().remove(player);
         }
 
-        private void changeTeamName(){//Cambiar para que los fondos no queden en 0
-            String teamName;
-            System.out.println("\nIngrese el nombre de su equipo:");
-            sc.skip("\n");
-            teamName=sc.nextLine();
-            MyTeam t1=user.getMyTeam();
-            t1.setTeamName(teamName);
-            changeMyTeam(t1);
-            modifyTeam();
-        }
+
 
     }
     //\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -220,7 +228,7 @@ public class UserMenu {
         public menuFixture(){fMenu();}
 
         private void fMenu() {
-            System.out.println("Menu Fixture:");
+            System.out.println("\nMenu Fixture:");
             System.out.println("1)Mostrar fixture completo:");
             System.out.println("2)Mostrar proximos partidos");
             System.out.println("3)Mostrar partidos anteriores");

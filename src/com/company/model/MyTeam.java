@@ -14,7 +14,7 @@ public class MyTeam implements Tactic {
 
     public MyTeam() {
         this.score = 0;
-        this.money = 65000;
+        this.money = 0;
     }
 
     public boolean change(Player player1, Player player2) {
@@ -60,7 +60,7 @@ public class MyTeam implements Tactic {
     }
 
     public void setMoney(int money) {
-        this.money -= money;
+        this.money = money;
     }
 
 
@@ -68,7 +68,7 @@ public class MyTeam implements Tactic {
 
         if (isCanAdd(player)) {
 
-            this.setMoney(player.getPrice());
+            this.setMoney(this.getMoney()-player.getPrice());
            return this.players.add(player);
         } else {
             return false;

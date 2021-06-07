@@ -1,5 +1,6 @@
 package com.company;
 
+import com.company.Views.MainMenu;
 import com.company.enums.Dates;
 import com.company.model.Fixture;
 import com.company.model.Match;
@@ -14,7 +15,9 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
- /* AdminMenu adminMenu = new AdminMenu();
+        MainMenu menu=new MainMenu();
+        menu.menuMain();
+        /* AdminMenu adminMenu = new AdminMenu();
   adminMenu.menu();*/
        /* SimpleDateFormat formatter= new SimpleDateFormat("yyyy-MM-dd 'at' HH:mm:ss z");
         Date date = new Date(System.currentTimeMillis());
@@ -23,7 +26,7 @@ public class Main {
         UserMenu menu = new UserMenu(new User());
         menu.preCharge();*/
 
-        FixtureRepository fixtureRepository = new FixtureRepository();
+        /*FixtureRepository fixtureRepository = new FixtureRepository();
         List<Match> all = fixtureRepository.getAll();
         Date date = new Date();
         UserRepository userRepository = new UserRepository();
@@ -54,7 +57,7 @@ public class Main {
                  us.getMyTeam().getPlayers()) {
              System.out.println(fixtureRepository.searchPoints(p, Dates.DATE_FIRST.getDate()));
             }
-        }
+        }*/
     }
 }
 
