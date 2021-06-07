@@ -182,8 +182,6 @@ public class AdminMenu {
         }
 
 
-
-
         private void modifyPLayer() {
             List<Player> all = clubRepository.getAll();
             Player select = null;
@@ -261,39 +259,48 @@ public class AdminMenu {
             Player player1 = player;
             print.println("Que numero desear ponerle al jugador?");
             player1.setPlayerNumber(scanner.nextInt());
-            changePlayer(player, player1);
-            System.out.println("cambio realizado");
+
+            //    changePlayer(player, player1);
+            //   System.out.println("cambio realizado");
             menu();
         }
 
         private void changePlayer(Player player1, Player player2) {
-            Club select=null;
+            Club select = null;
             //System.out.println(player1);
-            int index=0;
-            int i=0;
+            int index = 0;
+            int i = 0;
             List<Club> clubs = clubRepository.getClubs();
             for (Club c :
-                   clubs ) {
+                    clubs) {
                 if (c.getPlayerList().contains(player1)) {
-                     index = c.getPlayerList().indexOf(player1);
-                     i = clubRepository.getClubs().indexOf(c);
+                    index = c.getPlayerList().indexOf(player1);
+                    i = clubRepository.getClubs().indexOf(c);
                 }
             }
-            clubs.get(i).getPlayerList().set(index,player2);
+            clubs.get(i).getPlayerList().set(index, player2);
             clubRepository.setClubs(clubs);
             clubRepository.save();
         }
 
         private void changeName(Player player) {
-            Player player1 = new Player();
-            player1=player;
-            System.out.println(player1.hashCode());
-            System.out.println(player.hashCode());
-            print.println("Que nombre desear ponerle al jugador?");
-            scanner.skip("\n");
-            player.setPlayerName(scanner.nextLine());
-            changePlayer(player1, player);
-            System.out.println("cambio realizado");
+
+
+           //try {
+                Player player1 = new Player();
+           //     player1 = (Player) player.clone();
+                print.println("Que nombre desear ponerle al jugador?");
+                scanner.skip("\n");
+                player1.setPlayerName(scanner.nextLine());
+                System.out.println(player);
+                System.out.println(player1);
+            /*} catch (CloneNotSupportedException e) {
+                e.printStackTrace();
+            }*/
+
+
+           /* changePlayer(player, player1);
+            System.out.println("cambio realizado");*/
             menu();
         }
 
@@ -367,18 +374,18 @@ public class AdminMenu {
 
         private void changePlayerSameClub(Match m) {
             Player player = selectPlayerInMatch(m);
-            List<Club> clubs =  new ClubRepository().getClubs();
-            int i=0;
+            List<Club> clubs = new ClubRepository().getClubs();
+            int i = 0;
             if (player != null) {
                 if (player.getClubName().equals(m.getNameLocal())) {
-                    for (Player p:
-                         new ClubRepository().searchByName(m.getNameLocal()).getPlayerList()) {
+                    for (Player p :
+                            new ClubRepository().searchByName(m.getNameLocal()).getPlayerList()) {
                         print.println(i++ + ") Nombre: " + p.getPlayerName() + "Posicion: " + p.getClass().getSimpleName());
                     }
 
                 }
                 if (player.getClubName().equals(m.getNameVisitor())) {
-                    for (Player p:
+                    for (Player p :
                             new ClubRepository().searchByName(m.getNameVisitor()).getPlayerList()) {
                         print.println(i++ + ") Nombre: " + p.getPlayerName() + "Posicion: " + p.getClass().getSimpleName());
                     }

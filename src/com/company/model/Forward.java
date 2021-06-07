@@ -53,4 +53,6 @@ public class Forward extends Player {
         return super.clone();
 
     }
+
+
 }

@@ -15,7 +15,7 @@ public class Midfielder extends Player {
 
         int random = 1 + (int) (Math.random() * ((1000 - 1) + 1));
         //Goals
-        if (random < 450) {
+        if (random < 975) {
             super.setGoals(0);
         } else if (random >= 975 && random < 990) {
 
@@ -52,4 +52,6 @@ public class Midfielder extends Player {
         return super.clone();
 
     }
+
+
 }

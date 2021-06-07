@@ -1,23 +1,21 @@
 package com.company;
 
-import com.company.Views.MainMenu;
-import com.company.model.Forward;
+import com.company.enums.Dates;
+import com.company.model.Fixture;
 import com.company.model.Match;
 import com.company.model.Player;
-import com.company.repository.ClubRepository;
+import com.company.model.User;
 import com.company.repository.FixtureRepository;
+import com.company.repository.UserRepository;
 
-import java.lang.management.PlatformLoggingMXBean;
 import java.util.Date;
 import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) {
-        MainMenu mainMenu=new MainMenu();
-        mainMenu.menuMain();
-     /*   AdminMenu adminMenu = new AdminMenu();
-        //adminMenu.menu();
+ /* AdminMenu adminMenu = new AdminMenu();
+  adminMenu.menu();*/
        /* SimpleDateFormat formatter= new SimpleDateFormat("yyyy-MM-dd 'at' HH:mm:ss z");
         Date date = new Date(System.currentTimeMillis());
         System.out.println(formatter.format(date));
@@ -25,28 +23,43 @@ public class Main {
         UserMenu menu = new UserMenu(new User());
         menu.preCharge();*/
 
-     /*   FixtureRepository fixtureRepository = new FixtureRepository();
+        FixtureRepository fixtureRepository = new FixtureRepository();
         List<Match> all = fixtureRepository.getAll();
-        Date date = new Date(System.currentTimeMillis());
+        Date date = new Date();
+        UserRepository userRepository = new UserRepository();
+
         for (Match match :
                 all) {
-            if (match.getDate().after(date)) {
-               match.assembleMatch();
 
-                System.out.println("\n"+match);
+            if (match.getDate().before(date)) {
+                if (match.getVisitorTeam().isEmpty() || match.getLocalTeam().isEmpty()) {
+
+                    match.assembleMatch();
+
+                    match.pointsPlayers();
+                    System.out.println("messi");
+                }
+
             }
         }
-/
-      *
+        Fixture fixture = new Fixture();
+        fixture.setFixture(all);
+        fixtureRepository.setFixture(fixture);
+        fixtureRepository.save();
 
-      *//*
-        ClubRepository clubRepository =new ClubRepository();
-        Player player = clubRepository.getClubs().get(1).getPlayerList().get(22);
-        player.doPoints();
-        System.out.println(player
-        );*/
+        List<User> all1 = userRepository.getAll();
+        for (User us:
+             all1) {
+            for (Player p:
+                 us.getMyTeam().getPlayers()) {
+             System.out.println(fixtureRepository.searchPoints(p, Dates.DATE_FIRST.getDate()));
+            }
+        }
     }
-
 }
+
+
+
+
 
 

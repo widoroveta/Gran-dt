@@ -101,9 +101,13 @@ public class MainMenu {
             String mail = scanner.nextLine();
             System.out.println("\nIngresar nro telefonico ");
             int phone = scanner.nextInt();
-
             User u2 = new User(nameUser, password, name, surname, mail, phone);
             u2.register(u2);
+            System.out.println("Desea volver al menu?");
+            char c = scanner.next().charAt(0);
+            if (c == 'y' || c == 'Y') {
+                menuMain();
+            }
         }
     }
 }
