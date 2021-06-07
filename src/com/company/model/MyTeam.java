@@ -79,6 +79,7 @@ public class MyTeam implements Tactic {
     public boolean isCanAdd(Player player) {
         if (player.getPrice() < this.money) {
             if (players.size() >= 11) {
+                System.out.println("No se pueden agregar mas de 11 jugadores");
                 return false;
             } else {
                 if (players.size() == 0) return true;
@@ -90,7 +91,7 @@ public class MyTeam implements Tactic {
                     }
 
                 }
-                if (player instanceof Goalkeeper) return i > 0 ? false : true;
+                if (player instanceof Goalkeeper) return i > 0 ?  false : true;//TODO VER SI SE PUEDE AGREGAR ALERTA
                 if (player instanceof Defender) return i > 3 ? false : true;
                 if (player instanceof Midfielder) return i > 3 ? false : true;
                 if (player instanceof Forward) return i > 1 ? false : true;

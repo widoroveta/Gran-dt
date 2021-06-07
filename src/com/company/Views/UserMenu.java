@@ -108,11 +108,13 @@ public class UserMenu {
             tMenu();
         }
         //tMenu 1
+
         private void viewTeam(){
+            //List <Player> pla =user.getMyTeam().getPlayers();
             System.out.println("\nNombre de tu equipo: "+user.getMyTeam().getTeamName());
             System.out.println("\nFondos: $"+user.getMyTeam().getMoney());
-            if(user.getMyTeam()!=null){             //siempre es distinto de null
-            user.getMyTeam().getPlayers().stream().forEach(System.out::println);
+            if(!user.getMyTeam().getPlayers().isEmpty()){
+            user.getMyTeam().getPlayers().stream().sorted().forEach(System.out::println);
         }
         else{
                 System.out.println("No hay un equipo cargado");

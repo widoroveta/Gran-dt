@@ -14,7 +14,6 @@ public enum Dates {
         try {
             this.date = SDF.parse(day + "/" + month + "/" + year);
         } catch (ParseException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }
