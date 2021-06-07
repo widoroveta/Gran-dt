@@ -32,6 +32,7 @@ public class MainMenu {
                     menuMain();
                     break;
                 case 3:
+                    System.exit(0);
                     break;
                 default:
                     System.out.println("\nIngrese una opcion valida");
@@ -44,7 +45,7 @@ public class MainMenu {
     private void login() {
 
         User u1 = new User();
-        System.out.println("\nIngresar nombre ");
+        System.out.println("\nIngresar usuario ");
         scanner.skip("\n");
         String userName = scanner.nextLine();
         if(!new User().browsUser(userName)) {
