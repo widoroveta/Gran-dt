@@ -29,7 +29,7 @@ public class MainMenu {
                 case 2:
                     System.out.println("Registro");
                     regist();
-
+                    menuMain();
                     break;
                 case 3:
                     break;

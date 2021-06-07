@@ -96,6 +96,7 @@ public class MyTeam implements Tactic {
                 if (player instanceof Forward) return i > 1 ? false : true;
             }
         } else {
+            System.out.println("Fondos insuficientes.");
             return false;
 
         }

@@ -20,7 +20,7 @@ public class UserMenu {
 
 
     public void menu() {
-        System.out.println("Hola " + user.getName() + ",que quieres hacer?");
+        System.out.println("\nHola " + user.getName() + ",que quieres hacer?");
         System.out.println("1)Ver mi perfil");
         System.out.println("2)Menu equipo");
         System.out.println("3)Menu de fixture");
@@ -74,7 +74,7 @@ public class UserMenu {
         public menuTeam(){tMenu();}
 
         private void tMenu(){
-            System.out.println("Menu Equipo:");
+            System.out.println("\nMenu Equipo:");
             System.out.println("1)Ver Equipo.");
             System.out.println("2)Modificar Equipo.");
             System.out.println("3)Volver al menu anterior.");
@@ -82,6 +82,7 @@ public class UserMenu {
             switch (sc.nextInt()){
                 case 1:
                     viewTeam();
+                    tMenu();
                     break;
                 case 2:
                     modifyTeam();
@@ -152,12 +153,12 @@ public class UserMenu {
                 int i = 0;
                 for (Player p :
                         all) {
-                    System.out.println(i++ + ") Tipo:" + p.getClass().getSimpleName() + "  Nombre: " + p.getPlayerName() + " Club: " + p.getClubName());
+                    System.out.println(i++ + ") Tipo:" + p.getClass().getSimpleName() + ", Nombre: " + p.getPlayerName() + ", Club: " + p.getClubName()+", Precio: "+p.getPrice());
                 }
                 System.out.println("\nSelecciona por numero");
                 select = all.get(sc.nextInt());
-                System.out.println("\nType:" + select.getClass().getSimpleName() + "  Name: " + select.getPlayerName() + " Club: " + select.getClubName());
-                System.out.println("\nEs el que quieres seleccionar?Y/N R:volver");
+                System.out.println("\nType:" + select.getClass().getSimpleName() + ", Name: " + select.getPlayerName() + ", Club: " + select.getClubName()+", Precio: "+select.getPrice());
+                System.out.println("\nTu dinero: "+user.getMyTeam().getMoney()+"\nEs el que quieres seleccionar?Y/N R:volver");
                 char c = sc.next().charAt(0);
                 if (c == 'y' || c == 'Y') {
                     accept = true;
@@ -200,7 +201,7 @@ public class UserMenu {
             //        user.getMyTeam().remove(player);
         }
 
-        private void changeTeamName(){
+        private void changeTeamName(){//Cambiar para que los fondos no queden en 0
             String teamName;
             System.out.println("\nIngrese el nombre de su equipo:");
             sc.skip("\n");
