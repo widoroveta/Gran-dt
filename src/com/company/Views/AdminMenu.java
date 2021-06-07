@@ -299,7 +299,8 @@ public class AdminMenu {
             }
             clubs.get(i).getPlayerList().remove(player1);
             clubs.get(i).getPlayerList().set(index, player2);
-            System.out.println(clubs);
+
+            
             clubRepository.setClubs(clubs);
             clubRepository.save();
         }
