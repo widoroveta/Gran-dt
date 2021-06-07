@@ -49,7 +49,7 @@ public class ClubRepository implements Repository<Player> {
                         return super.getType();
                     }
                 });
-                clubs.subList(0, 19);
+
             }
         } catch (IOException e) {
             e.printStackTrace();

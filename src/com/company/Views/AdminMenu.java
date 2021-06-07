@@ -158,6 +158,7 @@ public class AdminMenu {
                     c = scanner.next().charAt(0);
                     if (c == 'y' || c == 'Y') {
                         System.out.println("escribe el nombre del club");
+                        scanner.skip("\n");
                         select.setClub(scanner.nextLine());
                         boolean b = changeNameClub(select);
                         if (b) {
@@ -247,38 +248,58 @@ public class AdminMenu {
         }
 
         private void changePrice(Player player) {
-            Player player1 = player;
-            print.println("Que precio desear ponerle al jugador?");
-            player1.setPrice(scanner.nextInt());
-            changePlayer(player, player1);
-            System.out.println("cambio realizado");
+
+            try {
+                Player player1 = null;
+                player1 = (Player) player.clone();
+                print.println("Que precio desear ponerle al jugador?");
+                player1.setPrice(scanner.nextInt());
+                changePlayer(player, player1);
+                System.out.println("cambio realizado");
+            } catch (CloneNotSupportedException e) {
+                e.printStackTrace();
+            }
             menu();
         }
 
         private void changeNumber(Player player) {
-            Player player1 = player;
-            print.println("Que numero desear ponerle al jugador?");
-            player1.setPlayerNumber(scanner.nextInt());
 
-            //    changePlayer(player, player1);
-            //   System.out.println("cambio realizado");
+            try {
+                Player player1 = null;
+                player1 = (Player) player.clone();
+                print.println("Que numero desear ponerle al jugador?");
+                player1.setPlayerNumber(scanner.nextInt());
+
+                changePlayer(player, player1);
+            } catch (CloneNotSupportedException e) {
+                e.printStackTrace();
+            }
+
+             System.out.println("cambio realizado");
             menu();
         }
 
         private void changePlayer(Player player1, Player player2) {
-            Club select = null;
-            //System.out.println(player1);
-            int index = 0;
-            int i = 0;
+
+            int index = -1;
+            int i = -1;
             List<Club> clubs = clubRepository.getClubs();
+            System.out.println(clubs);
             for (Club c :
                     clubs) {
-                if (c.getPlayerList().contains(player1)) {
-                    index = c.getPlayerList().indexOf(player1);
-                    i = clubRepository.getClubs().indexOf(c);
+                i++;
+                if (c.getClub().equals(player1.getClubName())) {
+                    for (Player player : c.getPlayerList()) {
+                        if (player.getPlayerName().equals(player1.getPlayerName())) {
+                            index = c.getPlayerList().indexOf(player);
+                            break;
+                        }
+                    }
                 }
             }
+            clubs.get(i).getPlayerList().remove(player1);
             clubs.get(i).getPlayerList().set(index, player2);
+            System.out.println(clubs);
             clubRepository.setClubs(clubs);
             clubRepository.save();
         }
@@ -286,21 +307,19 @@ public class AdminMenu {
         private void changeName(Player player) {
 
 
-           //try {
+            try {
                 Player player1 = new Player();
-           //     player1 = (Player) player.clone();
+                player1 = (Player) player.clone();
                 print.println("Que nombre desear ponerle al jugador?");
                 scanner.skip("\n");
                 player1.setPlayerName(scanner.nextLine());
-                System.out.println(player);
-                System.out.println(player1);
-            /*} catch (CloneNotSupportedException e) {
+                changePlayer(player, player1);
+            } catch (CloneNotSupportedException e) {
                 e.printStackTrace();
-            }*/
+            }
 
 
-           /* changePlayer(player, player1);
-            System.out.println("cambio realizado");*/
+            System.out.println("cambio realizado");
             menu();
         }
 

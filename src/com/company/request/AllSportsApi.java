@@ -23,14 +23,14 @@ public class AllSportsApi {
     private static final String appKey = "4f613aeef397a3ac7ed09e01692012de508c4f7f66277ac5a0eb798113e7081e";
     private final List<String> stringList = new ArrayList<>();
     private HttpURLConnection con = null;
-    private final List<Club> clubs = new ArrayList<>();
+    private List<Club> clubs = new ArrayList<>();
 
     public void toUpdate() throws IOException {
-        int i;
+        int i=0;
         ObjectMapper mapper = new ObjectMapper();
         mapper.configure(MapperFeature.PROPAGATE_TRANSIENT_MARKER, true);
         mapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
-        for (i = 10; i <= 40; i++) {
+        for (i = 10; i <= 28; i++) {
             try {
                 URL url = new URL("https://allsportsapi.com/api/football/?&met=Teams&teamId=26" + i + "&APIkey=" + appKey);
 
@@ -73,12 +73,17 @@ public class AllSportsApi {
                 clubs.add(club);
 
             }
-            ClubRepository clubRepository = new ClubRepository();
-            clubRepository.setClubs(clubs);
-            clubRepository.save();
+
 
 
         }
+
+        System.out.println(clubs.size());
+
+        ClubRepository clubRepository = new ClubRepository();
+        clubRepository.setClubs(clubs);
+        clubRepository.save();
+
     }
 
 }
