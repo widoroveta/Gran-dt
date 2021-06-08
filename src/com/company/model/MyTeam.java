@@ -10,7 +10,7 @@ public class MyTeam implements Tactic {
     private final List<Player> players = new ArrayList<>();
     private String teamName;
     private int money;
-    private transient int score;
+    private int score;
 
     public MyTeam() {
         this.score = 0;
@@ -113,11 +113,12 @@ public class MyTeam implements Tactic {
         }
         return score;
     }
+
     @Override
     public String toString() {
         return "MyTeam{" +
-                "teamName='" + teamName + '\'' +
-                tactic() +
+                "players=" + players +
+                ", teamName='" + teamName + '\'' +
                 ", money=" + money +
                 ", score=" + score +
                 '}';

@@ -131,14 +131,14 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "\nUser{" +
                 "userName='" + userName + '\'' +
                 ", password='" + password + '\'' +
                 ", name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", email='" + email + '\'' +
                 ", phone=" + phone +
+                ", myTeam=" + myTeam +
                 '}';
     }
-
 }
