@@ -5,11 +5,11 @@
 } ], [ "com.company.model.Result", {
   "name" : "lamona",
   "date" : [ "java.util.Date", 1620270000000 ],
-  "score" : 4
+  "score" : 0
 } ], [ "com.company.model.Result", {
   "name" : "lamona",
   "date" : [ "java.util.Date", 1620874800000 ],
-  "score" : 8
+  "score" : 4
 } ], [ "com.company.model.Result", {
   "name" : "lamona",
   "date" : [ "java.util.Date", 1621479600000 ],
@@ -17,15 +17,15 @@
 } ], [ "com.company.model.Result", {
   "name" : "lamona",
   "date" : [ "java.util.Date", 1622084400000 ],
-  "score" : 2
+  "score" : 4
 } ], [ "com.company.model.Result", {
   "name" : "lamona",
   "date" : [ "java.util.Date", 1622775600000 ],
-  "score" : 6
+  "score" : 8
 } ], [ "com.company.model.Result", {
   "name" : "lamona",
   "date" : [ "java.util.Date", 1623380400000 ],
-  "score" : 0
+  "score" : 6
 } ], [ "com.company.model.Result", {
   "name" : "lamona",
   "date" : [ "java.util.Date", 1623985200000 ],
@@ -37,11 +37,11 @@
 } ], [ "com.company.model.Result", {
   "name" : "guido",
   "date" : [ "java.util.Date", 1622343600000 ],
-  "score" : 6
+  "score" : 10
 } ], [ "com.company.model.Result", {
   "name" : "guido",
   "date" : [ "java.util.Date", 1620270000000 ],
-  "score" : 8
+  "score" : 6
 } ], [ "com.company.model.Result", {
   "name" : "guido",
   "date" : [ "java.util.Date", 1620874800000 ],
@@ -49,19 +49,19 @@
 } ], [ "com.company.model.Result", {
   "name" : "guido",
   "date" : [ "java.util.Date", 1621479600000 ],
-  "score" : 21
-} ], [ "com.company.model.Result", {
-  "name" : "guido",
-  "date" : [ "java.util.Date", 1622084400000 ],
   "score" : 8
 } ], [ "com.company.model.Result", {
   "name" : "guido",
+  "date" : [ "java.util.Date", 1622084400000 ],
+  "score" : 4
+} ], [ "com.company.model.Result", {
+  "name" : "guido",
   "date" : [ "java.util.Date", 1622775600000 ],
-  "score" : 14
+  "score" : 10
 } ], [ "com.company.model.Result", {
   "name" : "guido",
   "date" : [ "java.util.Date", 1623380400000 ],
-  "score" : 6
+  "score" : 8
 } ], [ "com.company.model.Result", {
   "name" : "guido",
   "date" : [ "java.util.Date", 1623985200000 ],

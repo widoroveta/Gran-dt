@@ -1,5 +1,6 @@
 package com.company;
 
+import com.company.Views.AdminMenu;
 import com.company.enums.Dates;
 import com.company.model.*;
 import com.company.repository.FixtureRepository;
@@ -15,16 +16,6 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-     /*  MainMenu menu =new MainMenu();
-        menu.menuMain();*/
- /*AdminMenu adminMenu = new AdminMenu();
-  adminMenu.menu();*/
-       /* SimpleDateFormat formatter= new SimpleDateFormat("yyyy-MM-dd 'at' HH:mm:ss z");
-        Date date = new Date(System.currentTimeMillis());
-        System.out.println(formatter.format(date));
-
-        UserMenu menu = new UserMenu(new User());
-        menu.preCharge();*/
 
         FixtureRepository fixtureRepository = new FixtureRepository();
         List<Match> all = fixtureRepository.getAll();
@@ -89,12 +80,14 @@ public class Main {
 
                 if(r.getName().equals(user.getName()))
                 {
-             System.out.println(points+=r.getScore());
+               points+=r.getScore();
                 }
             }
             user.getMyTeam().setScore(points);
         }
         System.out.println(all1);
+        userRepository.setUsers(all1);
+        userRepository.save();
     }
 }
 

@@ -63,16 +63,19 @@ public class ResultsRepository implements Repository<Result> {
     @Override
     public void retrieveData() {
         try {
-            if (fileResult.exists())
+            if (fileResult.exists()) {
                 mapper.enableDefaultTyping(ObjectMapper.DefaultTyping.NON_FINAL);
-            mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-            mapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
+                mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+                mapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
                 this.results = this.mapper.readValue(this.fileResult, new TypeReference<ArrayList<Result>>() {
                     @Override
                     public Type getType() {
                         return super.getType();
                     }
                 });
+            }else{
+                this.results=new ArrayList<>();
+            }
         }
      catch(
     IOException e) {

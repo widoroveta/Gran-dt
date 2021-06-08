@@ -54,6 +54,7 @@
     } ] ] ],
     "teamName" : "monitosteam",
     "money" : 42500,
+    "score" : 24,
     "pointDate" : 0
   } ]
 } ], [ "com.company.model.User", {
@@ -118,6 +119,7 @@
     } ] ] ],
     "teamName" : "carlos",
     "money" : 39500,
+    "score" : 52,
     "pointDate" : 0
   } ]
 } ] ] ]
