@@ -34,6 +34,7 @@ public class UserMenu {
                 menu();
             case 2:
                 menuTeam menuT=new menuTeam();
+                menuT.tMenu();
                 break;
             case 3:
                 menuFixture menuF=new menuFixture();
@@ -71,7 +72,8 @@ public class UserMenu {
 
         private Player playerAux=new Player();
 
-        public menuTeam(){tMenu();}
+        public menuTeam(){
+            }
 
         private void tMenu(){
             if(user.getMyTeam().getTeamName()==null){

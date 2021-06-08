@@ -1,20 +1,23 @@
 package com.company;
 
 import com.company.enums.Dates;
-import com.company.model.Fixture;
-import com.company.model.Match;
-import com.company.model.Player;
-import com.company.model.User;
+import com.company.model.*;
 import com.company.repository.FixtureRepository;
+import com.company.repository.ResultsRepository;
 import com.company.repository.UserRepository;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) {
- /* AdminMenu adminMenu = new AdminMenu();
+     /*  MainMenu menu =new MainMenu();
+        menu.menuMain();*/
+ /*AdminMenu adminMenu = new AdminMenu();
   adminMenu.menu();*/
        /* SimpleDateFormat formatter= new SimpleDateFormat("yyyy-MM-dd 'at' HH:mm:ss z");
         Date date = new Date(System.currentTimeMillis());
@@ -25,7 +28,14 @@ public class Main {
 
         FixtureRepository fixtureRepository = new FixtureRepository();
         List<Match> all = fixtureRepository.getAll();
-        Date date = new Date();
+      //  Date date = new Date();
+        SimpleDateFormat SDF = new SimpleDateFormat("dd/MM/yyyy");
+        Date date = null;
+        try {
+            date = SDF.parse("14/06/2021");
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
         UserRepository userRepository = new UserRepository();
 
         for (Match match :
@@ -37,7 +47,7 @@ public class Main {
                     match.assembleMatch();
 
                     match.pointsPlayers();
-                    System.out.println("messi");
+
                 }
 
             }
@@ -46,15 +56,45 @@ public class Main {
         fixture.setFixture(all);
         fixtureRepository.setFixture(fixture);
         fixtureRepository.save();
-
+        Dates[] values = Dates.values();
         List<User> all1 = userRepository.getAll();
-        for (User us:
-             all1) {
-            for (Player p:
-                 us.getMyTeam().getPlayers()) {
-             System.out.println(fixtureRepository.searchPoints(p, Dates.DATE_FIRST.getDate()));
+        List<Result> results = new ArrayList<>();
+        ResultsRepository repository = new ResultsRepository();
+        int points = 0;
+        for (User us :
+                all1) {
+
+            for (Dates d :
+                    values) {
+                points = 0;
+
+                for (Player p :
+                        us.getMyTeam().getPlayers()) {
+
+                    points += fixtureRepository.searchPoints(p, d.getDate());
+                }
+
+                results.add(new Result(us.getName(), d.getDate(), points));
             }
+
+            repository.setResults(results);
+            repository.save();
         }
+        for (User user:
+             all1) {
+            List<Result> all2 = repository.getAll();
+            points=0;
+            for (Result r:
+                 all2) {
+
+                if(r.getName().equals(user.getName()))
+                {
+             System.out.println(points+=r.getScore());
+                }
+            }
+            user.getMyTeam().setScore(points);
+        }
+        System.out.println(all1);
     }
 }
 

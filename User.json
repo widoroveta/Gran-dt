@@ -1,0 +1,123 @@
+[ "java.util.ArrayList", [ [ "com.company.model.User", {
+  "userName" : "lamonagimenez",
+  "password" : "789789",
+  "name" : "lamona",
+  "surname" : "gimenez",
+  "email" : "ffsaasf",
+  "phone" : 789456,
+  "myTeam" : [ "com.company.model.MyTeam", {
+    "players" : [ "java.util.ArrayList", [ [ "com.company.model.Defender", {
+      "playerName" : "Bednarek Jan",
+      "playerNumber" : 35,
+      "price" : 2000,
+      "clubName" : "Southampton"
+    } ], [ "com.company.model.Midfielder", {
+      "playerName" : "Propper Davy",
+      "playerNumber" : 24,
+      "price" : 4500,
+      "clubName" : "Brighton"
+    } ], [ "com.company.model.Midfielder", {
+      "playerName" : "March Solomon",
+      "playerNumber" : 20,
+      "price" : 1500,
+      "clubName" : "Brighton"
+    } ], [ "com.company.model.Midfielder", {
+      "playerName" : "Albrighton Marc",
+      "playerNumber" : 11,
+      "price" : 3000,
+      "clubName" : "Leicester"
+    } ], [ "com.company.model.Defender", {
+      "playerName" : "Veltman Joel",
+      "playerNumber" : 34,
+      "price" : 5000,
+      "clubName" : "Brighton"
+    } ], [ "com.company.model.Defender", {
+      "playerName" : "Fuchs Christian",
+      "playerNumber" : 28,
+      "price" : 5000,
+      "clubName" : "Leicester"
+    } ], [ "com.company.model.Defender", {
+      "playerName" : "Pereira Ricardo",
+      "playerNumber" : 21,
+      "price" : 3000,
+      "clubName" : "Leicester"
+    } ], [ "com.company.model.Forward", {
+      "playerName" : "Gabriel Jesus",
+      "playerNumber" : 9,
+      "price" : 2000,
+      "clubName" : "Manchester City"
+    } ], [ "com.company.model.Forward", {
+      "playerName" : "Mahrez Riyad",
+      "playerNumber" : 26,
+      "price" : 1500,
+      "clubName" : "Manchester City"
+    } ] ] ],
+    "teamName" : "monitosteam",
+    "money" : 42500,
+    "pointDate" : 0
+  } ]
+} ], [ "com.company.model.User", {
+  "userName" : "guido",
+  "password" : "456",
+  "name" : "guido",
+  "surname" : "roveta",
+  "email" : "fdasd",
+  "phone" : 456,
+  "myTeam" : [ "com.company.model.MyTeam", {
+    "players" : [ "java.util.ArrayList", [ [ "com.company.model.Goalkeeper", {
+      "playerName" : "Lloris Hugo",
+      "playerNumber" : 1,
+      "price" : 2500,
+      "clubName" : "Tottenham",
+      "withoutGoals" : false
+    } ], [ "com.company.model.Forward", {
+      "playerName" : "Son Heung-Min",
+      "playerNumber" : 7,
+      "price" : 4000,
+      "clubName" : "Tottenham"
+    } ], [ "com.company.model.Midfielder", {
+      "playerName" : "McTominay Scott",
+      "playerNumber" : 39,
+      "price" : 5000,
+      "clubName" : "Manchester United"
+    } ], [ "com.company.model.Forward", {
+      "playerName" : "Connolly Aaron",
+      "playerNumber" : 7,
+      "price" : 2500,
+      "clubName" : "Brighton"
+    } ], [ "com.company.model.Defender", {
+      "playerName" : "Ramsay Kayne",
+      "playerNumber" : 31,
+      "price" : 1000,
+      "clubName" : "Southampton"
+    } ], [ "com.company.model.Defender", {
+      "playerName" : "Williams Brandon",
+      "playerNumber" : 33,
+      "price" : 4500,
+      "clubName" : "Manchester United"
+    } ], [ "com.company.model.Midfielder", {
+      "playerName" : "Bissouma Yves",
+      "playerNumber" : 8,
+      "price" : 5000,
+      "clubName" : "Brighton"
+    } ], [ "com.company.model.Midfielder", {
+      "playerName" : "Lucas",
+      "playerNumber" : 27,
+      "price" : 500,
+      "clubName" : "Tottenham"
+    } ], [ "com.company.model.Defender", {
+      "playerName" : "Bailly Eric",
+      "playerNumber" : 3,
+      "price" : 2000,
+      "clubName" : "Manchester United"
+    } ], [ "com.company.model.Defender", {
+      "playerName" : "Lindelof Victor",
+      "playerNumber" : 2,
+      "price" : 3500,
+      "clubName" : "Manchester United"
+    } ] ] ],
+    "teamName" : "carlos",
+    "money" : 39500,
+    "pointDate" : 0
+  } ]
+} ] ] ]

@@ -27,7 +27,7 @@ public class Forward extends Player {
 
             super.setGoals(3);
         }
-        super.setPoints(super.getGoals() * Points.GOAL_DEFENDER.getPoints());
+        super.setPoints(super.getGoals() * Points.GOAL_FORWARD.getPoints());
         //Cards
         if (super.playYellowCard()) {
             super.setPoints(super.getPoints()-Points.YELLOW_CARD.getPoints());

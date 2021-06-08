@@ -18,41 +18,67 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ResultsRepository implements Repository<Result> {
-   List<Result> results =new ArrayList<>();
-   File fileResult =new File("Result.json");
-   ObjectMapper mapper=new ObjectMapper();
-   
-   
-   @Override
+    List<Result> results = new ArrayList<>();
+    File fileResult = new File("Result.json");
+    ObjectMapper mapper = new ObjectMapper();
+
+    public List<Result> getResults() {
+        return results;
+    }
+
+    public void setResults(List<Result> res) {
+       retrieveData();
+        for (Result r:
+            this.results) {
+            for (Result s:
+                res ) {
+                if(r.getName().equals(s)&&r.getDate().equals(s))
+                {
+                    res.remove(s);
+                }
+            }
+        }
+        this.results = res;
+    }
+
+    @Override
     public void add(Result result) {
-	//retrieveData();
-	   results.add(result);
-	   try {
-		mapper.writerWithDefaultPrettyPrinter().writeValue(this.fileResult, results);
-	} catch (JsonGenerationException e) {
-		e.printStackTrace();
-	} catch (JsonMappingException e) {
-		e.printStackTrace();
-	} catch (IOException e) {
-		e.printStackTrace();
-	}
+        retrieveData();
+        results.add(result);
+
+        try {
+            mapper.enableDefaultTyping(ObjectMapper.DefaultTyping.NON_FINAL);
+            mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+            mapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
+            mapper.writerWithDefaultPrettyPrinter().writeValue(this.fileResult, results);
+        } catch (JsonGenerationException e) {
+            e.printStackTrace();
+        } catch (JsonMappingException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
     public void retrieveData() {
-    	try {
-    this.results=this.mapper.readValue(this.fileResult, new TypeReference<ArrayList<Result>>(){
-        @Override
-        public Type getType() {
-            return super.getType();
+        try {
+            if (fileResult.exists())
+                mapper.enableDefaultTyping(ObjectMapper.DefaultTyping.NON_FINAL);
+            mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+            mapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
+                this.results = this.mapper.readValue(this.fileResult, new TypeReference<ArrayList<Result>>() {
+                    @Override
+                    public Type getType() {
+                        return super.getType();
+                    }
+                });
         }
-    });
+     catch(
+    IOException e) {
+         e.printStackTrace();
 
-} catch (IOException e) {
-    e.printStackTrace();
-
-}
-
+     }
 }
 
     @Override

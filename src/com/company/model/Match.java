@@ -34,12 +34,11 @@ public class Match {
                 '}';
     }
     public String toStringOnlyViewMatch(){
-        return  "\nMatch{" +
+        return  "\nMatch" +
                 "id=" + id +
                 ", nameLocal='" + nameLocal + '\'' +
                 ", nameVisitor='" + nameVisitor + '\'' +
-                ", date=" + date +
-                '}';
+                ", date=" + date ;
     }
 
     public int scoreGoals(List<Player> team) {

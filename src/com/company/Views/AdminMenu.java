@@ -1,11 +1,10 @@
 package com.company.Views;
 
-import com.company.model.Club;
-import com.company.model.Fixture;
-import com.company.model.Match;
-import com.company.model.Player;
+import com.company.model.*;
 import com.company.repository.ClubRepository;
 import com.company.repository.FixtureRepository;
+import com.company.repository.ResultsRepository;
+import com.company.repository.UserRepository;
 import com.company.request.AllSportsApi;
 
 import java.io.IOException;
@@ -28,6 +27,7 @@ public class AdminMenu {
         print.println("2)Modificar");
         print.println("3)Eliminar");
         print.println("4)Ver datos");
+        print.println("5)Volver al menu principal");
         switch (this.scanner.nextInt()) {
             case 1:
                 update();
@@ -37,8 +37,14 @@ public class AdminMenu {
                 modificationMenuAdmin.modification();
                 break;
             case 3:
+                new RemoveMenuAdmin().menuRemove();
                 break;
-
+            case 4:
+                new ViewMenuAdmin().viewMenu();
+                break;
+            case 5:
+                new MainMenu().menuMain();
+                break;
         }
     }
 
@@ -65,8 +71,36 @@ public class AdminMenu {
 
 
     /////
-    private class removeMenuAdmin {
-        public removeMenuAdmin() {
+    private class RemoveMenuAdmin {
+        public RemoveMenuAdmin() {
+        }
+
+        public void menuRemove() {
+            print.println("Menu de eliminacion");
+            print.println("Que quieres eliminar?");
+            print.println("1)Un jugador");
+            print.println("2)un club");
+            print.println("3)un usuario ");
+            print.println("4)un partido ");
+            print.println("5)un resultado ");
+            print.println("6)Volver al menu ");
+            switch (scanner.nextInt()) {
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+                case 5:
+                    break;
+
+                case 6:
+                    break;
+
+            }
+
         }
     }
 
@@ -83,6 +117,7 @@ public class AdminMenu {
             print.println("2)Clubes");
             print.println("3)Partidos");
             print.println("4)Resultados");
+            print.println("5)Volver al menu");
             switch (scanner.nextInt()) {
                 case 1:
                     modifyPLayer();
@@ -93,6 +128,10 @@ public class AdminMenu {
                 case 3:
                     modifyMatch();
                     break;
+                case 4:
+                    menu();
+                    break;
+
 
             }
 
@@ -233,7 +272,7 @@ public class AdminMenu {
 
         public boolean changeNameClub(Club select) {
             Club c = select;
-            int index = 0;
+            int index = -1;
             List<Club> clubs = clubRepository.getClubs();
             if (clubs.contains(select)) {
                 index = clubs.indexOf(select);
@@ -275,7 +314,7 @@ public class AdminMenu {
                 e.printStackTrace();
             }
 
-             System.out.println("cambio realizado");
+            System.out.println("cambio realizado");
             menu();
         }
 
@@ -300,7 +339,7 @@ public class AdminMenu {
             clubs.get(i).getPlayerList().remove(player1);
             clubs.get(i).getPlayerList().set(index, player2);
 
-            
+
             clubRepository.setClubs(clubs);
             clubRepository.save();
         }
@@ -415,5 +454,64 @@ public class AdminMenu {
             }
         }
     }
-}
 
+    private class ViewMenuAdmin {
+
+        public ViewMenuAdmin() {
+        }
+
+        public void viewMenu() {
+            ClubRepository clubRepository =new ClubRepository();
+            print.println("Menu de datos ");
+            print.println("Que quieres ver");
+            print.println("1)Jugadores");
+            print.println("2)Clubes");
+            print.println("3)Usuarios ");
+            print.println("4)Partidos ");
+            print.println("5)Resultados ");
+            print.println("6)Volver al menu ");
+            switch (scanner.nextInt()) {
+
+                case 1:
+                  System.out.println( clubRepository.getAll());
+                exitViews();
+                  break;
+                case 2:
+                    System.out.println(clubRepository.getClubs());
+                    exitViews();
+                    break;
+                case 3:
+                    UserRepository repository=new UserRepository();
+                    print.println(repository.getAll());
+               exitViews();
+                    break;
+                case 4:
+                    FixtureRepository fixtureRepository=new FixtureRepository();
+                    print.println(fixtureRepository.getAll());
+                    break;
+                case 5:
+                    ResultsRepository repository1 =new ResultsRepository();
+                    print.println(repository1.getAll());
+                    break;
+
+                case 6:
+                    menu();
+                    break;
+
+            }
+
+        }
+        public void exitViews() {
+            print.println("Aprete y para volver al menu de vistas y n para volver al menu principal de admin");
+            char c = scanner.next().charAt(0);
+            if (c == 'y' || c == 'Y') {
+
+               viewMenu();
+            }
+            if (c == 'n' || c == 'N') {
+                menu();
+            }
+        }
+    }
+
+}
