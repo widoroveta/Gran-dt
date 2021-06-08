@@ -1,15 +1,90 @@
 package com.company.Views;
 
-import com.company.model.User;
+import com.company.enums.Dates;
+import com.company.model.*;
+import com.company.repository.FixtureRepository;
+import com.company.repository.ResultsRepository;
+import com.company.repository.UserRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 import java.util.Scanner;
 
 public class MainMenu {
    static Scanner scanner = new Scanner(System.in);
 
-    public void menuMain() {
+   private void preProccesor(){
+       FixtureRepository fixtureRepository = new FixtureRepository();
+       List<Match> all = fixtureRepository.getAll();
+       Date date = new Date();
+
+       UserRepository userRepository = new UserRepository();
+
+       for (Match match :
+               all) {
+
+           if (match.getDate().before(date)) {
+               if (match.getVisitorTeam().isEmpty() || match.getLocalTeam().isEmpty()) {
+
+                   match.assembleMatch();
+
+                   match.pointsPlayers();
+
+               }
+
+           }
+       }
+       Fixture fixture = new Fixture();
+       fixture.setFixture(all);
+       fixtureRepository.setFixture(fixture);
+       fixtureRepository.save();
+       Dates[] values = Dates.values();
+       List<User> all1 = userRepository.getAll();
+       List<Result> results = new ArrayList<>();
+       ResultsRepository repository = new ResultsRepository();
+       int points = 0;
+       for (User us :
+               all1) {
+
+           for (Dates d :
+                   values) {
+               points = 0;
+
+               for (Player p :
+                       us.getMyTeam().getPlayers()) {
+
+                   points += fixtureRepository.searchPoints(p, d.getDate());
+               }
+
+               results.add(new Result(us.getName(), d.getDate(), points));
+           }
+
+           repository.setResults(results);
+           repository.save();
+       }
+       for (User user:
+               all1) {
+           List<Result> all2 = repository.getAll();
+           points=0;
+           for (Result r:
+                   all2) {
+
+               if(r.getName().equals(user.getName()))
+               {
+                   points+=r.getScore();
+               }
+           }
+           user.getMyTeam().setScore(points);
+       }
+       userRepository.setUsers(all1);
+       userRepository.save();
+   }
+
+   public void menuMain() {
+        preProccesor();
         int s;
         int opcion; //Guardaremos la opcion del usuario
         System.out.println("Gran DT Masters");

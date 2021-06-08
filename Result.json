@@ -1,73 +1,73 @@
 [ "java.util.ArrayList", [ [ "com.company.model.Result", {
-  "name" : "lamona",
-  "date" : [ "java.util.Date", 1622343600000 ],
-  "score" : 0
+  "name" : "pab",
+  "date" : [ "java.util.Date", 1622404800000 ],
+  "score" : 12
 } ], [ "com.company.model.Result", {
-  "name" : "lamona",
-  "date" : [ "java.util.Date", 1620270000000 ],
-  "score" : 0
-} ], [ "com.company.model.Result", {
-  "name" : "lamona",
-  "date" : [ "java.util.Date", 1620874800000 ],
+  "name" : "pab",
+  "date" : [ "java.util.Date", 1620331200000 ],
   "score" : 4
 } ], [ "com.company.model.Result", {
-  "name" : "lamona",
-  "date" : [ "java.util.Date", 1621479600000 ],
+  "name" : "pab",
+  "date" : [ "java.util.Date", 1620936000000 ],
+  "score" : 16
+} ], [ "com.company.model.Result", {
+  "name" : "pab",
+  "date" : [ "java.util.Date", 1621540800000 ],
+  "score" : 4
+} ], [ "com.company.model.Result", {
+  "name" : "pab",
+  "date" : [ "java.util.Date", 1622145600000 ],
   "score" : 2
 } ], [ "com.company.model.Result", {
-  "name" : "lamona",
-  "date" : [ "java.util.Date", 1622084400000 ],
+  "name" : "pab",
+  "date" : [ "java.util.Date", 1622836800000 ],
   "score" : 4
 } ], [ "com.company.model.Result", {
-  "name" : "lamona",
-  "date" : [ "java.util.Date", 1622775600000 ],
-  "score" : 8
-} ], [ "com.company.model.Result", {
-  "name" : "lamona",
-  "date" : [ "java.util.Date", 1623380400000 ],
-  "score" : 6
-} ], [ "com.company.model.Result", {
-  "name" : "lamona",
-  "date" : [ "java.util.Date", 1623985200000 ],
+  "name" : "pab",
+  "date" : [ "java.util.Date", 1623441600000 ],
   "score" : 0
 } ], [ "com.company.model.Result", {
-  "name" : "lamona",
-  "date" : [ "java.util.Date", 1624590000000 ],
+  "name" : "pab",
+  "date" : [ "java.util.Date", 1624046400000 ],
   "score" : 0
 } ], [ "com.company.model.Result", {
-  "name" : "guido",
-  "date" : [ "java.util.Date", 1622343600000 ],
+  "name" : "pab",
+  "date" : [ "java.util.Date", 1624651200000 ],
+  "score" : 0
+} ], [ "com.company.model.Result", {
+  "name" : "qwe",
+  "date" : [ "java.util.Date", 1622404800000 ],
   "score" : 10
 } ], [ "com.company.model.Result", {
-  "name" : "guido",
-  "date" : [ "java.util.Date", 1620270000000 ],
-  "score" : 6
-} ], [ "com.company.model.Result", {
-  "name" : "guido",
-  "date" : [ "java.util.Date", 1620874800000 ],
-  "score" : 6
-} ], [ "com.company.model.Result", {
-  "name" : "guido",
-  "date" : [ "java.util.Date", 1621479600000 ],
-  "score" : 8
-} ], [ "com.company.model.Result", {
-  "name" : "guido",
-  "date" : [ "java.util.Date", 1622084400000 ],
+  "name" : "qwe",
+  "date" : [ "java.util.Date", 1620331200000 ],
   "score" : 4
 } ], [ "com.company.model.Result", {
-  "name" : "guido",
-  "date" : [ "java.util.Date", 1622775600000 ],
+  "name" : "qwe",
+  "date" : [ "java.util.Date", 1620936000000 ],
   "score" : 10
 } ], [ "com.company.model.Result", {
-  "name" : "guido",
-  "date" : [ "java.util.Date", 1623380400000 ],
+  "name" : "qwe",
+  "date" : [ "java.util.Date", 1621540800000 ],
+  "score" : 12
+} ], [ "com.company.model.Result", {
+  "name" : "qwe",
+  "date" : [ "java.util.Date", 1622145600000 ],
   "score" : 8
 } ], [ "com.company.model.Result", {
-  "name" : "guido",
-  "date" : [ "java.util.Date", 1623985200000 ],
+  "name" : "qwe",
+  "date" : [ "java.util.Date", 1622836800000 ],
+  "score" : 2
+} ], [ "com.company.model.Result", {
+  "name" : "qwe",
+  "date" : [ "java.util.Date", 1623441600000 ],
   "score" : 0
 } ], [ "com.company.model.Result", {
-  "name" : "guido",
-  "date" : [ "java.util.Date", 1624590000000 ],
+  "name" : "qwe",
+  "date" : [ "java.util.Date", 1624046400000 ],
+  "score" : 0
+} ], [ "com.company.model.Result", {
+  "name" : "qwe",
+  "date" : [ "java.util.Date", 1624651200000 ],
   "score" : 0
 } ] ] ]

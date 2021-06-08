@@ -65,6 +65,7 @@
     } ] ] ],
     "teamName" : "Ronaldinho Soccer 64",
     "money" : 37000,
+    "score" : 42,
     "pointDate" : 0
   } ]
 } ], [ "com.company.model.User", {
@@ -122,18 +123,14 @@
       "price" : 3000,
       "clubName" : "Crystal Palace"
     } ], [ "com.company.model.Forward", {
-      "playerName" : "Bale Gareth",
-      "playerNumber" : 9,
+      "playerName" : "Scarlett Dane",
+      "playerNumber" : 53,
       "price" : 2500,
       "clubName" : "Tottenham"
-    } ], [ "com.company.model.Forward", {
-      "playerName" : "Delap Liam",
-      "playerNumber" : 9,
-      "price" : 4500,
-      "clubName" : "Manchester City"
     } ] ] ],
     "teamName" : "AllStars",
-    "money" : 37500,
+    "money" : 31000,
+    "score" : 46,
     "pointDate" : 0
   } ]
 } ] ] ]

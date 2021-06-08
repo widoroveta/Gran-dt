@@ -13,29 +13,21 @@ public class MyTeam implements Tactic {
     private int score;
 
     public MyTeam() {
-        this.score = 0;
-        this.money = 0;
     }
 
-    public boolean change(Player player1, Player player2) {
-        if (players.contains(player1)) {
+    public void change(Player player1, Player player2) {
+
+        if ( players.contains(player1) ) {
             players.remove(player1);
-            boolean b = players.add(player2);
-            if (!b) {
-                players.add(player1);
-                return false;
-            } else {
-                return true;
-            }
-        } else return false;
-    }
-
-    public boolean remove(Player player) {
-        if (!players.isEmpty()) {
-            if (players.contains(player)) {
-                return players.remove(player);
+            addPlayer(player2);
             }
         }
+
+
+    public boolean remove(Player player) {
+        if ( players.contains(player) ) {
+                return players.remove(player);
+            }
         return false;
     }
 
@@ -66,10 +58,10 @@ public class MyTeam implements Tactic {
 
     public boolean addPlayer(Player player) {
 
-        if (isCanAdd(player)) {
+        if ( isCanAdd(player) ) {
 
-            this.setMoney(this.getMoney()-player.getPrice());
-           return this.players.add(player);
+            this.setMoney(this.getMoney() - player.getPrice());
+            return this.players.add(player);
         } else {
             return false;
         }
@@ -77,24 +69,24 @@ public class MyTeam implements Tactic {
     }
 
     public boolean isCanAdd(Player player) {
-        if (player.getPrice() < this.money) {
-            if (players.size() >= 11) {
+        if ( player.getPrice() < this.money ) {
+            if ( players.size() >= 11 ) {
                 System.out.println("No se pueden agregar mas de 11 jugadores");
                 return false;
             } else {
-                if (players.size() == 0) return true;
+                if ( players.size() == 0 ) return true;
                 int i = 0;
                 for (Player p : players) {
                     boolean b = p.getClass().equals(player.getClass());
-                    if (b) {
+                    if ( b ) {
                         i++;
                     }
 
                 }
-                if (player instanceof Goalkeeper) return i > 0 ?  false : true;//TODO VER SI SE PUEDE AGREGAR ALERTA
-                if (player instanceof Defender) return i > 3 ? false : true;
-                if (player instanceof Midfielder) return i > 3 ? false : true;
-                if (player instanceof Forward) return i > 1 ? false : true;
+                if ( player instanceof Goalkeeper ) return i > 0 ? false : true;//TODO VER SI SE PUEDE AGREGAR ALERTA
+                if ( player instanceof Defender ) return i > 3 ? false : true;
+                if ( player instanceof Midfielder ) return i > 3 ? false : true;
+                if ( player instanceof Forward ) return i > 1 ? false : true;
             }
         } else {
             System.out.println("Fondos insuficientes.");
@@ -105,11 +97,11 @@ public class MyTeam implements Tactic {
 
     }
 
-    public int getPointDate ()
-    { int score=0;
-        for (Player player:
-             this.players) {
-          score += player.getPoints();
+    public int getPointDate() {
+        int score = 0;
+        for (Player player :
+                this.players) {
+            score += player.getPoints();
         }
         return score;
     }

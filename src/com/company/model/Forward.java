@@ -13,7 +13,7 @@ public class Forward extends Player {
 
     @Override
     public void doPoints() {
-        int random = 951;// 1 + (int) (Math.random() * ((1000 - 1) + 1));
+        int random =  1 + (int) (Math.random() * ((1000 - 1) + 1));
 
         //Goals
         if (random < 950) {

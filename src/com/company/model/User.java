@@ -4,7 +4,7 @@ import com.company.repository.UserRepository;
 
 import java.util.List;
 
-public class User {
+public class User implements Comparable<User>{
     private String userName;
     private String password;
     private String name;
@@ -140,5 +140,17 @@ public class User {
                 ", phone=" + phone +
                 ", myTeam=" + myTeam +
                 '}';
+    }
+
+    @Override
+    public int compareTo(User u) {
+        int result=0;
+        if(this.getMyTeam().getScore()>u.getMyTeam().getScore())
+            result=-1;
+        else if(this.getMyTeam().getScore()<u.getMyTeam().getScore())
+        {
+            result=1;
+        }
+        return result;
     }
 }
