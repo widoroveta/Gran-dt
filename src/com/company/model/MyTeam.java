@@ -96,6 +96,9 @@ public class MyTeam implements Tactic {
         return false;
 
     }
+    private void checkPlayerType(){
+
+    }
 
     public int getPointDate() {
         int score = 0;

@@ -23,7 +23,7 @@ public class UserMenu {
         System.out.println("2)Menu equipo");
         System.out.println("3)Menu de fixture");
         System.out.println("4)Mostrar Top Ten");
-        System.out.println("4)Cerrar sesion y volver al menu principal");
+        System.out.println("5)Cerrar sesion y volver al menu principal");
         System.out.println("Aprete cualquier otro numero para salir.");
         System.out.println("Ingrese una opcion");
 
@@ -112,7 +112,7 @@ public class UserMenu {
             teamName = sc.nextLine();
             MyTeam t1 = user.getMyTeam();
             t1.setTeamName(teamName);
-            t1.setMoney(70000);
+            t1.setMoney(40000);
             changeMyTeam(t1);
             tMenu();
         }
@@ -145,6 +145,7 @@ public class UserMenu {
                         char c = sc.next().charAt(0);
                         if ( c == 'n' || c == 'N' ) {
                             accept = true;
+                            modifyTeam();
                         }
                         if ( c == 'r' || c == 'R' ) {
                             modifyTeam();
@@ -154,10 +155,12 @@ public class UserMenu {
 
                 case 2:
                     changePlayerTeam();
+                    modifyTeam();
                     break;
 
                 case 3:
                     removePlayerTeam();
+                    modifyTeam();
                     break;
 
                 case 4:
@@ -247,7 +250,7 @@ public class UserMenu {
         changeMyTeam(t1);
     }
 
-    private void changePlayerTeam() {//TODO AGREGAR REGRESAR EN MODIFICAR EQUIPO
+    private void changePlayerTeam() {
         Player player1=searchPlayerTeam();
         Player player2 = searchPlayer();
         MyTeam team= getUser().getMyTeam();
@@ -347,13 +350,18 @@ private class TopTen{
             this.topten=usersAll;
         }
         else if(usersAll.size()>=10){
-            this.topten=usersAll.subList(0,9);
+            this.topten=usersAll.subList(0,10);
         }
     }
 
     public void showTopTen(){
         setTopTen();
-        System.out.println(this.topten);
+        for (User u:
+             this.topten) {
+            System.out.println("User: "+u.getUserName()+"; Team Name: "+u.getMyTeam().getTeamName()+"; Score: "+u.getMyTeam().getScore());
+
+        }
+        menu();
     }
 
 }

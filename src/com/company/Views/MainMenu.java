@@ -5,95 +5,120 @@ import com.company.model.*;
 import com.company.repository.FixtureRepository;
 import com.company.repository.ResultsRepository;
 import com.company.repository.UserRepository;
+import com.company.request.AllSportsApi;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Scanner;
+import java.io.IOException;
+import java.util.*;
 
 public class MainMenu {
    static Scanner scanner = new Scanner(System.in);
 
-   private void preProccesor(){
+   private void preProccesor() {
+       File clubsFile = new File("clubs.json");
+       File fixtureFile = new File("Fixture.json");
        FixtureRepository fixtureRepository = new FixtureRepository();
-       List<Match> all = fixtureRepository.getAll();
-       Date date = new Date();
+       if (clubsFile.exists()&&fixtureFile.exists()) {
+           List<Match> all = fixtureRepository.getAll();
+           Date date = new Date();
 
-       UserRepository userRepository = new UserRepository();
+           UserRepository userRepository = new UserRepository();
 
-       for (Match match :
-               all) {
+           for (Match match :
+                   all) {
 
-           if (match.getDate().before(date)) {
-               if (match.getVisitorTeam().isEmpty() || match.getLocalTeam().isEmpty()) {
+               if ( match.getDate().before(date) ) {
+                   if ( match.getVisitorTeam().isEmpty() || match.getLocalTeam().isEmpty() ) {
 
-                   match.assembleMatch();
+                       match.assembleMatch();
 
-                   match.pointsPlayers();
+                       match.pointsPlayers();
+
+                   }
 
                }
-
            }
-       }
-       Fixture fixture = new Fixture();
-       fixture.setFixture(all);
-       fixtureRepository.setFixture(fixture);
-       fixtureRepository.save();
-       Dates[] values = Dates.values();
-       List<User> all1 = userRepository.getAll();
-       List<Result> results = new ArrayList<>();
-       ResultsRepository repository = new ResultsRepository();
-       int points = 0;
-       for (User us :
-               all1) {
+           Fixture fixture = new Fixture();
+           fixture.setFixture(all);
+           fixtureRepository.setFixture(fixture);
+           fixtureRepository.save();
+           Dates[] values = Dates.values();
+           List<User> all1 = userRepository.getAll();
+           List<Result> results = new ArrayList<>();
+           ResultsRepository repository = new ResultsRepository();
+           int points = 0;
+           for (User us :
+                   all1) {
 
-           for (Dates d :
-                   values) {
+               for (Dates d :
+                       values) {
+                   points = 0;
+
+                   for (Player p :
+                           us.getMyTeam().getPlayers()) {
+
+                       points += fixtureRepository.searchPoints(p, d.getDate());
+                   }
+
+                   results.add(new Result(us.getName(), d.getDate(), points));
+               }
+
+               repository.setResults(results);
+               repository.save();
+           }
+           for (User user :
+                   all1) {
+               List<Result> all2 = repository.getAll();
                points = 0;
+               for (Result r :
+                       all2) {
 
-               for (Player p :
-                       us.getMyTeam().getPlayers()) {
-
-                   points += fixtureRepository.searchPoints(p, d.getDate());
+                   if ( r.getName().equals(user.getName()) ) {
+                       points += r.getScore();
+                   }
                }
-
-               results.add(new Result(us.getName(), d.getDate(), points));
+               user.getMyTeam().setScore(points);
            }
-
-           repository.setResults(results);
-           repository.save();
+           userRepository.setUsers(all1);
+           userRepository.save();
        }
-       for (User user:
-               all1) {
-           List<Result> all2 = repository.getAll();
-           points=0;
-           for (Result r:
-                   all2) {
+       else{
+           AllSportsApi api = new AllSportsApi();
 
-               if(r.getName().equals(user.getName()))
-               {
-                   points+=r.getScore();
-               }
+           try {
+               api.toUpdate();
+           } catch (IOException e) {
+               e.printStackTrace();
            }
-           user.getMyTeam().setScore(points);
+           Fixture fixture = new Fixture();
+           fixture.doFixture();
+           fixture.setDate();
+           fixtureRepository.setFixture(fixture);
+           boolean save = fixtureRepository.save();
+           if (save) {
+               System.out.println("se ha actualizado");
+           }
        }
-       userRepository.setUsers(all1);
-       userRepository.save();
    }
 
    public void menuMain() {
         preProccesor();
         int s;
-        int opcion; //Guardaremos la opcion del usuario
+        int opcion=-1; //Guardaremos la opcion del usuario
         System.out.println("Gran DT Masters");
         System.out.println("1. Ingresar");
         System.out.println("2. Registrarse");
         System.out.println("3. Salir");
 
 
+        try{
             opcion = scanner.nextInt();
+        }catch (InputMismatchException e){
+            System.out.println("Debe ingresar un numero de opcion valida");
+            scanner.reset();
+        }
+
             scanner.reset();
             switch (opcion) {
                 case 1:
@@ -111,6 +136,7 @@ public class MainMenu {
                     break;
                 default:
                     System.out.println("\nIngrese una opcion valida");
+                    menuMain();
             }
 
 
@@ -124,22 +150,22 @@ public class MainMenu {
         scanner.skip("\n");
         String userName = scanner.nextLine();
         if(!new User().browsUser(userName)) {
-            System.out.println("\nIngresar contraseña ");
+            System.out.println("\nIngresar password ");
             String password =scanner.nextLine();
             u1 = u1.login(userName,
                     password);
             if (u1!= null) {
-                System.out.println("Su usuario se ha conectado correctamente\n");
+                System.out.println("\nSu usuario se ha conectado correctamente\n");
                 UserMenu uMenu = new UserMenu(u1);
                 uMenu.menu();
             } else {
-                ///Su usuario no se ha conectado correctamente
+                System.out.println("\nUsuario o password incorrecto. Volviendo al menu principal.\n");
                 this.menuMain();
             }
         }
         else {
             if(userName.equalsIgnoreCase("admin")){
-                System.out.println("\nIngresar contraseña de admin");
+                System.out.println("\nIngresar password de admin");
                 String password = scanner.nextLine();
                 if (password.equalsIgnoreCase("admin")) {
                     new AdminMenu().menu();
@@ -171,7 +197,7 @@ public class MainMenu {
             String name = scanner.nextLine();
             System.out.println("\nIngresar apellido ");
             String surname = scanner.nextLine();
-            System.out.println("\nIngresar contraseña ");
+            System.out.println("\nIngresar password ");
             String password = scanner.nextLine();
             System.out.println("\nIngresar mail ");
             String mail = scanner.nextLine();
@@ -179,12 +205,12 @@ public class MainMenu {
             int phone = scanner.nextInt();
             User u2 = new User(nameUser, password, name, surname, mail, phone);
             u2.register(u2);
-            System.out.println("Desea volver al menu?");
-            char c = scanner.next().charAt(0);
-            if (c == 'y' || c == 'Y') {
+            System.out.println("\nUsuario registrado correctamente\n\n");
+            //char c = scanner.next().charAt(0);
+            //if (c == 'y' || c == 'Y') {
                 menuMain();
             }
         }
     }
-}
+
 
