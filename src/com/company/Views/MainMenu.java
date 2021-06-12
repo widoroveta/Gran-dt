@@ -116,7 +116,7 @@ public class MainMenu {
             opcion = scanner.nextInt();
         }catch (InputMismatchException e){
             System.out.println("Debe ingresar un numero de opcion valida");
-            scanner.reset();
+            scanner.nextLine();
         }
 
             scanner.reset();
@@ -208,7 +208,7 @@ public class MainMenu {
             System.out.println("\nUsuario registrado correctamente\n\n");
             //char c = scanner.next().charAt(0);
             //if (c == 'y' || c == 'Y') {
-                menuMain();
+            menuMain();
             }
         }
     }

@@ -1,31 +1,31 @@
 [ "java.util.ArrayList", [ [ "com.company.model.Result", {
   "name" : "pab",
   "date" : [ "java.util.Date", 1622404800000 ],
-  "score" : 12
+  "score" : 4
 } ], [ "com.company.model.Result", {
   "name" : "pab",
   "date" : [ "java.util.Date", 1620331200000 ],
-  "score" : 4
+  "score" : 0
 } ], [ "com.company.model.Result", {
   "name" : "pab",
   "date" : [ "java.util.Date", 1620936000000 ],
-  "score" : 16
+  "score" : 14
 } ], [ "com.company.model.Result", {
   "name" : "pab",
   "date" : [ "java.util.Date", 1621540800000 ],
-  "score" : 4
-} ], [ "com.company.model.Result", {
-  "name" : "pab",
-  "date" : [ "java.util.Date", 1622145600000 ],
   "score" : 2
 } ], [ "com.company.model.Result", {
   "name" : "pab",
+  "date" : [ "java.util.Date", 1622145600000 ],
+  "score" : 0
+} ], [ "com.company.model.Result", {
+  "name" : "pab",
   "date" : [ "java.util.Date", 1622836800000 ],
-  "score" : 4
+  "score" : 18
 } ], [ "com.company.model.Result", {
   "name" : "pab",
   "date" : [ "java.util.Date", 1623441600000 ],
-  "score" : 8
+  "score" : 6
 } ], [ "com.company.model.Result", {
   "name" : "pab",
   "date" : [ "java.util.Date", 1624046400000 ],
@@ -37,11 +37,11 @@
 } ], [ "com.company.model.Result", {
   "name" : "qwe",
   "date" : [ "java.util.Date", 1622404800000 ],
-  "score" : 10
+  "score" : 4
 } ], [ "com.company.model.Result", {
   "name" : "qwe",
   "date" : [ "java.util.Date", 1620331200000 ],
-  "score" : 4
+  "score" : 2
 } ], [ "com.company.model.Result", {
   "name" : "qwe",
   "date" : [ "java.util.Date", 1620936000000 ],
@@ -49,19 +49,19 @@
 } ], [ "com.company.model.Result", {
   "name" : "qwe",
   "date" : [ "java.util.Date", 1621540800000 ],
-  "score" : 12
+  "score" : 2
 } ], [ "com.company.model.Result", {
   "name" : "qwe",
   "date" : [ "java.util.Date", 1622145600000 ],
-  "score" : 8
+  "score" : 4
 } ], [ "com.company.model.Result", {
   "name" : "qwe",
   "date" : [ "java.util.Date", 1622836800000 ],
-  "score" : 2
+  "score" : 8
 } ], [ "com.company.model.Result", {
   "name" : "qwe",
   "date" : [ "java.util.Date", 1623441600000 ],
-  "score" : 2
+  "score" : 6
 } ], [ "com.company.model.Result", {
   "name" : "qwe",
   "date" : [ "java.util.Date", 1624046400000 ],
