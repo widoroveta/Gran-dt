@@ -25,7 +25,7 @@
 } ], [ "com.company.model.Result", {
   "name" : "pab",
   "date" : [ "java.util.Date", 1623441600000 ],
-  "score" : 0
+  "score" : 8
 } ], [ "com.company.model.Result", {
   "name" : "pab",
   "date" : [ "java.util.Date", 1624046400000 ],
@@ -61,7 +61,7 @@
 } ], [ "com.company.model.Result", {
   "name" : "qwe",
   "date" : [ "java.util.Date", 1623441600000 ],
-  "score" : 0
+  "score" : 2
 } ], [ "com.company.model.Result", {
   "name" : "qwe",
   "date" : [ "java.util.Date", 1624046400000 ],

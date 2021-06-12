@@ -65,7 +65,7 @@
     } ] ] ],
     "teamName" : "Ronaldinho Soccer 64",
     "money" : 37000,
-    "score" : 42,
+    "score" : 50,
     "pointDate" : 0
   } ]
 } ], [ "com.company.model.User", {
@@ -130,7 +130,7 @@
     } ] ] ],
     "teamName" : "AllStars",
     "money" : 31000,
-    "score" : 46,
+    "score" : 48,
     "pointDate" : 0
   } ]
 } ] ] ]

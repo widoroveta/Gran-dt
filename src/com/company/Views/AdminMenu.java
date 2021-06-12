@@ -72,7 +72,31 @@ public class AdminMenu {
 
     /////
     private class RemoveMenuAdmin {
+        ClubRepository clubRepository = new ClubRepository();
+        UserRepository userRepository =new UserRepository();
         public RemoveMenuAdmin() {
+        }
+
+        private Player searchPlayer() {
+            Player select = new Player();
+            List<Player> all = clubRepository.getAll();
+            boolean accept = false;
+            while (!accept) {
+                int i = 0;
+                for (Player p :
+                        all) {
+                    System.out.println(i++ + ") Tipo:" + p.getClass().getSimpleName() + ", Nombre: " + p.getPlayerName() + ", Club: " + p.getClubName() + ", Precio: " + p.getPrice());
+                }
+                System.out.println("\nSelecciona por numero");
+                select = all.get(scanner.nextInt());
+                char c = scanner.next().charAt(0);
+                if (c == 'y' || c == 'Y') {
+                    accept = true;
+                }
+
+
+            }
+            return select;
         }
 
         public void menuRemove() {
@@ -81,22 +105,72 @@ public class AdminMenu {
             print.println("1)Un jugador");
             print.println("2)un club");
             print.println("3)un usuario ");
-            print.println("4)un partido ");
-            print.println("5)un resultado ");
+       //     print.println("4)un partido ");
+         //   print.println("5)un resultado ");
             print.println("6)Volver al menu ");
             switch (scanner.nextInt()) {
+
                 case 1:
+                    int index = -1;
+                    int i=-1;
+                    Player player = searchPlayer();
+
+                    List<Club> clubs = clubRepository.getClubs();
+                    for (Club c : clubs) {
+                        if (c.getClub().equals(player.getClubName())) {
+                            index = clubs.indexOf(c);
+                            for (Player p :
+                                    c.getPlayerList()) {
+                                if (p.getPlayerName().equals(player.getPlayerName())) {
+                                   i=c.getPlayerList().indexOf(p);
+                                }
+                            }
+                        }
+                    }
+                    clubs.get(index).getPlayerList().remove(i);
+                  clubRepository.setClubs(clubs);
+                  clubRepository.save();
+                  menuRemove();
                     break;
                 case 2:
+                    List<Club> ce = clubRepository.getClubs();
+                    Club select;
+                    boolean accept = false;
+                    while (!accept) {
+                        int e = 0;
+                        for (Club cb : ce) {
+                            print.println("\n" + e++ + ") Nombre del club: " + cb.getClub());
+                        }
+                        print.println("\nSelecciona por numero");
+                        select = ce.get(scanner.nextInt());
+                        print.println("\nNombre del club: " + select.getClub());
+
+                        ce.remove(select);
+                    }
+                    clubRepository.setClubs(ce);
+                    clubRepository.save();
+                    menuRemove();
                     break;
                 case 3:
+                    List<User> users= userRepository.getAll();
+                    int e=0;
+                    for (User u:
+                         users) {
+                        System.out.println(e++ +")"+u.getUserName());
+                    }
+                    System.out.println("Elija por numero");
+                    users.remove(scanner.nextInt());
+                    userRepository.setUsers(users);
+                    userRepository.save();
+                    menuRemove();
                     break;
-                case 4:
+             /*   case 4:
                     break;
                 case 5:
-                    break;
+                    break;*/
 
                 case 6:
+                    menu();
                     break;
 
             }
@@ -115,8 +189,8 @@ public class AdminMenu {
             print.println("Que desea modificar?");
             print.println("1)Jugadores");
             print.println("2)Clubes");
-            print.println("3)Partidos");
-            print.println("4)Resultados");
+            ///    print.println("3)Partidos");
+            //  print.println("4)Resultados");
             print.println("5)Volver al menu");
             switch (scanner.nextInt()) {
                 case 1:
@@ -125,10 +199,10 @@ public class AdminMenu {
                 case 2:
                     modifyClub();
                     break;
-                case 3:
+       /*         case 3:
                     modifyMatch();
-                    break;
-                case 4:
+                    break;*/
+                case 5:
                     menu();
                     break;
 
@@ -136,7 +210,7 @@ public class AdminMenu {
             }
 
         }
-
+/*
         private void modifyMatch() {
             FixtureRepository fixtureRepository = new FixtureRepository();
             List<Match> all = fixtureRepository.getAll();
@@ -175,7 +249,7 @@ public class AdminMenu {
                     break;
             }
 
-        }
+        }*/
 
 
         private void modifyClub() {
@@ -363,7 +437,7 @@ public class AdminMenu {
             menu();
         }
 
-        private Player selectPlayerInMatch(Match m) {
+      /*  private Player selectPlayerInMatch(Match m) {
             int i = 0;
             print.println("Local team");
             for (Player p :
@@ -410,7 +484,7 @@ public class AdminMenu {
             return null;
         }
 
-        private void changeInMatchPlayer(Match m, Player player1, Player player2) {
+       /* private void changeInMatchPlayer(Match m, Player player1, Player player2) {
             FixtureRepository fixtureRepository = new FixtureRepository();
             List<Match> all = fixtureRepository.getAll();
             int i = all.indexOf(m);
@@ -453,15 +527,15 @@ public class AdminMenu {
 
             }
         }
+    }*/
     }
-
     private class ViewMenuAdmin {
 
         public ViewMenuAdmin() {
         }
 
         public void viewMenu() {
-            ClubRepository clubRepository =new ClubRepository();
+            ClubRepository clubRepository = new ClubRepository();
             print.println("Menu de datos ");
             print.println("Que quieres ver");
             print.println("1)Jugadores");
@@ -473,24 +547,24 @@ public class AdminMenu {
             switch (scanner.nextInt()) {
 
                 case 1:
-                  System.out.println( clubRepository.getAll());
-                exitViews();
-                  break;
+                    System.out.println(clubRepository.getAll());
+                    exitViews();
+                    break;
                 case 2:
                     System.out.println(clubRepository.getClubs());
                     exitViews();
                     break;
                 case 3:
-                    UserRepository repository=new UserRepository();
+                    UserRepository repository = new UserRepository();
                     print.println(repository.getAll());
-               exitViews();
+                    exitViews();
                     break;
                 case 4:
-                    FixtureRepository fixtureRepository=new FixtureRepository();
+                    FixtureRepository fixtureRepository = new FixtureRepository();
                     print.println(fixtureRepository.getAll());
                     break;
                 case 5:
-                    ResultsRepository repository1 =new ResultsRepository();
+                    ResultsRepository repository1 = new ResultsRepository();
                     print.println(repository1.getAll());
                     break;
 
@@ -501,12 +575,13 @@ public class AdminMenu {
             }
 
         }
+
         public void exitViews() {
             print.println("Aprete y para volver al menu de vistas y n para volver al menu principal de admin");
             char c = scanner.next().charAt(0);
             if (c == 'y' || c == 'Y') {
 
-               viewMenu();
+                viewMenu();
             }
             if (c == 'n' || c == 'N') {
                 menu();
